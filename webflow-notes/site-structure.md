@@ -4,8 +4,6 @@
 - Home: `/`
 - Solutions: `/solutions`
 - Industries: `/industries`
-- Guest Connectivity Solutions: `/guest-connectivity` in Webflow, currently `mobility-indoor-connectivity.html` in the static build
-- Business Internet & Network Services: `/business-internet`
 - Partners: `/partners`
 - About: `/about`
 - Contact: `/contact`
@@ -51,7 +49,7 @@ Primary nav should include:
 - About
 - Contact
 
-Do not add Business Internet & Network Services or Guest Connectivity Solutions as primary navigation items. Link to both from the Solutions page, footer solution links, and relevant CTAs.
+Do not add Business Internet & Network Services or Guest Connectivity Solutions as standalone pages or primary navigation items. Present both solution areas on the Solutions page and route solution-specific CTAs to Contact.
 
 Header CTA:
 - Talk with Dascoda
@@ -81,8 +79,7 @@ Recommended structure:
 ## Footer
 Footer should include:
 - Short positioning statement: Technology Solutions. Trusted Guidance. Accountable Execution.
-- Primary navigation links: Solutions, Industries, Partners, About, Contact
-- Solution links: Business Internet & Network Services and Guest Connectivity Solutions
+- Primary navigation links: Home, Solutions, Industries, Partners, About, Contact
 - Contact link
 - Copyright
 
@@ -112,33 +109,27 @@ Then present supporting capability blocks:
 - Technology Advisory: assessments, planning, sourcing support, stakeholder alignment, and practical decision support in service of the lead solution areas
 - Program Leadership: implementation coordination, deployment oversight, partner management, rollout leadership, and ongoing accountability from strategy through execution
 
-## Business Internet & Network Services Page Structure
-Use the URL `/business-internet`.
+## Business Internet & Network Services Content Placement
+Do not create a standalone Business Internet & Network Services page in the current site architecture.
 
-Recommended structure:
-- Hero: Business Internet and Network Services for Hospitality and Multi-Site Environments
-- The Challenge: fragmented provider landscape, unclear service fit, operational risk
-- What Dascoda Supports: business internet services, network service planning, carrier/provider coordination, agreement support, deployment support, ongoing accountability
-- Why Dascoda: trusted technology solutions partner, not a broker or product company
-- Industries: Hospitality, Multifamily / MDU, Commercial Real Estate, Retail, Manufacturing, Other Multi-Site Environments
-- CTA: bring clarity to the next internet or network services decision
+Business internet, carrier sourcing, agreement support, network services, and post-install accountability should remain visible as solution topics within:
+- Home Solutions Focus section
+- Solutions page
+- Partners page ecosystem section
 
-## Guest Connectivity Solutions Page Structure
-Use the URL `/guest-connectivity` in Webflow. The current static file remains `mobility-indoor-connectivity.html`.
+CTA behavior should route interested visitors to Contact rather than a separate detail page.
 
-Do not position the page as only Passpoint, only indoor cellular coverage, or only Ameriband. Passpoint and Ameriband Wi-DAS should remain visible within Guest Connectivity Solutions.
+## Guest Connectivity / Wi-DAS Content Placement
+Do not create a standalone Guest Connectivity, Mobility, or Passpoint page in the current site architecture.
 
-Recommended structure:
-- Hero: Guest Connectivity Solutions
-- The Business Need: guest connectivity, indoor wireless experience, Wi-Fi Calling, secure onboarding, staff connectivity, solution fit
-- Solution Components: Passpoint, Ameriband Wi-DAS, indoor wireless experience, Wi-Fi Calling, other indoor options when needed, partner coordination
-- Featured Partner: Ameriband as Dascoda's exclusive hospitality partner for Passpoint-enabled Wi-DAS
-- What is Passpoint?
-- What is Ameriband Wi-DAS?
-- Why Dascoda: needs assessment, solution fit, partner coordination, stakeholder alignment, deployment support, ongoing accountability
-- Industries: Hospitality, Multifamily / MDU, Commercial Real Estate, Retail, Manufacturing, Other multi-site environments
+Passpoint, Ameriband Wi-DAS, and indoor mobile connectivity should remain visible as solution topics within:
+- Home Ameriband section
+- Solutions page
+- Partners page featured Ameriband section
 
-Do not change protected Blueprint recommendations for technical SEO, JSON-LD/schema, contact forms, public vs confidential guardrails, tracking, CRM, Guest Connectivity Solutions page structure, or Business Internet page structure.
+CTA behavior should route interested visitors to Contact rather than a separate detail page.
+
+Do not change protected Blueprint recommendations for technical SEO, JSON-LD/schema, contact forms, public vs confidential guardrails, tracking, and CRM.
 
 ## Imagery Guidance
 Use hospitality imagery as the primary visual language, including hotels, resorts, lobbies, guest-facing property environments, and executive planning moments. Balance that with selective multi-site imagery such as multifamily communities, commercial buildings, retail locations, manufacturing facilities, and portfolio-map visuals.

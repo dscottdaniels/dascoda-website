@@ -97,7 +97,7 @@ Recommended image: premium hospitality environment.
 Guests naturally using mobile devices in a hotel lobby, resort, meeting space, or public area. Focus on guest experience and mobility. Avoid antennas, cellular equipment, telecom diagrams, dashboards, and technical imagery. The image should communicate: "Guests expect their phones to work everywhere."
 
 ### CTA
-Explore Passpoint & Mobility
+Talk About Wi-DAS
 
 ## Why Dascoda Section
 ### Headline

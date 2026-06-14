@@ -28,7 +28,7 @@
 - Eyebrow: Featured Partnership: Ameriband
 - Headline: Exclusive hospitality partner for Passpoint-enabled Wi-DAS.
 - Copy explains Dascoda as Ameriband's exclusive hospitality partner and Ameriband as the provider of the Passpoint-enabled Wi-DAS platform, with Dascoda supporting fit assessment, stakeholder alignment, deployment coordination, and accountability through operational readiness
-- CTA: View Passpoint & Mobility
+- CTA: Discuss Wi-DAS
 
 ## 5. How Dascoda Helps
 - Eyebrow: How Dascoda Helps

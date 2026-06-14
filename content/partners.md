@@ -64,7 +64,7 @@ Dascoda serves as Ameriband's exclusive hospitality partner, helping hotel owner
 Ameriband provides the Passpoint-enabled Wi-DAS platform. Dascoda helps clients assess fit, align stakeholders, coordinate deployment activities, and maintain accountability from evaluation through operational readiness.
 
 ### CTA
-View Passpoint & Mobility
+Discuss Wi-DAS
 
 ## Partner Categories
 - Connectivity providers

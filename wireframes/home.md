@@ -39,7 +39,7 @@
   - Left: hospitality guest image only
   - Right: Ameriband's Exclusive Hospitality Partner heading, American Bandwidth logo, partnership content, Dascoda advisory/program leadership role, carrier/technology partner engagement, and hospitality relationship value
 - Full-width benefits list: existing Wi-Fi infrastructure, improved indoor mobile connectivity, seamless guest and user experience, automatic carrier-based authentication, reduced complexity, cost reduction potential, and faster path to deployment
-- CTA: Explore Passpoint & Mobility
+- CTA: Talk About Wi-DAS
 - Image placeholder guidance: premium hospitality environment where guests naturally use mobile devices in a hotel lobby, resort, meeting space, or public area; focus on guest experience and mobility; avoid antennas, cellular equipment, telecom diagrams, dashboards, and technical imagery
 
 ## 6. Why Dascoda
