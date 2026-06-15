@@ -33,7 +33,7 @@ Dascoda helps organizations evaluate, source, deploy, and support connectivity, 
 Business Internet, Fiber, Broadband, SD-WAN, Carrier Sourcing, Agreement Support, and Multi-Site Connectivity Programs.
 
 #### Mobility Solutions
-Passpoint-enabled Wi-DAS, Indoor Cellular Coverage, DAS Advisory, Small Cell Strategy, and Mobile Experience Programs.
+Passpoint-enabled Wi-Fi through Ameriband, Indoor Cellular Coverage, DAS Advisory, Small Cell Strategy, and Mobile Experience Programs.
 
 #### Technology Advisory & Program Leadership
 Solution Evaluation, Partner Coordination, Deployment Planning, Vendor Alignment, and Accountable Execution.
@@ -64,25 +64,25 @@ Dascoda was built on hospitality experience, but the same connectivity, mobility
 Helping Hotels Improve Indoor Mobile Connectivity
 
 ### Subheadline
-Exclusive Hospitality Partner for Ameriband Wi-DAS
+Exclusive Hospitality Partner for Passpoint-Enabled Wi-Fi
 
 ### Problem Statement
 Guests expect their mobile devices to work throughout a property, yet indoor cellular coverage remains a challenge for many hotels. As mobile usage grows and newer cellular frequencies struggle to penetrate buildings, hotels need practical ways to improve the mobile experience without the cost and complexity of many traditional in-building wireless approaches.
 
 ### Ameriband Section
 #### Ameriband's Exclusive Hospitality Partner
-Dascoda is Ameriband's exclusive hospitality partner, helping hotel owners, operators, and management companies improve indoor mobile connectivity through Passpoint-enabled Wi-DAS solutions.
+Dascoda is Ameriband's exclusive hospitality partner, helping hotel owners, operators, and management companies improve indoor mobile connectivity through Passpoint-enabled Wi-Fi.
 
-By leveraging existing Wi-Fi infrastructure, Wi-DAS can provide a practical alternative to many traditional DAS and small-cell deployments, helping organizations improve coverage, reduce complexity, accelerate deployment, and lower overall costs.
+By leveraging existing wireless infrastructure, Ameriband's Wi-DAS architecture uses Passpoint technology to provide a practical alternative to many traditional DAS and small-cell deployments, helping organizations improve coverage, reduce complexity, accelerate deployment, and lower overall costs.
 
 Unlike a traditional product engagement, Dascoda helps organizations assess fit, align ownership and operational stakeholders, coordinate pilot programs, engage carriers and technology partners, and guide deployment planning from assessment through execution.
 
-Through Dascoda's exclusive hospitality relationship, clients gain access to a combination of hospitality expertise, carrier relationships, Passpoint-enabled Wi-DAS technology, and program leadership that extends beyond a traditional technology deployment.
+Through Dascoda's exclusive hospitality relationship, clients gain access to a combination of hospitality expertise, carrier relationships, Passpoint-enabled Wi-Fi through Ameriband, and program leadership that extends beyond a traditional technology deployment.
 
 Together, Dascoda and Ameriband help organizations improve indoor cellular coverage, enhance guest and employee experiences, leverage existing Wi-Fi investments, and deliver a more seamless mobile experience throughout the property.
 
 ### Benefits
-#### Why Hospitality and Multi-Site Organizations Select Wi-DAS
+#### Why Hospitality and Multi-Site Organizations Select Passpoint
 - Leverages existing Wi-Fi infrastructure
 - Improves indoor mobile connectivity
 - Creates a more seamless guest and user experience
@@ -97,7 +97,7 @@ Recommended image: premium hospitality environment.
 Guests naturally using mobile devices in a hotel lobby, resort, meeting space, or public area. Focus on guest experience and mobility. Avoid antennas, cellular equipment, telecom diagrams, dashboards, and technical imagery. The image should communicate: "Guests expect their phones to work everywhere."
 
 ### CTA
-Talk About Wi-DAS
+Talk About Passpoint
 
 ## Why Dascoda Section
 ### Headline

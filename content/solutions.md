@@ -28,7 +28,7 @@ Dascoda combines connectivity expertise, mobility solutions, and program leaders
 Business internet, fiber, broadband, Ethernet, WAN, SD-WAN, carrier sourcing, contract support, and multi-property connectivity programs.
 
 ### Passpoint & Mobility Solutions
-Passpoint-enabled Wi-DAS through Ameriband, indoor mobile connectivity, DAS advisory, small-cell strategy, and guest mobility solutions.
+Passpoint-enabled Wi-Fi through Ameriband, indoor mobile connectivity, DAS advisory, small-cell strategy, and guest mobility solutions.
 
 ### Technology Advisory & Program Leadership
 Solution evaluation, stakeholder alignment, deployment planning, partner coordination, and accountable execution.
@@ -63,14 +63,14 @@ Improve indoor mobile connectivity without traditional DAS complexity.
 
 Guests and employees increasingly expect mobile devices to work seamlessly throughout a property, yet indoor cellular coverage remains a challenge across many hospitality and multi-site environments.
 
-Through Dascoda's exclusive hospitality partnership with Ameriband, organizations can evaluate Passpoint-enabled Wi-DAS solutions that leverage existing Wi-Fi infrastructure to improve indoor mobile connectivity while avoiding much of the cost, complexity, and deployment effort associated with traditional DAS solutions.
+Through Dascoda's exclusive hospitality partnership with Ameriband, organizations can evaluate Passpoint-enabled Wi-Fi that leverages existing wireless infrastructure to improve indoor mobile connectivity while avoiding much of the cost, complexity, and deployment effort associated with traditional DAS solutions.
 
 Dascoda helps assess fit, align stakeholders, coordinate pilot programs, and guide deployment planning from evaluation through execution.
 
 ### Ameriband's Exclusive Hospitality Partner
-Dascoda serves as Ameriband's exclusive hospitality partner, helping hotel owners, operators, and management companies evaluate, pilot, and deploy Passpoint-enabled Wi-DAS solutions. Dascoda aligns ownership, operational, and technology stakeholders to move deployments from evaluation through execution.
+Dascoda serves as Ameriband's exclusive hospitality partner, helping hotel owners, operators, and management companies evaluate, pilot, and deploy Passpoint-enabled Wi-Fi through Ameriband. Ameriband's Wi-DAS architecture uses Passpoint technology and existing Wi-Fi infrastructure to create a seamless indoor mobile connectivity experience. Dascoda aligns ownership, operational, and technology stakeholders to move deployments from evaluation through execution.
 
-### Why Organizations Select Wi-DAS
+### Why Organizations Select Passpoint
 - Leverages existing Wi-Fi infrastructure
 - Improves indoor mobile connectivity
 - Creates a more seamless guest, resident, and employee experience

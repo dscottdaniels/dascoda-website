@@ -34,12 +34,12 @@
 
 ## 5. Featured Partnership
 - Full-width intro headline: Improving Indoor Mobile Connectivity Across Hospitality and Multi-Site Environments
-- Full-width intro copy: why indoor mobile connectivity matters, why coverage is becoming more challenging, and why Passpoint-enabled Wi-DAS is a practical alternative to many traditional DAS and small-cell deployments
+- Full-width intro copy: why indoor mobile connectivity matters, why coverage is becoming more challenging, and why Passpoint-enabled Wi-Fi through Ameriband is a practical alternative to many traditional DAS and small-cell deployments
 - Two-column partnership area:
   - Left: hospitality guest image only
   - Right: Ameriband's Exclusive Hospitality Partner heading, American Bandwidth logo, partnership content, Dascoda advisory/program leadership role, carrier/technology partner engagement, and hospitality relationship value
 - Full-width benefits list: existing Wi-Fi infrastructure, improved indoor mobile connectivity, seamless guest and user experience, automatic carrier-based authentication, reduced complexity, cost reduction potential, and faster path to deployment
-- CTA: Talk About Wi-DAS
+- CTA: Talk About Passpoint
 - Image placeholder guidance: premium hospitality environment where guests naturally use mobile devices in a hotel lobby, resort, meeting space, or public area; focus on guest experience and mobility; avoid antennas, cellular equipment, telecom diagrams, dashboards, and technical imagery
 
 ## 6. Why Dascoda

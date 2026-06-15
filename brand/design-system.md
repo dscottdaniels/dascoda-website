@@ -107,7 +107,7 @@ Use subtle connectivity lines, nodes, arcs, and portfolio-map patterns as suppor
 ## Content Hierarchy
 Recommended page-level framing:
 - Lead with Connectivity, Mobility, and Technology Solutions for Hospitality and Multi-Site Environments
-- Present Passpoint as a technology within Mobility & Indoor Connectivity, not as the page or solution category
+- Lead with Passpoint-enabled Wi-Fi through Ameriband. Reference Wi-DAS only as Ameriband's technical architecture when explanation requires it.
 - Clarify that hospitality is the primary vertical, not the only vertical
 - Emphasize business outcomes: service continuity, account alignment, deployment coordination, stakeholder clarity, and execution support
 - Use industry examples to broaden relevance without diluting the hospitality core

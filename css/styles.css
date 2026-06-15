@@ -774,12 +774,16 @@ p {
   border-color: rgba(198, 60, 50, 0.58);
 }
 
-.timeline-dascoda::before {
-  width: 30px;
-  height: 22px;
-  background: linear-gradient(135deg, var(--blue-start) 0 48%, var(--red) 49% 65%, var(--green) 66% 100%);
-  border-radius: 18px 18px 18px 4px;
-  transform: skewX(-12deg);
+.timeline-dascoda::before,
+.timeline-dascoda::after {
+  display: none;
+}
+
+.timeline-dascoda img {
+  display: block;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
 }
 
 .timeline-year {

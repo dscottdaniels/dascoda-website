@@ -73,7 +73,7 @@ Support from evaluation and sourcing through agreement support, implementation c
 ### Ownership Perspective
 Experience across hospitality ownership, enterprise technology leadership, and large-scale program execution informs how Dascoda supports decision-making and delivery.
 
-### Ameriband / Passpoint-Enabled Wi-DAS Partnership
-Dascoda is Ameriband's exclusive hospitality partner for Passpoint-enabled Wi-DAS opportunities. Dascoda remains an independent client-centered solutions partner that helps clients evaluate fit, align stakeholders, and coordinate execution around Ameriband-enabled opportunities.
+### Ameriband / Passpoint-Enabled Wi-Fi Partnership
+Dascoda is Ameriband's exclusive hospitality partner for Passpoint-enabled Wi-Fi opportunities. Dascoda remains an independent client-centered solutions partner that helps clients evaluate fit, align stakeholders, and coordinate execution around Ameriband-enabled opportunities.
 
 Passpoint should remain visible as an important technology topic, but the broader solution category is Mobility & Indoor Connectivity.

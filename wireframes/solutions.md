@@ -34,10 +34,10 @@
 ## 5. Passpoint & Mobility Solutions Detail
 - Split section focused on the hospitality and multi-site indoor mobile connectivity challenge
 - Headline: Improve indoor mobile connectivity without traditional DAS complexity.
-- Left copy: guest and employee expectations, indoor cellular coverage challenge, Ameriband partnership, Passpoint-enabled Wi-DAS, existing Wi-Fi infrastructure, avoiding much of the cost, complexity, and deployment effort associated with traditional DAS solutions, and Dascoda's role from evaluation through execution
+- Left copy: guest and employee expectations, indoor cellular coverage challenge, Ameriband partnership, Passpoint-enabled Wi-Fi through Ameriband, existing wireless infrastructure, avoiding much of the cost, complexity, and deployment effort associated with traditional DAS solutions, and Dascoda's role from evaluation through execution
 - Highlighted callout: Ameriband's Exclusive Hospitality Partner with Ameriband / American Bandwidth logo above the partnership text
-- Right card: Why Organizations Select Wi-DAS benefits list
-- Note: Wi-DAS is Ameriband's Passpoint-enabled solution, not a competing category.
+- Right card: Why Organizations Select Passpoint benefits list
+- Note: Wi-DAS should be referenced only as Ameriband's technical architecture that uses Passpoint technology and existing Wi-Fi infrastructure.
 
 ## 6. Technology Advisory & Program Leadership Detail
 - Split section with explanatory copy and service list

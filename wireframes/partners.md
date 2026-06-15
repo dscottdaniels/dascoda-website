@@ -24,11 +24,11 @@
 ## 4. Featured Partner: Ameriband
 - Two-column layout with contained infographic image on the left and copy on the right
 - Image: assets/images/passpoint-widas-hospitality-infographic.png
-- Alt text: Passpoint-enabled Wi-DAS hospitality infographic showing existing Wi-Fi, Passpoint authentication, mobile connectivity, guest experience, faster deployment, and lower-cost indoor mobile coverage.
+- Alt text: Passpoint-enabled Wi-Fi hospitality infographic showing existing Wi-Fi, Passpoint authentication, mobile connectivity, guest experience, faster deployment, and lower-cost indoor mobile coverage.
 - Eyebrow: Featured Partnership: Ameriband
-- Headline: Exclusive hospitality partner for Passpoint-enabled Wi-DAS.
-- Copy explains Dascoda as Ameriband's exclusive hospitality partner and Ameriband as the provider of the Passpoint-enabled Wi-DAS platform, with Dascoda supporting fit assessment, stakeholder alignment, deployment coordination, and accountability through operational readiness
-- CTA: Discuss Wi-DAS
+- Headline: Exclusive hospitality partner for Passpoint-enabled Wi-Fi.
+- Copy explains Dascoda as Ameriband's exclusive hospitality partner and Ameriband as the provider of a Passpoint-enabled Wi-Fi solution that leverages existing wireless infrastructure, with Dascoda supporting fit assessment, stakeholder alignment, deployment coordination, and accountability through operational readiness
+- CTA: Discuss Passpoint
 
 ## 5. How Dascoda Helps
 - Eyebrow: How Dascoda Helps

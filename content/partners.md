@@ -1,7 +1,7 @@
 # Partners
 
 ## Page Purpose
-Explain Dascoda's strategic partner ecosystem, show how clients gain access to trusted relationships, and highlight Ameriband as the featured partner for Passpoint-enabled Wi-DAS opportunities in hospitality.
+Explain Dascoda's strategic partner ecosystem, show how clients gain access to trusted relationships, and highlight Ameriband as the featured partner for Passpoint-enabled Wi-Fi opportunities in hospitality.
 
 ## Credibility Line
 Technology Solutions. Trusted Guidance. Accountable Execution.
@@ -34,7 +34,7 @@ Dascoda helps organizations navigate provider relationships, mobility programs, 
   - Carrier Coordination
   - Commercial Alignment
 - Passpoint & Mobility Solutions
-  - Passpoint-enabled Wi-DAS
+  - Passpoint-enabled Wi-Fi through Ameriband
   - Indoor Mobile Connectivity
   - DAS Advisory
   - Small Cell Strategy
@@ -53,18 +53,18 @@ Featured Partnership: Ameriband
 ### Visual
 Use assets/images/passpoint-widas-hospitality-infographic.png as a contained image with rounded corners.
 
-Alt text: Passpoint-enabled Wi-DAS hospitality infographic showing existing Wi-Fi, Passpoint authentication, mobile connectivity, guest experience, faster deployment, and lower-cost indoor mobile coverage.
+Alt text: Passpoint-enabled Wi-Fi hospitality infographic showing existing Wi-Fi, Passpoint authentication, mobile connectivity, guest experience, faster deployment, and lower-cost indoor mobile coverage.
 
 ### Headline
-Exclusive hospitality partner for Passpoint-enabled Wi-DAS.
+Exclusive hospitality partner for Passpoint-enabled Wi-Fi.
 
 ### Body Copy
-Dascoda serves as Ameriband's exclusive hospitality partner, helping hotel owners, operators, and management teams evaluate, pilot, and deploy Passpoint-enabled Wi-DAS solutions that leverage existing Wi-Fi infrastructure to improve indoor mobile connectivity.
+Dascoda serves as Ameriband's exclusive hospitality partner, helping hotel owners, operators, and management teams evaluate, pilot, and deploy Passpoint-enabled Wi-Fi through Ameriband that leverages existing wireless infrastructure to improve indoor mobile connectivity.
 
-Ameriband provides the Passpoint-enabled Wi-DAS platform. Dascoda helps clients assess fit, align stakeholders, coordinate deployment activities, and maintain accountability from evaluation through operational readiness.
+Ameriband provides a Passpoint-enabled Wi-Fi solution that leverages existing wireless infrastructure to deliver seamless indoor mobile connectivity. Dascoda helps clients assess fit, align stakeholders, coordinate deployment activities, and maintain accountability from evaluation through operational readiness.
 
 ### CTA
-Discuss Wi-DAS
+Discuss Passpoint
 
 ## Partner Categories
 - Connectivity providers

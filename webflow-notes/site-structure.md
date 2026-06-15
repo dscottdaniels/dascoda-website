@@ -119,10 +119,10 @@ Business internet, carrier sourcing, agreement support, network services, and po
 
 CTA behavior should route interested visitors to Contact rather than a separate detail page.
 
-## Guest Connectivity / Wi-DAS Content Placement
+## Guest Connectivity / Passpoint Content Placement
 Do not create a standalone Guest Connectivity, Mobility, or Passpoint page in the current site architecture.
 
-Passpoint, Ameriband Wi-DAS, and indoor mobile connectivity should remain visible as solution topics within:
+Passpoint, Passpoint-enabled Wi-Fi through Ameriband, and indoor mobile connectivity should remain visible as solution topics within:
 - Home Ameriband section
 - Solutions page
 - Partners page featured Ameriband section
