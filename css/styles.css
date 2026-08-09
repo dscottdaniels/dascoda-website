@@ -930,6 +930,10 @@ p {
   padding: 82px 0;
 }
 
+.home-page .section {
+  background: var(--white);
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(18px);
@@ -946,6 +950,10 @@ p {
 }
 
 .section-blue {
+  background: var(--blue-soft);
+}
+
+.home-page .section-blue {
   background: var(--blue-soft);
 }
 
@@ -1024,6 +1032,16 @@ p {
 .industry-card {
   position: relative;
   overflow: hidden;
+}
+
+.industry-card:nth-child(2),
+.industry-card:nth-child(5) {
+  border-top-color: var(--red);
+}
+
+.industry-card:nth-child(3),
+.industry-card:nth-child(6) {
+  border-top-color: var(--green);
 }
 
 .industry-card::before {
@@ -2013,10 +2031,43 @@ p {
   color: var(--navy);
 }
 
-.ameriband-benefits .list {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px 28px;
-  margin-top: 18px;
+.ameriband-benefit-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.ameriband-benefit-card {
+  min-height: 100%;
+  padding: 20px;
+  border-top: 4px solid var(--blue-start);
+}
+
+.ameriband-benefit-card:nth-child(2) {
+  border-top-color: var(--red);
+}
+
+.ameriband-benefit-card:nth-child(3) {
+  border-top-color: var(--green);
+}
+
+.ameriband-benefit-card:nth-child(4) {
+  border-top-color: var(--blue-end);
+}
+
+.ameriband-benefit-card h4 {
+  color: var(--navy);
+  font-size: 0.82rem;
+  line-height: 1.25;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.ameriband-benefit-card p {
+  margin-top: 10px;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
 .ameriband-benefits .actions {
@@ -2431,6 +2482,10 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 
+  .ameriband-benefit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .founder-media {
     height: 230px;
     min-height: 230px;
@@ -2485,6 +2540,10 @@ textarea:focus {
 
   .hero-copy .lead {
     font-size: 1.03rem;
+  }
+
+  .ameriband-benefit-grid {
+    grid-template-columns: 1fr;
   }
 
   @media (max-width: 380px) {
