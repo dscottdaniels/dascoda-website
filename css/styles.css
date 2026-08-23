@@ -1035,11 +1035,12 @@ p {
 }
 
 .privacy-policy h2 {
-  margin-top: 34px;
-  margin-bottom: 12px;
+  margin-top: 26px;
+  margin-bottom: 8px;
   color: var(--navy);
-  font-size: 1.75rem;
-  line-height: 1.22;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
 }
 
 .privacy-policy h3 {
@@ -1050,27 +1051,19 @@ p {
 }
 
 .privacy-policy h2:first-of-type {
-  margin-top: 22px;
+  margin-top: 0;
 }
 
 .privacy-policy p,
 .privacy-policy li {
   color: var(--text);
   font-size: 1rem;
-  line-height: 1.72;
+  line-height: 1.64;
 }
 
 .privacy-policy p {
-  margin-top: 13px;
-}
-
-.privacy-intro-heading {
-  max-width: 620px;
-  margin: 0 0 14px;
-  color: var(--navy);
-  font-size: 1.25rem;
-  font-weight: 600;
-  line-height: 1.25;
+  margin-top: 9px;
+  margin-bottom: 0;
 }
 
 .privacy-policy .list {
@@ -2941,14 +2934,10 @@ textarea:focus {
   }
 
   .privacy-policy h2 {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
   }
 
   .privacy-policy h3 {
-    font-size: 1.125rem;
-  }
-
-  .privacy-intro-heading {
     font-size: 1.125rem;
   }
 
