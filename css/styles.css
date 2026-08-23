@@ -1011,6 +1011,61 @@ p {
   background: var(--blue-soft);
 }
 
+.privacy-hero {
+  padding: 46px 0 38px;
+}
+
+.privacy-hero .section-header {
+  margin-bottom: 0;
+}
+
+.privacy-hero h1 {
+  font-size: clamp(3rem, 4vw, 3.5rem);
+}
+
+.privacy-content {
+  padding: 54px 0 72px;
+}
+
+.privacy-policy {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 34px 38px;
+  background: var(--white);
+  border: 1px solid rgba(47, 95, 168, 0.12);
+  border-radius: var(--radius);
+}
+
+.privacy-policy h2 {
+  margin-top: 34px;
+  color: var(--navy);
+  font-size: clamp(1.75rem, 2vw, 2.125rem);
+}
+
+.privacy-policy h2:first-of-type {
+  margin-top: 28px;
+}
+
+.privacy-policy p,
+.privacy-policy li {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.privacy-policy p {
+  margin-top: 14px;
+}
+
+.privacy-policy .list {
+  margin-top: 14px;
+  padding-left: 22px;
+}
+
+.privacy-policy .list li + li {
+  margin-top: 8px;
+}
+
 .home-page .section-blue {
   background: var(--blue-soft);
 }
@@ -2485,6 +2540,22 @@ textarea:focus {
   font-size: 0.94rem;
 }
 
+.footer-legal {
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.86rem;
+}
+
+.footer-legal a {
+  color: rgba(255, 255, 255, 0.74);
+  font-weight: 600;
+}
+
+.footer-legal span {
+  margin: 0 8px;
+  color: rgba(255, 255, 255, 0.34);
+}
+
 .footer-note {
   max-width: none;
   margin-top: 10px;
@@ -2834,6 +2905,26 @@ textarea:focus {
 
   .industries-page .section {
     padding: 58px 0;
+  }
+
+  .privacy-hero {
+    padding: 38px 0 34px;
+  }
+
+  .privacy-hero h1 {
+    font-size: clamp(2.5rem, 11vw, 3.1rem);
+  }
+
+  .privacy-content {
+    padding: 38px 0 56px;
+  }
+
+  .privacy-policy {
+    padding: 26px 22px;
+  }
+
+  .privacy-policy h2 {
+    font-size: 1.65rem;
   }
 
   .industries-page main > .section:first-of-type {
