@@ -1020,7 +1020,7 @@ p {
 }
 
 .privacy-hero h1 {
-  font-size: clamp(3rem, 4vw, 3.5rem);
+  font-size: 3.25rem;
 }
 
 .privacy-content {
@@ -1038,7 +1038,15 @@ p {
   margin-top: 34px;
   margin-bottom: 12px;
   color: var(--navy);
-  font-size: clamp(1.75rem, 2vw, 2.125rem);
+  font-size: 1.75rem;
+  line-height: 1.22;
+}
+
+.privacy-policy h3 {
+  color: var(--navy);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
 }
 
 .privacy-policy h2:first-of-type {
@@ -1060,8 +1068,8 @@ p {
   max-width: 620px;
   margin: 0 0 14px;
   color: var(--navy);
-  font-size: clamp(1.5rem, 2vw, 1.75rem);
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 600;
   line-height: 1.25;
 }
 
@@ -2921,7 +2929,7 @@ textarea:focus {
   }
 
   .privacy-hero h1 {
-    font-size: clamp(2.5rem, 11vw, 3.1rem);
+    font-size: 2.5rem;
   }
 
   .privacy-content {
@@ -2933,7 +2941,15 @@ textarea:focus {
   }
 
   .privacy-policy h2 {
-    font-size: 1.65rem;
+    font-size: 1.5rem;
+  }
+
+  .privacy-policy h3 {
+    font-size: 1.125rem;
+  }
+
+  .privacy-intro-heading {
+    font-size: 1.125rem;
   }
 
   .industries-page main > .section:first-of-type {
