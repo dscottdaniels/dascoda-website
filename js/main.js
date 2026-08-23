@@ -8,15 +8,48 @@ if (menuToggle && navLinks) {
   });
 }
 
-const contactForm = document.querySelector("[data-contact-form]");
-const formMessage = document.querySelector("[data-form-message]");
+const CONTACT_SUBMITTED_KEY = "dascoda_contact_submitted";
+const contactForm = document.querySelector(".contact-page form");
 
-if (contactForm && formMessage) {
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    formMessage.classList.add("is-visible");
-    contactForm.reset();
+const trackGaEvent = (eventName) => {
+  if (typeof window.gtag === "function") {
+    window.gtag("event", eventName, {
+      form_name: "contact",
+    });
+  }
+};
+
+if (contactForm) {
+  let contactFormStarted = false;
+  const markContactFormStarted = () => {
+    if (contactFormStarted) return;
+    contactFormStarted = true;
+    trackGaEvent("contact_form_start");
+  };
+
+  contactForm.addEventListener("focusin", markContactFormStarted);
+  contactForm.addEventListener("change", markContactFormStarted);
+
+  contactForm.addEventListener("submit", () => {
+    try {
+      window.sessionStorage.setItem(CONTACT_SUBMITTED_KEY, "true");
+    } catch (error) {
+      // Analytics should never interfere with the FormSubmit POST.
+    }
+
+    trackGaEvent("contact_form_submit");
   });
+}
+
+if (window.location.pathname === "/thank-you" || window.location.pathname === "/thank-you.html") {
+  try {
+    if (window.sessionStorage.getItem(CONTACT_SUBMITTED_KEY) === "true") {
+      trackGaEvent("contact_form_success");
+      window.sessionStorage.removeItem(CONTACT_SUBMITTED_KEY);
+    }
+  } catch (error) {
+    // Ignore storage restrictions so the thank-you page still loads normally.
+  }
 }
 
 document.querySelectorAll("[data-founder-photo]").forEach((image) => {
