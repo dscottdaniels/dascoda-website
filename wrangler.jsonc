@@ -17,7 +17,7 @@
       "name": "EMAIL",
       "allowed_destination_addresses": [
         "dscottdaniels@dascoda.com",
-        "mark.mueleman@dascoda.com"
+        "mark.meuleman@dascoda.com"
       ],
       "allowed_sender_addresses": [
         "website@forms.dascoda.com"

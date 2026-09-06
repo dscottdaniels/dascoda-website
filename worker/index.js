@@ -1,5 +1,5 @@
 const CONTACT_TO = "dscottdaniels@dascoda.com";
-const CONTACT_CC = "mark.mueleman@dascoda.com";
+const CONTACT_CC = "mark.meuleman@dascoda.com";
 const CONTACT_FROM = "website@forms.dascoda.com";
 const CONTACT_SUBJECT = "New Dascoda website inquiry";
 const MAX_BODY_BYTES = 20000;
