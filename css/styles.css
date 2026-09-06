@@ -2480,6 +2480,31 @@ textarea:focus {
   border-color: var(--blue-start);
 }
 
+.contact-page .form label {
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.contact-page .form input,
+.contact-page .form select,
+.contact-page .form textarea {
+  color: var(--ink);
+  background: rgba(245, 247, 250, 0.45);
+  border-color: rgba(107, 114, 128, 0.28);
+  font-weight: 400;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.contact-page .form input:focus,
+.contact-page .form select:focus,
+.contact-page .form textarea:focus {
+  background: var(--white);
+  border-color: var(--blue-start);
+  outline: 3px solid rgba(47, 95, 168, 0.14);
+  box-shadow: 0 0 0 1px rgba(47, 95, 168, 0.08);
+}
+
 .form-message {
   display: none;
   padding: 14px 16px;
