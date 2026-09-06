@@ -1,0 +1,53 @@
+{
+  "eyebrow": "DASCODA INSIGHTS",
+  "headline": "Practical perspectives on connectivity, mobility, and the technology decisions shaping modern properties.",
+  "copy": "Dascoda Insights helps owners, operators, and technology leaders understand the changing connectivity environment, evaluate available solutions, and make informed decisions based on the needs of the property.",
+  "target_keyword": "connectivity mobility technology insights",
+  "supporting_keywords": [
+    "hotel connectivity strategy",
+    "indoor mobile connectivity",
+    "technology advisory"
+  ],
+  "meta_title": "Dascoda Insights | Connectivity, Mobility & Technology",
+  "meta_description": "Insights for owners, operators, and technology leaders evaluating connectivity, mobility, and technology decisions across modern properties.",
+  "og_title": "Dascoda Insights | Connectivity, Mobility & Technology",
+  "og_description": "Practical perspectives for evaluating connectivity, mobility, and technology decisions across modern properties.",
+  "og_image": "/assets/images/home-industries-portfolio-visual.png",
+  "date_published": null,
+  "date_updated": null,
+  "publication_date_status": "pending_actual_dascoda_com_publication_date",
+  "sections": [
+    {
+      "id": "featured-insight",
+      "eyebrow": "Featured Insight",
+      "headline": "Start with the guest expectation.",
+      "description": "A practical entry point for understanding why indoor mobile connectivity has become a business issue for modern properties.",
+      "layout": "featured",
+      "slugs": ["the-new-guest-expectation"]
+    },
+    {
+      "id": "understanding-connectivity",
+      "eyebrow": "Understanding In-Building Connectivity",
+      "headline": "Evaluate the available paths before choosing a solution.",
+      "description": "The pillar article introduces the major approaches owners and operators should understand before moving forward.",
+      "layout": "pillar",
+      "slugs": ["hotel-in-building-cellular-coverage-options"]
+    },
+    {
+      "id": "go-deeper",
+      "eyebrow": "Go Deeper",
+      "headline": "Compare approaches and understand the technology.",
+      "description": "These educational pieces support the evaluation path without forcing every reader into a technical deep dive.",
+      "layout": "grid",
+      "slugs": ["das-vs-passpoint", "passpoint-for-hotels"]
+    },
+    {
+      "id": "dascoda-approach",
+      "eyebrow": "The Dascoda Approach",
+      "headline": "Move from education to action with an evaluation-first partner.",
+      "description": "The decision-stage article explains how Dascoda helps clients align stakeholders, evaluate options, and maintain accountability through execution.",
+      "layout": "featured",
+      "slugs": ["why-dascoda"]
+    }
+  ]
+}

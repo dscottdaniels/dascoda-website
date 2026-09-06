@@ -1,0 +1,197 @@
+{
+  "title": "Why Dascoda: An Evaluation-First Approach to Hotel Connectivity",
+  "dek": "Hotel connectivity decisions should start with the property, not the technology. Dascoda evaluates the operating need, existing infrastructure, carrier environment, and business priorities before recommending a path forward.",
+  "content_type": "article",
+  "funnel_stage": "decision",
+  "landing_section": "dascoda-approach",
+  "featured": true,
+  "display_order": 50,
+  "category": "Technology Advisory",
+  "tags": [
+    "evaluation-first",
+    "stakeholder alignment",
+    "execution accountability"
+  ],
+  "industries": [
+    "Hospitality",
+    "Multi-Site Operations"
+  ],
+  "solutions": [
+    "Technology Advisory & Program Leadership",
+    "Connectivity Solutions",
+    "Passpoint & Mobility Solutions"
+  ],
+  "target_keyword": "hotel connectivity advisor",
+  "supporting_keywords": [
+    "hotel connectivity evaluation",
+    "technology advisory hospitality",
+    "connectivity deployment accountability"
+  ],
+  "meta_title": "Why Dascoda for Hotel Connectivity Decisions | Dascoda",
+  "meta_description": "See how Dascoda helps hotel owners and operators evaluate connectivity options, align stakeholders, and move from decision to execution.",
+  "og_title": "Why Dascoda: An Evaluation-First Approach to Hotel Connectivity",
+  "og_description": "How Dascoda helps hotel connectivity decisions start with the property, operating need, and business priorities.",
+  "related_slugs": [
+    "hotel-in-building-cellular-coverage-options",
+    "das-vs-passpoint",
+    "passpoint-for-hotels",
+    "the-new-guest-expectation"
+  ],
+  "sources_heading": "Sources and further reading",
+  "slug": "why-dascoda",
+  "date_published": "2026-09-06",
+  "date_updated": "2026-09-06",
+  "metadata_status": "metadata_prepared_publication_date_pending",
+  "publication_date_status": "published",
+  "og_image": "/assets/images/home-industries-portfolio-visual.png",
+  "lede_callout": "Every hotel is different. Building construction, existing Wi-Fi and broadband, carrier conditions, guest needs, budget, and deployment priorities can all change the right answer. Dascoda starts by evaluating those conditions, then helps determine which architecture best fits the property.",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Hotel connectivity decisions should start with the property, not the technology. Dascoda evaluates the operating need, existing infrastructure, carrier environment, and business priorities before recommending a path forward."
+    },
+    {
+      "type": "h2",
+      "text": "How Dascoda approaches the decision"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hotels differ in construction, Wi-Fi quality, broadband capacity, carrier conditions, ownership priorities, budgets, and deployment timelines. Across Dascoda's published Insights content, the approach is consistent: understand those conditions before selecting the technology."
+    },
+    {
+      "type": "source_note",
+      "text": "Source: Dascoda Insights, “DAS vs. Passpoint: Understanding Hotel Cellular Coverage Options”; “Hotel In-Building Cellular Coverage: Understanding the Available Options”; and “Passpoint for Hotels: What It Is and How It Works.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "The objective is not to sell a hotel the most infrastructure. It is to identify the most practical architecture that meets the guest and operational requirement at an appropriate cost and level of disruption. Depending on the property, that may mean Passpoint and Wi-DAS, traditional DAS, indoor small cells, targeted signal enhancement, or a hybrid design."
+    },
+    {
+      "type": "source_note",
+      "text": "Source: Dascoda Insights, “Hotel In-Building Cellular Coverage: Understanding the Available Options,” section “The Dascoda approach.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "For many existing hotels with strong enterprise Wi-Fi, Passpoint and Wi-DAS deserve serious consideration because they can leverage infrastructure already deployed throughout the building. For larger, higher-capacity, or more specialized environments, DAS may remain the correct architecture. The important step is to evaluate the property before choosing the technology."
+    },
+    {
+      "type": "source_note",
+      "text": "Source: Dascoda Insights, “DAS vs. Passpoint: Understanding Hotel Cellular Coverage Options,” section “The Dascoda view.”"
+    },
+    {
+      "type": "h2",
+      "text": "Where Ameriband and Wi-DAS Fit"
+    },
+    {
+      "type": "paragraph",
+      "text": "One option Dascoda evaluates for hospitality is Ameriband's Wi-DAS architecture. Dascoda's website states that it is Ameriband's exclusive hospitality partner, helping hotel owners, operators, and management companies evaluate Passpoint-enabled solutions that can leverage existing wireless infrastructure to improve indoor mobile connectivity."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dascoda's site describes Wi-DAS as using Passpoint technology to provide a practical alternative to many traditional DAS and small-cell deployments, with the potential to reduce infrastructure complexity, accelerate deployment, and lower overall cost. Ameriband's own materials position Wi-DAS as expanding indoor cellular coverage through a property's existing Wi-Fi infrastructure while connecting to major carriers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dascoda's role is broader than selecting a product. Its published materials describe helping clients assess fit, align ownership and operational stakeholders, coordinate pilot programs, engage carriers and technology partners, and guide deployment planning from assessment through execution."
+    },
+    {
+      "type": "source_note",
+      "text": "Source: dascoda.com (homepage) and ameriband.com/wi-das."
+    },
+    {
+      "type": "h2",
+      "text": "Why Passpoint Can Be Attractive in the Right Hotel"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Leverages existing Wi-Fi: uses existing Wi-Fi infrastructure to support Passpoint-enabled indoor mobile connectivity.",
+        "Faster deployment: reduces much of the infrastructure and installation complexity associated with traditional DAS deployments.",
+        "Lower cost than traditional DAS: provides a more cost-efficient approach to improving indoor mobile connectivity in many environments.",
+        "Improved indoor mobile experience: helps deliver a more seamless mobile experience for guests, residents, employees, and visitors."
+      ]
+    },
+    {
+      "type": "source_note",
+      "text": "Source: dascoda.com (homepage), “Why Organizations Select Passpoint.”"
+    },
+    {
+      "type": "h2",
+      "text": "Why organizations choose to work with Dascoda"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dascoda's value is not tied to a single technology. Its published materials describe four areas that shape how it works with owners, operators, and multi-site organizations:"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Ownership perspective: built on real-world ownership and operational experience, helping clients align technology decisions to business outcomes.",
+        "Enterprise technology leadership: experience supporting large-scale connectivity, mobility, and technology initiatives across complex multi-site environments.",
+        "Strategic partner ecosystem: access to trusted providers, specialized solutions, and strategic relationships aligned to client objectives.",
+        "Accountable execution: support from planning and agreement coordination through deployment, partner management, and ongoing follow-through."
+      ]
+    },
+    {
+      "type": "source_note",
+      "text": "Source: dascoda.com (homepage), “Why Dascoda.”"
+    },
+    {
+      "type": "h2",
+      "text": "What Evaluation-First Means in Practice"
+    },
+    {
+      "type": "paragraph",
+      "text": "An evaluation-first approach means working through the property conditions and business priorities before deciding which technology belongs in the building. In practice, Dascoda’s published approach centers on the following questions:"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Where and how is the connectivity problem affecting guests, staff, or operations?",
+        "What Wi-Fi, broadband, and building infrastructure is already in place?",
+        "Which carriers, device requirements, and participation dependencies matter for the property?",
+        "What level of construction impact and operational disruption is acceptable?",
+        "How do deployment timing and total cost of ownership compare across the available options?",
+        "Would one architecture solve the problem, or is a hybrid approach more appropriate?"
+      ]
+    },
+    {
+      "type": "source_note",
+      "text": "Source: Dascoda Insights, “Passpoint for Hotels: What It Is and How It Works”; “Hotel In-Building Cellular Coverage: Understanding the Available Options”; and “DAS vs. Passpoint: Understanding Hotel Cellular Coverage Options.”"
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "text": "Dascoda Solutions, homepage: https://dascoda.com/"
+    },
+    {
+      "id": "source-2",
+      "text": "American Bandwidth - Wi-DAS: https://ameriband.com/wi-das"
+    },
+    {
+      "id": "source-3",
+      "text": "American Bandwidth, homepage: https://ameriband.com/"
+    },
+    {
+      "id": "source-4",
+      "text": "Dascoda Insights, \"DAS vs. Passpoint: Understanding Hotel Cellular Coverage Options,\" section \"The Dascoda view.\""
+    },
+    {
+      "id": "source-5",
+      "text": "Dascoda Insights, \"Hotel In-Building Cellular Coverage: Understanding the Available Options,\" section \"The Dascoda approach: build the connectivity layer around the property.\""
+    },
+    {
+      "id": "source-6",
+      "text": "Dascoda Insights, \"Passpoint for Hotels: What It Is and How It Works,\" section \"How Dascoda approaches the decision.\""
+    }
+  ],
+  "source_note": "Research note: Every claim about Dascoda's approach, positioning, or the Ameriband partnership on this page is quoted or closely paraphrased from Dascoda's published Insights articles or from dascoda.com and ameriband.com directly, with the specific source identified after each section. No claims about internal process, methodology, or results are asserted beyond what these sources state.",
+  "cta": {
+    "headline": "Every property is different. Start with the operating need.",
+    "copy": "Dascoda helps owners and operators evaluate the connectivity challenge, understand the available options, and determine the right path forward.",
+    "button_text": "Talk with Dascoda",
+    "button_url": "/contact"
+  },
+  "source_document": "C:\\Users\\dscot\\Downloads\\Dascoda_Insights_Why_Dascoda_Updated.docx"
+}

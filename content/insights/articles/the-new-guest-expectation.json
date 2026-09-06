@@ -1,0 +1,703 @@
+{
+  "title": "Why Hotel Guests Now Expect Reliable Cellular Coverage",
+  "dek": "Why cellular connectivity is becoming part of the hotel experience.",
+  "content_type": "white_paper",
+  "funnel_stage": "awareness",
+  "landing_section": "featured-insight",
+  "featured": true,
+  "display_order": 10,
+  "category": "Mobility",
+  "tags": [
+    "guest experience",
+    "indoor mobile connectivity",
+    "hospitality"
+  ],
+  "industries": [
+    "Hospitality"
+  ],
+  "solutions": [
+    "Passpoint & Mobility Solutions",
+    "Technology Advisory & Program Leadership"
+  ],
+  "target_keyword": "hotel cellular coverage",
+  "supporting_keywords": [
+    "hotel guest connectivity",
+    "indoor cellular coverage",
+    "hospitality connectivity strategy"
+  ],
+  "meta_title": "Why Hotel Guests Expect Reliable Cellular Coverage | Dascoda",
+  "meta_description": "Learn why reliable indoor cellular coverage is becoming part of the hotel guest experience and how owners can evaluate their options.",
+  "og_title": "Why Hotel Guests Now Expect Reliable Cellular Coverage",
+  "og_description": "Why cellular connectivity is becoming part of the hotel experience.",
+  "related_slugs": [
+    "hotel-in-building-cellular-coverage-options",
+    "why-dascoda"
+  ],
+  "sources_heading": "References and Research Notes",
+  "slug": "the-new-guest-expectation",
+  "date_published": "2026-09-06",
+  "date_updated": "2026-09-06",
+  "metadata_status": "metadata_prepared_publication_date_pending",
+  "publication_date_status": "published",
+  "editorial_notes": [
+    "Hospitality Technology 2025 Guest Engagement Study, 'How to Win the Customer': specific Wi-Fi-importance figure remains pending direct confirmation. Do not introduce, restore, replace, or paraphrase the unresolved 84% claim before final publication approval.",
+    "Wireless Infrastructure Group and Nomadix source note: primary source reports should be confirmed before citing specific percentages."
+  ],
+  "og_image": "/assets/images/home-industries-portfolio-visual.png",
+  "lede_callout": "",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Executive Summary"
+    },
+    {
+      "type": "h3",
+      "text": "Connectivity is becoming part of the hotel experience"
+    },
+    {
+      "type": "paragraph",
+      "text": "The hotel guest journey has become increasingly mobile. Guests use smartphones to research and book travel, check in, access digital room keys, communicate with hotel teams, stream entertainment, authenticate payments, work remotely, arrange transportation and manage loyalty relationships. Hilton and Marriott are actively expanding these mobile touchpoints, while IHG has deployed Wi-Fi Auto Connect — a Passpoint-based feature — across more than 5,000 hotels to reduce friction in getting guests online."
+    },
+    {
+      "type": "paragraph",
+      "text": "That shift changes the meaning of connectivity. Historically, hotel connectivity was largely discussed as a Wi-Fi amenity, while cellular service was treated as the mobile carrier's responsibility. Guests increasingly experience a different reality: they move continuously between cellular and Wi-Fi and expect their phone to work throughout the property. In 2024 consumer research conducted by Forsta on behalf of Dense Air Networks, 82% of hotel guests said staying connected was important or extremely important when selecting lodging, 86% normally connected to the internet using their cellphone during a hotel stay, and 52% preferred cellular connectivity versus 33% who preferred private Wi-Fi."
+    },
+    {
+      "type": "paragraph",
+      "text": "The challenge is that excellent outdoor carrier coverage does not guarantee excellent indoor service. Low-emissivity glass, concrete, steel, building depth, elevators, basements and interior spaces can attenuate cellular signals. At the same time, the economics of indoor wireless are evolving. BOMA International's 2025 guidance describes changing roles among carriers, property managers and third-party infrastructure providers, while Ericsson outlines carrier-led, neutral-host-led and enterprise-led models for indoor coverage."
+    },
+    {
+      "type": "paragraph",
+      "text": "This creates a new strategic question for hospitality leaders: not simply who owns the cellular network, but who owns the guest's connectivity experience inside the property."
+    },
+    {
+      "type": "paragraph",
+      "text": "The carrier owns the macro network. The property owns the guest experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "The implication is not that every hotel should deploy the same technology. The market now includes traditional and digital DAS, small cells, neutral-host models, signal enhancement, converged fiber infrastructure, advanced Wi-Fi, Passpoint/OpenRoaming approaches and hybrid designs. The right answer depends on the building, guest profile, carrier participation, existing infrastructure, brand requirements, operational needs and economics."
+    },
+    {
+      "type": "paragraph",
+      "text": "This paper examines the evidence behind the changing expectation, how hotel brands and individual properties are responding, and a practical framework for owners and operators to evaluate their own connectivity strategy."
+    },
+    {
+      "type": "h2",
+      "text": "1 | The Guest Journey"
+    },
+    {
+      "type": "h3",
+      "text": "Hospitality has moved the stay onto the smartphone"
+    },
+    {
+      "type": "paragraph",
+      "text": "The smartphone is no longer an accessory to the hotel stay. For many guests, it is the interface through which the stay is planned, entered, personalized and managed."
+    },
+    {
+      "type": "h3",
+      "text": "The mobile journey now spans the entire stay"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Before arrival",
+        "Arrival",
+        "During the stay",
+        "Departure & loyalty"
+      ],
+      "rows": [
+        [
+          "Search, booking, loyalty, trip planning",
+          "Mobile check-in, room selection, digital key",
+          "Messaging, dining, streaming, work, payments, transportation",
+          "Digital checkout, folio, reviews, points, rebooking"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Hilton's 2025 travel research reported that 63% of travelers wanted to use a digital room key and 77% wanted to use personal devices seamlessly while traveling. Hilton also reported nearly 14.3 million Digital Keys downloaded from January through August 2024. Marriott's current Bonvoy app supports mobile check-in, Mobile Key, hotel chat, special requests and mobile dining at participating properties."
+    },
+    {
+      "type": "paragraph",
+      "text": "The important point is not simply that hotel apps are popular. It is that hospitality companies are intentionally designing more of the guest journey around a connected personal device. That increases the operational and experiential cost when connectivity becomes unreliable."
+    },
+    {
+      "type": "stat_callout",
+      "value": "80%",
+      "label": "of global travelers in Hilton's 2024 research said using personal devices seamlessly with on-property technology, from Wi-Fi to streaming apps, was important.",
+      "source_id": "Hilton 2024 Trends Report"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hilton's Connected Room Experience also illustrates how the boundary between personal device, hotel network and room technology is blurring. Enabled properties can welcome guests by name on the television and support personalized streaming and room experiences. Hilton explicitly notes that connectivity among these on-property technologies becomes increasingly important as digital innovation advances."
+    },
+    {
+      "type": "h2",
+      "text": "2 | From Amenity to Expectation"
+    },
+    {
+      "type": "h3",
+      "text": "Connectivity increasingly influences the guest's perception of the stay"
+    },
+    {
+      "type": "paragraph",
+      "text": "For much of the industry's digital history, connectivity was treated as an amenity: first wired internet, then Wi-Fi, then faster Wi-Fi. The current evidence suggests a different status. Guests increasingly treat connectivity as baseline infrastructure."
+    },
+    {
+      "type": "stat_callout",
+      "value": "82%",
+      "label": "of hotel guests said staying connected was important or extremely important when selecting lodging.",
+      "source_id": "Forsta consumer research conducted on behalf of Dense Air Networks, 2024"
+    },
+    {
+      "type": "stat_callout",
+      "value": "35% / 34%",
+      "label": "of surveyed Gen Z and Millennial business travelers cited unreliable connectivity / poor mobile connectivity as top travel frustrations.",
+      "source_id": "Cox Business, 2025"
+    },
+    {
+      "type": "paragraph",
+      "text": "These studies measure somewhat different populations and ask different questions, so their percentages should not be treated as directly comparable. Their directional consistency is more important: connectivity affects hotel choice, guest frustration and the ability to use the increasingly digital hotel experience. Independent industry commentary echoes the same direction — Wireless Infrastructure Group and Nomadix have each separately cited majorities of guests ranking reliable connectivity among their top hotel priorities."
+    },
+    {
+      "type": "h3",
+      "text": "Business travel raises the stakes"
+    },
+    {
+      "type": "paragraph",
+      "text": "The business traveler may be especially sensitive to inconsistent indoor service. The smartphone can be simultaneously a communications device, authenticator, hotspot, travel manager, calendar, payment method and access point to corporate systems. Cox Business reported that 58% of surveyed Gen Z and Millennial business travelers selected fast, reliable connectivity as the hotel technology feature they value most for work travel."
+    },
+    {
+      "type": "paragraph",
+      "text": "That does not mean connectivity outranks every traditional hospitality factor. Location, cleanliness, service, room quality and price remain fundamental. It means connectivity increasingly sits alongside those fundamentals as an enabling layer for the modern stay."
+    },
+    {
+      "type": "h2",
+      "text": "3 | Cellular + Wi-Fi"
+    },
+    {
+      "type": "h3",
+      "text": "Wi-Fi is only half of the connectivity story"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hotel technology strategies have understandably focused on Wi-Fi. Hotels control the Wi-Fi environment, brands have established standards for it, and Wi-Fi supports guest internet access as well as an expanding range of property systems. But a guest's actual connectivity experience is not limited to the hotel WLAN."
+    },
+    {
+      "type": "stat_callout",
+      "value": "52% / 33%",
+      "label": "of hotel guests preferred cellular connectivity versus private Wi-Fi in 2024 research.",
+      "source_id": "Forsta consumer research conducted on behalf of Dense Air Networks, 2024"
+    },
+    {
+      "type": "stat_callout",
+      "value": "86%",
+      "label": "normally connected to the internet using their cellphone during a hotel stay.",
+      "source_id": "Forsta consumer research conducted on behalf of Dense Air Networks, 2024"
+    },
+    {
+      "type": "paragraph",
+      "text": "The same research showed surprisingly similar patterns of daily cellular and Wi-Fi use while traveling. That matters because the guest rarely thinks in terms of network architecture. The guest opens an application, places a call, receives an authentication code, joins a video meeting or sends a message and expects the action to work."
+    },
+    {
+      "type": "h3",
+      "text": "Why both networks matter"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Cellular preserves the guest's familiar carrier identity and can support voice, messaging, data and authentication without joining a guest network.",
+        "Wi-Fi provides high-capacity local access and is deeply integrated into hotel guest internet, streaming and operational systems.",
+        "Corporate devices may have security or VPN policies that influence which network is used.",
+        "Coverage varies by carrier, spectrum band, device and physical location inside the property.",
+        "Guests increasingly move between networks without wanting to understand or manage the transition."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The better question is no longer only, ‘Is the hotel Wi-Fi good?’ It is, ‘Can the guest stay connected?’"
+    },
+    {
+      "type": "paragraph",
+      "text": "This distinction is also visible in how brands are working on the problem. IHG's Wi-Fi Auto Connect removes repeated logins and automatically connects opted-in loyalty members at more than 5,000 hotels using Passpoint-based technology. That initiative is Wi-Fi focused, but strategically it addresses the larger expectation: connectivity should become increasingly automatic and invisible — whichever network is carrying it."
+    },
+    {
+      "type": "h2",
+      "text": "4 | Why Indoor Cellular Is Difficult"
+    },
+    {
+      "type": "h3",
+      "text": "Good outdoor coverage can become poor indoor coverage"
+    },
+    {
+      "type": "paragraph",
+      "text": "A mobile carrier can deliver strong service outside a property while guests still experience dead zones inside. The reason is straightforward: the building becomes part of the radio environment."
+    },
+    {
+      "type": "h3",
+      "text": "Common hotel coverage challenges"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Challenge",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Low-E glass",
+          "Energy-efficient coatings can attenuate radiofrequency signals entering the building."
+        ],
+        [
+          "Concrete and steel",
+          "Dense structural materials absorb or reflect signal and can isolate interior areas."
+        ],
+        [
+          "Building depth",
+          "Interior guestrooms, corridors and meeting spaces may be far from exterior signal sources."
+        ],
+        [
+          "Vertical complexity",
+          "Elevators, stairwells, basements and parking areas are common difficult zones."
+        ],
+        [
+          "Spectrum differences",
+          "Different frequency bands propagate differently; higher-frequency capacity layers can be more sensitive to penetration loss."
+        ],
+        [
+          "Carrier variation",
+          "A property can perform well for one carrier and poorly for another."
+        ],
+        [
+          "Capacity vs. coverage",
+          "A visible signal does not guarantee enough capacity for a ballroom, conference or peak occupancy period."
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Real hotel deployments illustrate the issue. Hyatt Place Houston-Katy found almost no usable cellular signal across its first floor after construction — the initial site survey measured signal as low as -110 dBm. Wilson Connectivity's integrator attributed the problem to construction materials, layout and distance from the nearest tower, and deployed a customized signal-enhancement solution covering roughly 20,000 square feet, improving signal to approximately -70 dBm."
+    },
+    {
+      "type": "paragraph",
+      "text": "At Resorts Casino Hotel in Atlantic City, dense construction and heavy seasonal demand contributed to long-standing coverage complaints. A third-party neutral-host operator and Intenna Systems deployed a multi-carrier DAS covering nearly one million square feet of lower-level common and back-of-house areas."
+    },
+    {
+      "type": "paragraph",
+      "text": "These examples reinforce an important planning principle: indoor cellular performance should be measured at the property. Outdoor carrier maps alone cannot describe the guest's actual indoor experience."
+    },
+    {
+      "type": "h2",
+      "text": "5 | How Brands and Hotels Are Responding"
+    },
+    {
+      "type": "h3",
+      "text": "The industry is attacking the problem from several directions"
+    },
+    {
+      "type": "paragraph",
+      "text": "There is no single 'hotel connectivity program.' Brands and properties are responding at different layers of the technology stack. Some initiatives improve Wi-Fi and make access frictionless. Others build future-ready converged infrastructure. Some properties deploy dedicated indoor cellular systems. Increasingly, the strategy combines several of these approaches."
+    },
+    {
+      "type": "h3",
+      "text": "1. Making Wi-Fi more seamless and brand-consistent"
+    },
+    {
+      "type": "paragraph",
+      "text": "IHG provides one of the clearest examples at scale. Its Wi-Fi Auto Connect feature, launched across more than 5,000 hotels, allows opted-in IHG One Rewards members to connect automatically upon arrival after a one-time setup, using Passpoint-based technology — the first deployment of its kind at scale in hospitality. IHG said its network was already handling more than 5.3 million monthly Wi-Fi logins when the feature launched. This builds on IHG Connect, which combined increased bandwidth, cloud-based Wi-Fi, automatic loyalty-member recognition, multi-device support, bandwidth management and centralized monitoring."
+    },
+    {
+      "type": "paragraph",
+      "text": "The strategic lesson is broader than Wi-Fi: the brand is working to make connectivity persistent, recognizable and low-friction across a portfolio rather than treating each stay as a new network session."
+    },
+    {
+      "type": "h3",
+      "text": "2. Designing the guest experience around mobile connectivity"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hilton and Marriott are integrating smartphones directly into the stay. Hilton Honors supports booking, digital check-in, room selection, Digital Key, messaging, reservations, television controls and digital checkout. Marriott Bonvoy supports mobile check-in, Mobile Key, hotel chat, requests and mobile dining."
+    },
+    {
+      "type": "paragraph",
+      "text": "These capabilities do not solve cellular dead zones themselves. They do increase the business importance of dependable connectivity because the guest's device is now part of the service-delivery model."
+    },
+    {
+      "type": "h3",
+      "text": "3. Building converged, future-ready property infrastructure"
+    },
+    {
+      "type": "paragraph",
+      "text": "Some new hotels are designing wired, Wi-Fi and cellular infrastructure together rather than as isolated systems. The Grand Hyatt at San Francisco International Airport was designed with structured cabling, RUCKUS Wi-Fi and an ERA in-building cellular platform managed by a neutral host. The case study reports an all-digital DAS supporting multiple operators throughout common areas and guestrooms, alongside a converged IP network supporting the guest entertainment experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hyatt Studios provides another infrastructure example. Corning's case study describes fiber deployed throughout the building — the industry's first all-brand fiber-to-the-room deployment for the brand — to support a uniform digital experience and create a foundation that can adapt to future bandwidth and technology requirements."
+    },
+    {
+      "type": "h3",
+      "text": "4. Deploying dedicated indoor cellular where the property requires it"
+    },
+    {
+      "type": "paragraph",
+      "text": "Luxury, convention, casino, airport and complex urban properties may justify dedicated multi-carrier cellular infrastructure. The Savoy in London deployed a dedicated indoor mobile network supported by all UK mobile operators to deliver reliable service throughout a listed luxury property while preserving its interior design."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Grand Hyatt SFO, Resorts Casino Hotel and other properties have used neutral-host or multi-carrier DAS models to extend cellular coverage into guestrooms, meeting spaces and difficult interior areas."
+    },
+    {
+      "type": "h3",
+      "text": "5. Using targeted enhancement for defined problem areas"
+    },
+    {
+      "type": "paragraph",
+      "text": "Not every hotel requires a fully active DAS. Hyatt Place Houston-Katy used a more targeted repeater-based design to address a specific first-floor coverage problem. This illustrates why assessment matters: the technical and economic answer for a limited dead zone can be very different from the answer for a large convention hotel or mixed-use complex."
+    },
+    {
+      "type": "h3",
+      "text": "6. Exploring convergence between Wi-Fi and carrier connectivity"
+    },
+    {
+      "type": "paragraph",
+      "text": "Passpoint and OpenRoaming approaches seek to reduce authentication friction and enable secure, automatic connectivity using compatible Wi-Fi infrastructure. IHG's Wi-Fi Auto Connect is a live example of Passpoint deployed at hospitality scale, and industry commentary increasingly points to Passpoint-based authentication as a natural complement to indoor cellular strategy — particularly where a property already has strong enterprise Wi-Fi and carrier participation supports the use case. These approaches should be evaluated alongside, not automatically substituted for, DAS, small cells or other cellular systems; the strongest property strategies increasingly combine both layers rather than treating Wi-Fi and cellular convergence as a replacement for dedicated in-building cellular infrastructure."
+    },
+    {
+      "type": "h2",
+      "text": "6 | Who Owns the Experience?"
+    },
+    {
+      "type": "h3",
+      "text": "The traditional responsibility boundary is becoming less clear"
+    },
+    {
+      "type": "paragraph",
+      "text": "Historically, poor cellular service inside a hotel could be treated primarily as a carrier issue. The carrier licensed the spectrum, operated the network and owned the customer relationship. That model is becoming harder to apply universally inside buildings."
+    },
+    {
+      "type": "stat_callout",
+      "value": "38%",
+      "label": "of guests who did not attribute responsibility to the cellular carriers identified property managers and owners as responsible for ensuring connectivity infrastructure in buildings they do not own.",
+      "source_id": "Forsta consumer research conducted on behalf of Dense Air Networks, 2024"
+    },
+    {
+      "type": "stat_callout",
+      "value": "42%",
+      "label": "of guests who did not see it as their own responsibility said property managers and owners should pay for connectivity.",
+      "source_id": "Forsta consumer research conducted on behalf of Dense Air Networks, 2024"
+    },
+    {
+      "type": "paragraph",
+      "text": "These findings should be interpreted carefully. They do not prove that guests now blame the hotel instead of the carrier. They do show that a meaningful share of consumers see the property owner or manager as part of the responsibility model."
+    },
+    {
+      "type": "paragraph",
+      "text": "Industry evidence points in the same direction. BOMA International's Q3 2025 report, 'Solving the In-Building Cellular Coverage Challenge,' was written to help property managers understand the evolving roles of tenants, property managers and wireless carriers and make informed decisions about cellular connectivity — describing coverage as having become 'as essential as electricity and water.'"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ericsson describes multiple indoor business models, including neutral-host-led and enterprise-led approaches in which the building owner can fund or influence the solution. The existence of these models reflects a market in which indoor connectivity is increasingly negotiated among carriers, owners and infrastructure partners rather than assumed to be funded entirely by the mobile operator."
+    },
+    {
+      "type": "paragraph",
+      "text": "Guests may not know who engineered the network. They know whether their phone works in the hotel."
+    },
+    {
+      "type": "h2",
+      "text": "7 | Business Impact"
+    },
+    {
+      "type": "h3",
+      "text": "A coverage problem can touch far more than a phone call"
+    },
+    {
+      "type": "paragraph",
+      "text": "As the smartphone becomes more central to travel, the consequences of poor indoor connectivity broaden. The issue can affect guest satisfaction, business productivity, meetings and events, hotel operations and the perceived quality of the brand experience."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Area",
+        "Potential impact"
+      ],
+      "rows": [
+        [
+          "Guest experience",
+          "Calls, messages, social sharing, travel apps, transportation, payments and personal communication."
+        ],
+        [
+          "Business productivity",
+          "Teams/Zoom calls, corporate applications, MFA, VPN access, hotspot use and time-sensitive communication."
+        ],
+        [
+          "Meetings & events",
+          "Attendee connectivity, event apps, exhibitor communications, production teams and high-density demand."
+        ],
+        [
+          "Hotel digital services",
+          "Mobile keys, messaging, app interactions, streaming and other smartphone-centered touchpoints."
+        ],
+        [
+          "Operations",
+          "Staff communications, vendor coordination and increasingly mobile workflows."
+        ],
+        [
+          "Reputation",
+          "Connectivity frustration can become part of the guest's overall perception of property quality."
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The strongest public evidence today is around frustration and digital dependence rather than a quantified direct link between cellular quality and RevPAR or guest satisfaction scores. Dascoda therefore recommends avoiding unsupported ROI claims. The more defensible conclusion is that connectivity increasingly enables functions guests and hotels already rely upon, making persistent coverage gaps a growing operational and experiential risk."
+    },
+    {
+      "type": "h2",
+      "text": "8 | Changing Economics"
+    },
+    {
+      "type": "h3",
+      "text": "The indoor cellular business model is evolving"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dedicated indoor cellular networks were historically concentrated in high-value venues where carriers could justify direct investment. That model does not economically scale to every hotel. At the same time, modern buildings can be more difficult for outdoor networks to penetrate, and guests expect more from their devices."
+    },
+    {
+      "type": "paragraph",
+      "text": "BOMA's 2025 guidance frames the issue as a stakeholder problem: carriers face investment and prioritization constraints, owners face tenant and user expectations, and third-party models can help bridge the gap. Ericsson similarly describes carrier-led, neutral-host-led and enterprise-led models, with funding potentially coming from the carrier, neutral host, building owner or combinations of stakeholders."
+    },
+    {
+      "type": "h3",
+      "text": "What has changed for hotel owners"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Waiting for a carrier-funded solution may not align with the property's timing or priority.",
+        "A full multi-carrier DAS can be appropriate but may require significant engineering, coordination, capital and carrier participation.",
+        "Neutral-host structures can shift ownership and operational responsibilities to a specialist provider.",
+        "Small cells and targeted enhancement can address defined coverage or capacity needs.",
+        "Strong Wi-Fi infrastructure creates additional options, including Passpoint-based approaches where carrier support and use case align.",
+        "New construction and major renovations create an opportunity to design pathways, fiber, power and equipment space before problems become expensive retrofits."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The result is not necessarily lower cost in every scenario. It is greater choice. Owners can increasingly evaluate a portfolio of approaches instead of assuming the only alternatives are 'the carrier pays' or 'the hotel buys a traditional DAS.'"
+    },
+    {
+      "type": "h2",
+      "text": "9 | Solution Landscape"
+    },
+    {
+      "type": "h3",
+      "text": "There is no single technology answer"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Approach",
+        "Best fit",
+        "Strengths",
+        "Considerations"
+      ],
+      "rows": [
+        [
+          "Multi-carrier DAS",
+          "Large / complex properties, high traffic, premium venues",
+          "Purpose-built cellular coverage and capacity; multi-carrier potential",
+          "Engineering, cost, carrier coordination, deployment complexity"
+        ],
+        [
+          "Small cells",
+          "Targeted indoor cellular coverage/capacity",
+          "Compact, scalable, direct cellular service",
+          "Carrier architecture and multi-operator strategy"
+        ],
+        [
+          "Neutral host",
+          "Properties seeking shared infrastructure",
+          "Can support multiple carriers through common infrastructure",
+          "Commercial model, carrier onboarding, operator capabilities"
+        ],
+        [
+          "Signal enhancement / repeaters",
+          "Defined dead zones with usable donor signal",
+          "Potentially lower cost and faster for targeted areas",
+          "Dependent on outside signal and system design; not equivalent to all DAS models"
+        ],
+        [
+          "Advanced Wi-Fi",
+          "Every modern hotel",
+          "High-capacity guest and operational connectivity",
+          "Does not by itself guarantee native multi-carrier cellular coverage"
+        ],
+        [
+          "Passpoint / OpenRoaming",
+          "Properties with capable Wi-Fi and supported carrier ecosystem",
+          "Secure automatic Wi-Fi onboarding; can reduce friction and support convergence",
+          "Carrier/device participation, Wi-Fi quality, architecture and commercial model"
+        ],
+        [
+          "Hybrid design",
+          "Many real-world properties",
+          "Combines technologies around actual needs",
+          "Requires disciplined assessment and lifecycle management"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Technology selection should follow requirements, not precede them. A hotel should first understand where coverage fails, which carriers and user groups matter, whether the issue is coverage or capacity, what infrastructure already exists, what brand standards apply, and what economic model is realistic."
+    },
+    {
+      "type": "h2",
+      "text": "10 | A Practical Framework"
+    },
+    {
+      "type": "h3",
+      "text": "Treat connectivity as a managed guest-experience layer"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Assess — Measure cellular performance by carrier and Wi-Fi performance across guestrooms, public areas, meeting spaces, back-of-house, elevators, parking and other critical zones.",
+        "Understand — Define guest, staff, meeting/event, brand, security, carrier and operational requirements. Separate coverage problems from capacity problems.",
+        "Inventory — Document circuits, Wi-Fi architecture, fiber/copper pathways, telecom rooms, power, rooftop access and any existing cellular equipment.",
+        "Design — Compare realistic options using technical fit, carrier participation, capital cost, operating cost, disruption, scalability and lifecycle requirements.",
+        "Implement — Coordinate brand, property, carrier, integrator and operational stakeholders. Plan around occupancy and guest disruption.",
+        "Validate — Perform post-installation testing against the baseline. Confirm performance in the spaces and use cases that drove the project.",
+        "Manage — Monitor changing carrier networks, property renovations, Wi-Fi refreshes, guest usage and technology requirements over time."
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Portfolio owners should think beyond one property"
+    },
+    {
+      "type": "paragraph",
+      "text": "For multi-property owners and management companies, the biggest opportunity may be consistency. A portfolio-level framework can standardize assessment methods, data collection, minimum performance expectations, vendor governance and decision criteria while still allowing each property to use the solution appropriate to its physical and economic environment."
+    },
+    {
+      "type": "paragraph",
+      "text": "That approach also creates better information for capital planning. Instead of reacting to complaints property by property, ownership can identify which hotels have material risk, which require targeted remediation, and which should incorporate cellular infrastructure into upcoming renovations or PIPs."
+    },
+    {
+      "type": "h2",
+      "text": "Conclusion"
+    },
+    {
+      "type": "h3",
+      "text": "The guest experience is becoming network-agnostic"
+    },
+    {
+      "type": "paragraph",
+      "text": "Guests increasingly expect their digital lives to follow them into the hotel. They may move between cellular and Wi-Fi, use a brand app and a carrier network in the same minute, or rely on a smartphone for both hotel services and personal communication. The technical boundaries matter to the organizations designing the infrastructure. They matter much less to the guest."
+    },
+    {
+      "type": "paragraph",
+      "text": "That is why indoor cellular coverage is becoming a hospitality strategy question. Brands are reducing Wi-Fi friction, expanding mobile keys and app-based services, deploying more consistent digital platforms and, in selected properties, designing cellular and Wi-Fi infrastructure together. Individual hotels are using approaches ranging from targeted enhancement to multi-carrier neutral-host DAS. The common thread is that connectivity is increasingly treated as part of the environment the property must deliberately manage."
+    },
+    {
+      "type": "paragraph",
+      "text": "For owners and operators, the most important next step is not to choose a product. It is to understand the experience being delivered today, identify the gaps that matter, and evaluate the full set of available technical and economic models."
+    },
+    {
+      "type": "paragraph",
+      "text": "The objective is not to force one technology. It is to deliver the connectivity experience the property and its guests require."
+    },
+    {
+      "type": "h2",
+      "text": "Dascoda Solutions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dascoda Solutions helps hospitality organizations evaluate and implement connectivity strategies across internet circuits, Wi-Fi and indoor cellular coverage. Dascoda's approach is designed to start with property requirements and business outcomes, then identify the most appropriate technology and provider ecosystem."
+    },
+    {
+      "type": "paragraph",
+      "text": "Through its hospitality relationship with Ameriband, Dascoda can also evaluate Passpoint / Wi-DAS approaches for properties where leveraging existing Wi-Fi infrastructure and supported carrier participation can provide a cost-effective path to improved cellular connectivity. Dascoda also evaluates traditional and alternative in-building approaches when those are better aligned to the property."
+    },
+    {
+      "type": "paragraph",
+      "text": "Designing the Connectivity Layer of Modern Buildings."
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "text": "Forsta consumer research conducted on behalf of Dense Air Networks, 2024. Total sample n=2,240; hospitality cuts generally n≈1,006–1,293 depending on question."
+    },
+    {
+      "id": "source-2",
+      "text": "Hilton, 2025 Trends Report, 'High-Tech Travel Meets Digital Detox.' Reports 63% want a digital room key, 77% want to use personal devices seamlessly while traveling, and nearly 14.3 million Digital Keys downloaded Jan–Aug 2024."
+    },
+    {
+      "id": "source-3",
+      "text": "Marriott Bonvoy Mobile App, current feature overview. Mobile check-in, Mobile Key, hotel chat, special requests and mobile dining at participating properties."
+    },
+    {
+      "id": "source-4",
+      "text": "IHG Hotels & Resorts, 'Introduces Effortless Wi-Fi Connection for Guests Worldwide,' June 1, 2023. Wi-Fi Auto Connect at 5,000+ hotels; 5.3 million monthly Wi-Fi logins cited at launch; Passpoint-based per WiFi NOW Global reporting."
+    },
+    {
+      "id": "source-5",
+      "text": "Hilton, 2024 Trends Report, 'Connectivity & Personalization.' Reports 80% of global travelers value seamless use of personal devices with on-property technology and describes Connected Room, mobile messaging and cloud-based property technology."
+    },
+    {
+      "id": "source-6",
+      "text": "Hospitality Technology, 2025 Guest Engagement Study, 'How to Win the Customer.'"
+    },
+    {
+      "id": "source-7",
+      "text": "BOMA International, Q3 2025, 'Solving the In-Building Cellular Coverage Challenge.' Property-manager guidance on evolving roles of tenants, property managers and wireless carriers; describes coverage as having become 'as essential as electricity and water.'"
+    },
+    {
+      "id": "source-8",
+      "text": "Ericsson, indoor connectivity business-model materials. Describes carrier-led, neutral-host-led and enterprise-led models and alternative funding structures, explicitly including hotels among applicable venue types."
+    },
+    {
+      "id": "source-9",
+      "text": "Cox Business, June 17, 2025, 'Disconnected and Disappointed.' Survey of Gen Z and Millennial business travelers; 35% cited unreliable connectivity and 34% poor mobile connectivity among top frustrations; 58% selected fast, reliable connectivity as the hotel technology feature they value most for work travel."
+    },
+    {
+      "id": "source-10",
+      "text": "Wilson Connectivity, Sept. 5, 2024, Hyatt Place Houston-Katy case study. Describes first-floor coverage issues (signal as low as -110 dBm) and targeted repeater deployment covering approximately 20,000 sq. ft. (improved to approximately -70 dBm)."
+    },
+    {
+      "id": "source-11",
+      "text": "Intenna Systems, Resorts Casino Hotel Atlantic City case study. Describes multi-carrier neutral-host DAS covering nearly one million square feet of lower-level hotel/casino space."
+    },
+    {
+      "id": "source-12",
+      "text": "IHG, IHG Connect program update. Describes increased bandwidth, cloud Wi-Fi, automatic recognition, multi-device connectivity, bandwidth management and centralized monitoring."
+    },
+    {
+      "id": "source-13",
+      "text": "RUCKUS Networks / CommScope, Grand Hyatt at San Francisco International Airport case study. Describes integrated wired, Wi-Fi, cellular and A/V infrastructure and an ERA all-digital DAS managed by a neutral host."
+    },
+    {
+      "id": "source-14",
+      "text": "Corning, Hyatt Studios case study. Describes an all-brand fiber-to-the-room network designed for adaptable, future-ready guest connectivity."
+    },
+    {
+      "id": "source-15",
+      "text": "Wireless Infrastructure Group, The Savoy Hotel London case study. Describes a dedicated indoor mobile network supported by all UK mobile operators."
+    },
+    {
+      "id": "source-16",
+      "text": "Wireless Infrastructure Group and Nomadix, cited independently via Nextivity industry commentary (2026), on guest prioritization of reliable mobile connectivity when choosing a hotel."
+    }
+  ],
+  "source_note": "",
+  "cta": {
+    "headline": "Every property is different. Start with the operating need.",
+    "copy": "Dascoda helps owners and operators evaluate the connectivity challenge, understand the available options, and determine the right path forward.",
+    "button_text": "Talk with Dascoda",
+    "button_url": "/contact"
+  },
+  "source_document": "C:\\Users\\dscot\\OneDrive\\Documents\\Dascoda\\Marketing\\White Papers\\Dascoda_New_Guest_Expectation_White_Paper 8-2026v3.docx"
+}

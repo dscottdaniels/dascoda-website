@@ -1,0 +1,242 @@
+{
+  "title": "Passpoint for Hotels: What It Is and How It Works",
+  "dek": "How standards-based Wi-Fi authentication can help hotels create a more seamless indoor mobile experience.",
+  "content_type": "guide",
+  "funnel_stage": "education",
+  "landing_section": "go-deeper",
+  "featured": false,
+  "display_order": 40,
+  "category": "Mobility",
+  "tags": [
+    "Passpoint",
+    "Wi-Fi",
+    "indoor mobile connectivity"
+  ],
+  "industries": [
+    "Hospitality"
+  ],
+  "solutions": [
+    "Passpoint & Mobility Solutions"
+  ],
+  "target_keyword": "Passpoint for hotels",
+  "supporting_keywords": [
+    "Passpoint Wi-Fi hotels",
+    "automatic Wi-Fi authentication",
+    "hotel indoor mobile experience"
+  ],
+  "meta_title": "Passpoint for Hotels: What It Is and How It Works | Dascoda",
+  "meta_description": "Understand how Passpoint can help hotels support secure, automatic Wi-Fi authentication and a more seamless indoor mobile experience.",
+  "og_title": "Passpoint for Hotels: What It Is and How It Works",
+  "og_description": "How standards-based Wi-Fi authentication can help hotels create a more seamless indoor mobile experience.",
+  "related_slugs": [
+    "hotel-in-building-cellular-coverage-options",
+    "das-vs-passpoint",
+    "why-dascoda"
+  ],
+  "sources_heading": "Sources and further reading",
+  "slug": "passpoint-for-hotels",
+  "date_published": "2026-09-06",
+  "date_updated": "2026-09-06",
+  "metadata_status": "metadata_prepared_publication_date_pending",
+  "publication_date_status": "published",
+  "og_image": "/assets/images/home-industries-portfolio-visual.png",
+  "lede_callout": "The simplest way to understand Passpoint: it removes much of the friction between a compatible mobile device and a trusted Wi-Fi network. For hotels, that can turn existing Wi-Fi infrastructure into a more useful part of the guest connectivity experience.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The hotel connectivity problem is changing"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hotel guests increasingly expect their phones to work everywhere in a property, not just near windows or in the lobby. They use mobile devices for voice calls, messaging, ride-share applications, mobile keys, airline apps, streaming, work, authentication codes, and countless other services. When outdoor cellular signals weaken inside guestrooms, meeting spaces, elevators, lower levels, or interior corridors, the guest rarely distinguishes between a cellular problem and a hotel problem. The experience simply feels disconnected."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hotels have spent years building increasingly capable Wi-Fi networks to meet guest demand. Yet traditional guest Wi-Fi often requires a person to find the right network, accept terms, enter credentials, or pass through a captive portal. Passpoint changes that connection process. It can allow an authorized device to recognize a participating Wi-Fi network and authenticate automatically, without asking the guest to manually select an SSID or complete a splash page each time."
+    },
+    {
+      "type": "h2",
+      "text": "What is Passpoint?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Passpoint is a Wi-Fi Alliance technology based on industry standards, including IEEE 802.11u, that enables compatible devices to discover and securely authenticate to participating Wi-Fi networks. It is also commonly associated with the term Hotspot 2.0. Microsoft describes Passpoint as a standard for seamless hotspot authentication that uses IEEE 802.11u to exchange information with a provider before a connection is established, then uses enterprise Wi-Fi security and EAP authentication for the connection."
+    },
+    {
+      "type": "paragraph",
+      "text": "The important point for hotel operators is that Passpoint is not a new radio network and it is not a replacement for Wi-Fi. It is a standards-based method for making the relationship between a device and an authorized Wi-Fi network far more automatic and secure."
+    },
+    {
+      "type": "h2",
+      "text": "How it works in plain English"
+    },
+    {
+      "type": "paragraph",
+      "text": "A simplified Passpoint connection can be thought of in four steps:"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Discover. A compatible device encounters a Wi-Fi network that advertises Passpoint capabilities.",
+        "Identify. The device exchanges information with the network and determines whether it has an eligible identity or roaming relationship for that network.",
+        "Authenticate. If the required relationship exists, the device authenticates using an approved enterprise authentication method rather than a shared hotel Wi-Fi password.",
+        "Connect. The device joins the encrypted Wi-Fi network, often without the user needing to open Wi-Fi settings, select an SSID, or complete a guest portal."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The technical details can involve ANQP, 802.1X, EAP methods, roaming policies, carrier profiles, and authentication infrastructure. For the guest, however, the ideal experience is much simpler: the phone connects because the device and network already know how to trust one another."
+    },
+    {
+      "type": "h2",
+      "text": "Why that matters in a hotel"
+    },
+    {
+      "type": "paragraph",
+      "text": "The value of Passpoint is not merely that it makes Wi-Fi easier to join. Its larger significance is that it allows Wi-Fi to participate more naturally in the broader mobile connectivity ecosystem. The Wireless Broadband Alliance describes Passpoint as an industry standard used to provide seamless and secure Wi-Fi access, while OpenRoaming extends that concept through a federation of identity and network providers."
+    },
+    {
+      "type": "paragraph",
+      "text": "For hotels, this matters because the property may already have dozens or hundreds of carefully positioned Wi-Fi access points providing dense indoor coverage. If that Wi-Fi infrastructure is properly designed, configured, and integrated with the appropriate authentication and carrier relationships, it can play a larger role in keeping mobile devices connected when outdoor cellular coverage does not penetrate the building well."
+    },
+    {
+      "type": "h2",
+      "text": "Passpoint is not the same as Wi-Fi Calling"
+    },
+    {
+      "type": "paragraph",
+      "text": "This distinction is important. Passpoint and Wi-Fi Calling solve different parts of the experience."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Passpoint helps a compatible device automatically discover, authenticate to, and connect with an authorized Wi-Fi network.",
+        "Wi-Fi Calling is a carrier and device capability that can carry voice calls and text services over an active Wi-Fi connection when appropriate. AT&T and T-Mobile, for example, describe Wi-Fi Calling as allowing calls and texts over Wi-Fi when cellular coverage is weak or unavailable."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A hotel can offer ordinary guest Wi-Fi that supports Wi-Fi Calling, but the guest may still have to join that Wi-Fi manually. Passpoint addresses the onboarding and authentication step. In a properly integrated environment, these technologies can work together to make the experience feel much more seamless."
+    },
+    {
+      "type": "h2",
+      "text": "Passpoint is also more than \"automatic public Wi-Fi\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Automatic connection can sound concerning if it is confused with a phone indiscriminately joining an open public hotspot. That is not how Passpoint is intended to work. Passpoint uses enterprise authentication and encrypted Wi-Fi connections. Microsoft documents support for WPA2-Enterprise or WPA3-Enterprise together with EAP authentication. The device evaluates the network and the identity relationship before connecting."
+    },
+    {
+      "type": "paragraph",
+      "text": "That makes the security model fundamentally different from an open guest network or a shared-password hotspot. The exact security architecture still depends on the implementation, but the underlying model is based on authenticated, encrypted access rather than convenience alone."
+    },
+    {
+      "type": "h2",
+      "text": "Where Wi-DAS fits"
+    },
+    {
+      "type": "paragraph",
+      "text": "Passpoint by itself is a technology standard. It does not, by itself, redesign a hotel network, create carrier relationships, guarantee coverage, or make an underperforming Wi-Fi system suddenly capable of supporting a strong mobile experience. A complete deployment requires the surrounding architecture and operational model."
+    },
+    {
+      "type": "paragraph",
+      "text": "American Bandwidth, Dascoda Solutions' indoor connectivity partner for hospitality, describes its Wi-DAS solution as combining existing Wi-Fi infrastructure with Passpoint, carrier integration, and network optimization. Its stated approach is to use the dense Wi-Fi footprint many organizations already have rather than adding a completely separate layer of legacy DAS infrastructure when the property and use case are a fit."
+    },
+    {
+      "type": "paragraph",
+      "text": "That distinction matters: Passpoint is the enabling standard; Wi-DAS is a broader solution architecture that applies Passpoint and carrier integration to the indoor connectivity problem."
+    },
+    {
+      "type": "h2",
+      "text": "What does a hotel need before considering Passpoint?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A Passpoint-based strategy begins with the hotel's actual network, not with a marketing promise. Important questions include:"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Does the Wi-Fi network provide strong, consistent RF coverage in the areas where cellular service is weak?",
+        "Does the network have enough capacity and internet backhaul to support additional mobile traffic without degrading the guest Wi-Fi experience?",
+        "Are the installed access points, controllers, and network configuration compatible with the required standards and deployment model?",
+        "Which carriers, devices, and subscriber profiles are expected to participate?",
+        "How will authentication, security, monitoring, support, and ongoing network changes be managed?"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This is why a site and network assessment remains important. Leveraging existing Wi-Fi can reduce the amount of new physical infrastructure required, but \"existing\" does not automatically mean \"ready.\""
+    },
+    {
+      "type": "h2",
+      "text": "What the guest should experience"
+    },
+    {
+      "type": "paragraph",
+      "text": "The most compelling aspect of Passpoint may be what the guest does not have to do. When the device, network, carrier relationships, and settings are properly aligned, there may be no hotel Wi-Fi network to search for, no password to remember, and no splash page to complete for the Passpoint connection. The device can authenticate in the background and use the available Wi-Fi connection as part of the guest's broader mobile experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "That does not mean every device, every carrier, or every deployment behaves identically. Compatibility, carrier participation, device provisioning, user settings, and network quality all matter. For that reason, hotels should evaluate Passpoint as an engineered connectivity solution, not as a universal software switch."
+    },
+    {
+      "type": "h2",
+      "text": "The bigger idea: Wi-Fi and cellular are converging"
+    },
+    {
+      "type": "paragraph",
+      "text": "For decades, hotel operators tended to think of Wi-Fi and cellular as separate utilities. That line is becoming less useful. Passpoint and roaming frameworks such as OpenRoaming are part of a broader industry movement toward more seamless interaction between Wi-Fi and mobile networks."
+    },
+    {
+      "type": "paragraph",
+      "text": "For hotel owners, the strategic question is therefore changing from \"Do we have Wi-Fi?\" to \"How can the connectivity infrastructure we already operate contribute to a reliable mobile experience throughout the property?\" Passpoint is one increasingly important part of that answer."
+    },
+    {
+      "type": "h2",
+      "text": "How Dascoda approaches the decision"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dascoda Solutions helps hotel owners and operators evaluate indoor connectivity from the property's point of view, not from a single-technology point of view. That means understanding the guest experience problem, existing Wi-Fi and broadband infrastructure, carrier environment, property layout, ownership priorities, budget, and deployment timeline before recommending a path forward."
+    },
+    {
+      "type": "paragraph",
+      "text": "For properties with strong enterprise Wi-Fi, Passpoint and Wi-DAS may offer a compelling way to improve indoor mobile connectivity while leveraging infrastructure already in place. Other properties may require DAS, small cells, signal enhancement, or a hybrid approach. The right answer starts with the building and the business requirement."
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "text": "Microsoft Learn - Passpoint: https://learn.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/passpoint"
+    },
+    {
+      "id": "source-2",
+      "text": "Wireless Broadband Alliance - OpenRoaming FAQ: https://wballiance.com/openroaming/faq/"
+    },
+    {
+      "id": "source-3",
+      "text": "Wireless Broadband Alliance - OpenRoaming: https://wballiance.com/openroaming/"
+    },
+    {
+      "id": "source-4",
+      "text": "AT&T - Wi-Fi Calling: https://www.att.com/features/wifi-calling/"
+    },
+    {
+      "id": "source-5",
+      "text": "T-Mobile - Wi-Fi Calling: https://www.t-mobile.com/support/coverage/wi-fi-calling-from-t-mobile"
+    },
+    {
+      "id": "source-6",
+      "text": "American Bandwidth - Wi-DAS: https://ameriband.com/wi-das"
+    }
+  ],
+  "source_note": "Research note: This Dascoda Insights article is written for an executive hospitality audience. Technical claims were checked against standards, carrier, regulator, and infrastructure-provider materials. Vendor-specific statements are identified as such.",
+  "cta": {
+    "headline": "Every property is different. Start with the operating need.",
+    "copy": "Dascoda helps owners and operators evaluate the connectivity challenge, understand the available options, and determine the right path forward.",
+    "button_text": "Talk with Dascoda",
+    "button_url": "/contact"
+  },
+  "source_document": "C:\\Users\\dscot\\OneDrive\\Documents\\Dascoda\\Marketing\\Articles\\Dascoda_Insights_Passpoint_for_Hotels.docx"
+}

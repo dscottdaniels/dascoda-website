@@ -1,0 +1,370 @@
+{
+  "title": "Hotel In-Building Cellular Coverage: Understanding the Available Options",
+  "dek": "A practical guide to DAS, small cells, signal boosters, Passpoint/Wi-DAS, Wi-Fi Calling, private wireless, and hybrid strategies.",
+  "content_type": "guide",
+  "funnel_stage": "consideration",
+  "landing_section": "understanding-connectivity",
+  "featured": true,
+  "display_order": 20,
+  "category": "Connectivity",
+  "tags": [
+    "in-building wireless",
+    "DAS",
+    "Passpoint",
+    "carrier strategy"
+  ],
+  "industries": [
+    "Hospitality"
+  ],
+  "solutions": [
+    "Connectivity Solutions",
+    "Passpoint & Mobility Solutions"
+  ],
+  "target_keyword": "hotel in-building cellular coverage options",
+  "supporting_keywords": [
+    "hotel indoor cellular coverage",
+    "DAS small cells Passpoint",
+    "in-building wireless options"
+  ],
+  "meta_title": "Hotel In-Building Cellular Coverage Options | Dascoda",
+  "meta_description": "A practical guide to DAS, small cells, signal boosters, Passpoint, Wi-Fi Calling, private wireless, and hybrid hotel coverage strategies.",
+  "og_title": "Hotel In-Building Cellular Coverage: Understanding the Available Options",
+  "og_description": "A practical guide to the major indoor mobile connectivity options hotel owners should evaluate.",
+  "related_slugs": [
+    "das-vs-passpoint",
+    "passpoint-for-hotels",
+    "why-dascoda"
+  ],
+  "sources_heading": "Sources and further reading",
+  "slug": "hotel-in-building-cellular-coverage-options",
+  "date_published": "2026-09-06",
+  "date_updated": "2026-09-06",
+  "metadata_status": "metadata_prepared_publication_date_pending",
+  "publication_date_status": "published",
+  "og_image": "/assets/images/home-industries-portfolio-visual.png",
+  "lede_callout": "There is no single technology called \"in-building cellular.\" Hotels can solve indoor mobile problems in several ways. The right approach depends on whether the property needs better carrier RF, more capacity, easier Wi-Fi onboarding, targeted signal enhancement, private operational connectivity, or a combination of these outcomes.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Start with the problem, not the product"
+    },
+    {
+      "type": "paragraph",
+      "text": "When a hotel has poor mobile service, the natural reaction is to ask, \"What system should we install?\" That question is usually premature. Indoor mobile problems can have very different causes: exterior macro coverage may be weak; modern glass or concrete may attenuate radio signals; one carrier may perform worse than another; the building may have coverage but insufficient capacity during events; or the hotel may have excellent Wi-Fi that guests are not joining reliably."
+    },
+    {
+      "type": "paragraph",
+      "text": "Those problems do not all require the same solution. Before investing, hotel owners should identify the experience that is failing and the technical reason it is failing. Only then does it make sense to compare the available options."
+    },
+    {
+      "type": "h2",
+      "text": "1. Distributed Antenna Systems (DAS)"
+    },
+    {
+      "type": "paragraph",
+      "text": "A DAS distributes cellular radio signals through a network of antennas installed throughout a building. Depending on the design, those signals may originate from carrier base-station equipment, small-cell sources, or an off-air donor signal. DAS is a mature approach used to extend coverage and, in many architectures, capacity inside large or difficult buildings."
+    },
+    {
+      "type": "h3",
+      "text": "Where DAS fits best"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Large, complex, or high-density properties.",
+        "Hotels with convention centers, ballrooms, large event spaces, or significant simultaneous-user requirements.",
+        "Buildings that need purpose-built carrier RF indoors rather than relying primarily on Wi-Fi.",
+        "New construction or major renovation projects where pathways, power, and antenna locations can be incorporated into the building plan."
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "What owners should understand"
+    },
+    {
+      "type": "paragraph",
+      "text": "DAS can deliver a robust cellular architecture, but it can also require substantial design, equipment, cabling or fiber, power, installation labor, carrier coordination, commissioning, and ongoing lifecycle support. Multi-carrier support is possible but should be explicitly defined rather than assumed."
+    },
+    {
+      "type": "h2",
+      "text": "2. Indoor small cells"
+    },
+    {
+      "type": "paragraph",
+      "text": "Small cells are low-power cellular radio nodes used to add coverage and capacity closer to users. Indoor systems can range from individual enterprise cells to coordinated multi-node architectures. Ericsson, for example, describes indoor small-cell systems designed to provide 4G and 5G connectivity inside buildings, including solutions capable of supporting multiple frequency bands and operators depending on the architecture."
+    },
+    {
+      "type": "h3",
+      "text": "Where small cells fit best"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Targeted indoor coverage or capacity requirements.",
+        "Properties that need a cellular network layer but may not require a full traditional DAS architecture.",
+        "Specific carrier-led deployments or enterprise environments with clearly defined operator requirements."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The tradeoff is that small cells remain carrier cellular infrastructure. Spectrum, carrier integration, backhaul, handoff behavior, number of operators, placement, and system management all matter. A single-carrier small-cell deployment may solve one problem while leaving guests on other carriers unchanged."
+    },
+    {
+      "type": "h2",
+      "text": "3. Cellular signal boosters and repeaters"
+    },
+    {
+      "type": "paragraph",
+      "text": "Signal boosters receive an available cellular signal, amplify it, and retransmit it into an area where the signal is weaker. They can be effective for localized coverage problems when a usable donor signal exists outside or elsewhere in the building. The FCC regulates wireless signal boosters in the United States and maintains specific technical and operational requirements designed to prevent harmful interference."
+    },
+    {
+      "type": "h3",
+      "text": "Where boosters fit best"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Smaller properties or limited dead zones.",
+        "Situations where a strong enough donor signal exists to be captured and redistributed.",
+        "Targeted remediation where the economics of a larger system do not make sense."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Boosters do not create carrier capacity from nothing. Their effectiveness depends heavily on donor-signal quality, system design, isolation between donor and indoor antennas, supported bands, and regulatory compliance. They should not be treated as a universal substitute for engineered in-building cellular systems."
+    },
+    {
+      "type": "h2",
+      "text": "4. Passpoint and Wi-DAS"
+    },
+    {
+      "type": "paragraph",
+      "text": "Passpoint takes a different approach. Rather than extending carrier RF inside the building, it enables compatible devices to automatically discover and securely authenticate to participating Wi-Fi networks. In a carrier-integrated architecture, the hotel's Wi-Fi system can therefore become a more seamless part of the mobile connectivity experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "American Bandwidth's Wi-DAS approach combines existing Wi-Fi infrastructure with Passpoint, carrier integration, and network optimization. The value proposition is straightforward: many hotels already operate a dense network of Wi-Fi access points throughout guestrooms and public areas. When that Wi-Fi environment is suitable, the property may be able to improve indoor mobile usability without installing a separate cellular antenna network throughout the building."
+    },
+    {
+      "type": "h3",
+      "text": "Where Passpoint / Wi-DAS fits best"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Existing hotels with high-quality enterprise Wi-Fi.",
+        "Properties seeking lower-disruption alternatives to major new in-building construction.",
+        "Portfolio owners looking for a potentially repeatable approach across many sites.",
+        "Locations where cellular dead zones overlap areas already well served by Wi-Fi."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The major dependency is the quality of the Wi-Fi network itself. Coverage, capacity, backhaul, compatible infrastructure, authentication, carrier relationships, device behavior, and ongoing network operations all influence results."
+    },
+    {
+      "type": "h2",
+      "text": "5. Traditional Wi-Fi Calling"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wi-Fi Calling allows supported smartphones and carriers to place calls and send texts over an active Wi-Fi connection when cellular service is weak or unavailable. It is widely supported by major U.S. carriers. For hotels, it can provide meaningful relief from cellular dead zones when guests are already connected to a strong Wi-Fi network."
+    },
+    {
+      "type": "h3",
+      "text": "Where Wi-Fi Calling fits best"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "As a baseline capability on a well-designed hotel Wi-Fi network.",
+        "For guests who knowingly join hotel Wi-Fi and have Wi-Fi Calling enabled and supported by their carrier/device.",
+        "As part of a broader connectivity strategy rather than a complete onboarding solution."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The limitation is friction. A guest may still need to recognize that cellular service is poor, find the correct hotel network, join it, complete a portal, and have Wi-Fi Calling properly enabled. Passpoint can address much of that onboarding friction, which is why the two technologies should not be treated as synonyms."
+    },
+    {
+      "type": "h2",
+      "text": "6. Private LTE and private 5G"
+    },
+    {
+      "type": "paragraph",
+      "text": "Private wireless networks use dedicated LTE or 5G infrastructure to provide an organization-controlled cellular network for approved devices and applications. Nokia and other infrastructure providers position private wireless primarily around industrial, operational, and mission-critical use cases where enterprises need predictable performance, mobility, security, or device connectivity."
+    },
+    {
+      "type": "h3",
+      "text": "Where private wireless may fit in hospitality"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Large resorts, campuses, or mixed-use properties with operational mobility requirements.",
+        "Staff communications, IoT, automation, facilities operations, or specialized devices that need a controlled wireless environment.",
+        "Properties with enterprise use cases that go well beyond improving public guest cellular service."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Private LTE/5G generally should not be presented as a direct substitute for improving every guest's public carrier coverage. It is a different tool with different economics, spectrum models, device requirements, and operational objectives."
+    },
+    {
+      "type": "h2",
+      "text": "7. Hybrid approaches"
+    },
+    {
+      "type": "paragraph",
+      "text": "Many buildings do not fit neatly into one technology category. A hotel could use DAS or small cells in a high-density convention area, Passpoint across guestrooms and public spaces, and a booster for a highly localized back-of-house problem. New construction might include pathways and infrastructure that preserve several future options while an existing property chooses lower-disruption measures today."
+    },
+    {
+      "type": "paragraph",
+      "text": "A hybrid architecture can also be phased. A hotel group may begin with measurement and Wi-Fi-based improvements, then add targeted cellular infrastructure only where the data shows it is necessary. This can be more economically rational than designing the entire property around the most expensive edge case."
+    },
+    {
+      "type": "h2",
+      "text": "A practical comparison for hotel owners"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Approach",
+        "Uses existing Wi-Fi?",
+        "Adds carrier RF indoors?",
+        "Typical complexity",
+        "Best general fit"
+      ],
+      "rows": [
+        [
+          "DAS",
+          "No, not as the primary access layer",
+          "Yes",
+          "High",
+          "Large or high-density properties needing engineered multi-area cellular RF"
+        ],
+        [
+          "Indoor small cells",
+          "No",
+          "Yes",
+          "Medium to high",
+          "Targeted cellular coverage/capacity with defined carrier architecture"
+        ],
+        [
+          "Signal booster",
+          "No",
+          "Re-amplifies existing carrier signal",
+          "Low to medium",
+          "Localized issues with a usable donor signal"
+        ],
+        [
+          "Passpoint / Wi-DAS",
+          "Yes",
+          "No, uses Wi-Fi access",
+          "Low to medium if Wi-Fi is ready",
+          "Existing hotels with strong enterprise Wi-Fi and mobile coverage gaps"
+        ],
+        [
+          "Wi-Fi Calling",
+          "Yes",
+          "No",
+          "Low",
+          "Baseline capability once the guest is connected to Wi-Fi"
+        ],
+        [
+          "Private LTE/5G",
+          "Usually separate",
+          "Creates a private cellular network",
+          "High",
+          "Operational/enterprise use cases, not simply public guest coverage"
+        ]
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "How to choose: seven questions before buying anything"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Where, specifically, does the mobile experience fail? Guestrooms, lobby, elevators, meeting rooms, back-of-house, parking structures, or everywhere?",
+        "Which carriers are affected? A building problem and a single-carrier problem are not the same thing.",
+        "Is the issue coverage, capacity, onboarding friction, voice performance, mobile data performance, or an operational use case?",
+        "What infrastructure is already in place? Wi-Fi coverage, fiber, Ethernet, power, broadband, equipment rooms, and pathways materially change the economics.",
+        "How much construction disruption can the operating hotel tolerate?",
+        "What is the expected total cost and lifecycle, including support, carrier coordination, upgrades, and future network changes?",
+        "What measurable outcome will define success? Better RF measurements alone are not enough if the guest experience does not improve."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Why the assessment matters"
+    },
+    {
+      "type": "paragraph",
+      "text": "The best indoor connectivity decisions start with evidence. RF testing, Wi-Fi assessment, carrier-by-carrier performance, property drawings, construction materials, guest complaint patterns, high-density event requirements, and existing network capacity can all change the recommended architecture."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is especially important in hospitality because two hotels under the same brand can have completely different connectivity environments. One may be a new suburban property with modern Wi-Fi and relatively good outdoor cellular coverage. Another may be a historic urban tower with low-emissivity glass, thick construction, interior guestrooms, multiple carriers, and extensive meeting space. The same product should not automatically be prescribed to both."
+    },
+    {
+      "type": "h2",
+      "text": "The Dascoda approach: build the connectivity layer around the property"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dascoda Solutions approaches indoor connectivity as an owner and operator decision first. The objective is not to sell the hotel the most infrastructure. It is to identify the most practical architecture that meets the guest and operational requirement at an appropriate cost and level of disruption."
+    },
+    {
+      "type": "paragraph",
+      "text": "That may mean leveraging an existing Wi-Fi investment through Passpoint and Wi-DAS. It may mean a traditional DAS, indoor small cells, targeted signal enhancement, or a hybrid design. The important thing is that the technology follows the problem, not the other way around."
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "text": "FCC - Signal Boosters: https://www.fcc.gov/wireless/bureau-divisions/mobility-division/signal-boosters"
+    },
+    {
+      "id": "source-2",
+      "text": "CommScope - Distributed Antenna System overview: https://www.commscope.com/blog/2016/top-10-commscope-innovations-distributed-antenna-system-solutions/"
+    },
+    {
+      "id": "source-3",
+      "text": "Ericsson - Indoor small cell coverage: https://www.ericsson.com/en/small-cells/indoor-coverage"
+    },
+    {
+      "id": "source-4",
+      "text": "Microsoft Learn - Passpoint: https://learn.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/passpoint"
+    },
+    {
+      "id": "source-5",
+      "text": "Wireless Broadband Alliance - OpenRoaming FAQ: https://wballiance.com/openroaming/faq/"
+    },
+    {
+      "id": "source-6",
+      "text": "AT&T - Wi-Fi Calling: https://www.att.com/features/wifi-calling/"
+    },
+    {
+      "id": "source-7",
+      "text": "T-Mobile - Wi-Fi Calling: https://www.t-mobile.com/support/coverage/wi-fi-calling-from-t-mobile"
+    },
+    {
+      "id": "source-8",
+      "text": "Nokia - Private Networks: https://www.nokia.com/private-networks/"
+    },
+    {
+      "id": "source-9",
+      "text": "American Bandwidth - Wi-DAS: https://ameriband.com/wi-das"
+    }
+  ],
+  "source_note": "Research note: This Dascoda Insights article is written for an executive hospitality audience. Technical claims were checked against standards, carrier, regulator, and infrastructure-provider materials. Vendor-specific statements are identified as such.",
+  "cta": {
+    "headline": "Every property is different. Start with the operating need.",
+    "copy": "Dascoda helps owners and operators evaluate the connectivity challenge, understand the available options, and determine the right path forward.",
+    "button_text": "Talk with Dascoda",
+    "button_url": "/contact"
+  },
+  "source_document": "C:\\Users\\dscot\\OneDrive\\Documents\\Dascoda\\Marketing\\Articles\\Dascoda_Insights_Hotel_InBuilding_Coverage_Options.docx"
+}

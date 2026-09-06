@@ -1,0 +1,281 @@
+{
+  "title": "DAS vs. Passpoint: Understanding Hotel Cellular Coverage Options",
+  "dek": "Two very different approaches to the same guest expectation: reliable mobile connectivity inside the hotel.",
+  "content_type": "article",
+  "funnel_stage": "comparison",
+  "landing_section": "go-deeper",
+  "featured": false,
+  "display_order": 30,
+  "category": "Mobility",
+  "tags": [
+    "DAS",
+    "Passpoint",
+    "comparison",
+    "hospitality"
+  ],
+  "industries": [
+    "Hospitality"
+  ],
+  "solutions": [
+    "Passpoint & Mobility Solutions"
+  ],
+  "target_keyword": "DAS vs Passpoint hotels",
+  "supporting_keywords": [
+    "hotel cellular coverage options",
+    "DAS vs Passpoint",
+    "indoor mobile connectivity"
+  ],
+  "meta_title": "DAS vs. Passpoint for Hotel Cellular Coverage | Dascoda",
+  "meta_description": "Compare DAS and Passpoint approaches for hotel indoor mobile coverage, including where each option fits and what owners should evaluate.",
+  "og_title": "DAS vs. Passpoint: Understanding Hotel Cellular Coverage Options",
+  "og_description": "Two different approaches to the same guest expectation: reliable mobile connectivity inside the hotel.",
+  "related_slugs": [
+    "hotel-in-building-cellular-coverage-options",
+    "passpoint-for-hotels",
+    "why-dascoda"
+  ],
+  "sources_heading": "Sources and further reading",
+  "slug": "das-vs-passpoint",
+  "date_published": "2026-09-06",
+  "date_updated": "2026-09-06",
+  "metadata_status": "metadata_prepared_publication_date_pending",
+  "publication_date_status": "published",
+  "og_image": "/assets/images/home-industries-portfolio-visual.png",
+  "lede_callout": "DAS distributes cellular radio coverage through dedicated in-building infrastructure. Passpoint-based Wi-DAS uses a hotel's Wi-Fi network as part of the mobile connectivity experience. Neither is universally \"better.\" The right choice depends on the property, carriers, infrastructure, budget, and performance requirement.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The question is no longer whether indoor cellular matters"
+    },
+    {
+      "type": "paragraph",
+      "text": "For many hotel owners, the discussion has moved beyond whether indoor mobile coverage affects the guest experience. The harder question is what to do about it. Traditional distributed antenna systems, or DAS, have long been one of the primary tools for bringing carrier radio signals deeper into large buildings. Passpoint-based approaches create another path by using standards-based Wi-Fi authentication and carrier integration to make existing Wi-Fi infrastructure part of the indoor mobile experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because the two approaches work differently, comparing them solely on price or on a generic \"bars of service\" measure can lead to the wrong decision. A better comparison starts with what each architecture is actually doing."
+    },
+    {
+      "type": "h2",
+      "text": "What is a DAS?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A distributed antenna system is an in-building radio architecture that distributes wireless signals from a source through a network of antennas positioned around a building or venue. DAS has been used for decades to improve wireless coverage and, depending on the design and signal sources, capacity. CommScope describes DAS as an important tool for delivering indoor wireless coverage and capacity in environments where macro cellular networks do not adequately serve users inside the structure."
+    },
+    {
+      "type": "paragraph",
+      "text": "In practical terms, a DAS creates a dedicated cellular RF layer inside the property. The system may include donor or carrier signal sources, head-end equipment, fiber or coaxial distribution, remote units, antennas, power, monitoring, and carrier-specific integration. Multi-carrier systems can support more than one mobile operator, but carrier participation, design, approval, and economics are important parts of the project."
+    },
+    {
+      "type": "h2",
+      "text": "What is a Passpoint-based Wi-DAS approach?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A Passpoint-based approach does not distribute cellular RF through a new antenna system. Instead, it uses the property's Wi-Fi radio network as the indoor access layer. Passpoint allows compatible devices to discover and securely authenticate to participating Wi-Fi networks, often without a manual guest login. Carrier integration and Wi-Fi Calling can then allow that Wi-Fi connection to support a broader mobile experience, depending on the carrier, device, network, and deployment."
+    },
+    {
+      "type": "paragraph",
+      "text": "American Bandwidth describes its Wi-DAS architecture as combining a property's existing Wi-Fi infrastructure with Passpoint, carrier integration, and network optimization. For a hotel that already has dense, well-designed Wi-Fi coverage, this creates the possibility of improving mobile connectivity without building an entirely separate layer of cellular antennas throughout the property."
+    },
+    {
+      "type": "h2",
+      "text": "The fundamental difference"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Question",
+        "Traditional DAS",
+        "Passpoint / Wi-DAS"
+      ],
+      "rows": [
+        [
+          "What carries the indoor connection?",
+          "Dedicated cellular RF distributed through in-building antennas.",
+          "The property Wi-Fi network, using standards-based authentication and carrier integration."
+        ],
+        [
+          "Is new in-building radio infrastructure typically required?",
+          "Yes. DAS generally requires dedicated distribution equipment, antennas, cabling/fiber, power, and design.",
+          "Often much less new physical infrastructure if the existing Wi-Fi network is suitable."
+        ],
+        [
+          "What happens on the guest device?",
+          "The device remains connected to the cellular carrier network through indoor cellular RF.",
+          "The device connects to authorized Wi-Fi; mobile services may use that connection depending on carrier/device behavior."
+        ],
+        [
+          "Primary strength",
+          "Purpose-built cellular RF coverage and capacity.",
+          "Leverages an already-dense Wi-Fi footprint and can reduce deployment complexity."
+        ],
+        [
+          "Primary constraint",
+          "Cost, design complexity, carrier coordination, construction, and lifecycle requirements.",
+          "Depends heavily on Wi-Fi quality, carrier integration, device compatibility, and proper configuration."
+        ]
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Where DAS can be the stronger fit"
+    },
+    {
+      "type": "paragraph",
+      "text": "DAS remains an important and appropriate technology. It can be particularly attractive when a property requires a dedicated in-building cellular RF layer, needs tightly engineered cellular capacity, is very large or structurally complex, or has requirements that cannot be met adequately through the existing Wi-Fi environment."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Large convention hotels, resorts, stadium-like venues, or high-density event spaces with significant cellular capacity requirements.",
+        "Buildings where the existing Wi-Fi footprint does not provide adequate coverage, capacity, or infrastructure for a Wi-Fi-led strategy.",
+        "Projects where direct carrier RF inside the building is a specific technical or operational requirement.",
+        "New construction or major renovation projects where in-building cellular infrastructure can be planned into the design from the beginning.",
+        "Properties willing to support the capital, coordination, construction, and lifecycle requirements of a dedicated cellular system."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Where Passpoint / Wi-DAS can be the stronger fit"
+    },
+    {
+      "type": "paragraph",
+      "text": "A Passpoint-based strategy becomes especially interesting when the hotel already operates a high-quality enterprise Wi-Fi network throughout the areas where cellular coverage is weak. The opportunity is to use that investment more effectively instead of assuming another full physical radio network must be built alongside it."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Existing hotels with dense Wi-Fi coverage across guestrooms, corridors, public areas, and meeting spaces.",
+        "Owners seeking a lower-disruption deployment path than a major new antenna and cabling project.",
+        "Multi-property hotel groups looking for an approach that may be repeatable across a portfolio with similar Wi-Fi architectures.",
+        "Properties where capital budget, installation time, or construction complexity make a traditional DAS difficult to justify.",
+        "Hotels where the primary problem is guest and employee mobile usability in areas that already have strong Wi-Fi service."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Cost matters, but it should not be the first filter"
+    },
+    {
+      "type": "paragraph",
+      "text": "One reason Passpoint-based solutions attract attention is the potential to avoid much of the net-new physical infrastructure associated with a traditional DAS. American Bandwidth markets Wi-DAS specifically around leveraging existing Wi-Fi and states that its deployments can be delivered at a fraction of legacy DAS costs in suitable environments."
+    },
+    {
+      "type": "paragraph",
+      "text": "The exact economics of either approach vary widely with square footage, building materials, carrier requirements, coverage objectives, available cabling and fiber, Wi-Fi readiness, labor, and the number of properties involved. Owners should therefore be cautious with generic per-square-foot claims. A low-cost solution that does not meet the performance requirement is not inexpensive; it is simply incomplete."
+    },
+    {
+      "type": "h2",
+      "text": "Deployment time and disruption"
+    },
+    {
+      "type": "paragraph",
+      "text": "Traditional DAS can involve RF design, site surveys, carrier coordination, signal-source planning, installation of head-end and remote equipment, antenna placement, cabling or fiber pathways, power, commissioning, optimization, and sometimes permitting or construction coordination. The timeline can therefore be substantial, particularly for a live hotel where access to guestrooms and public areas must be carefully managed."
+    },
+    {
+      "type": "paragraph",
+      "text": "A Passpoint/Wi-DAS deployment may require far less physical construction when the Wi-Fi network is already capable. But the word \"may\" matters. If the Wi-Fi network has coverage gaps, insufficient capacity, aging access points, inadequate backhaul, or incompatible architecture, remediation may be needed before it can successfully support the use case."
+    },
+    {
+      "type": "h2",
+      "text": "Carrier participation matters in both models"
+    },
+    {
+      "type": "paragraph",
+      "text": "A multi-carrier experience does not happen by assumption. DAS projects often require carrier signal sources, approvals, or participation. Passpoint-based approaches also depend on carrier relationships, subscriber provisioning, device compatibility, and the authentication model being used. This is one reason hotel ownership should resist technology proposals that promise universal carrier performance without first defining the carrier and device assumptions."
+    },
+    {
+      "type": "h2",
+      "text": "What about Wi-Fi Calling?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wi-Fi Calling is relevant to a Passpoint strategy but should not be confused with Passpoint itself. Wi-Fi Calling allows supported carrier voice and messaging services to use an active Wi-Fi connection. Passpoint helps make joining the appropriate Wi-Fi network automatic and secure. A traditional guest Wi-Fi network can support Wi-Fi Calling too, but the guest may need to find and join the network first."
+    },
+    {
+      "type": "paragraph",
+      "text": "This distinction matters because the business value of Passpoint is not simply \"Wi-Fi Calling without a password.\" It is the larger ability to create a standards-based, carrier-integrated onboarding experience that allows Wi-Fi to act more naturally as part of mobile connectivity."
+    },
+    {
+      "type": "h2",
+      "text": "A hotel may not need to choose only one"
+    },
+    {
+      "type": "paragraph",
+      "text": "The most sophisticated answer is sometimes hybrid. A very large property could use dedicated cellular infrastructure in convention, back-of-house, or exceptionally high-density areas while using Wi-Fi and Passpoint more broadly in guestrooms and other spaces. A hotel might also deploy targeted signal enhancement for a localized coverage issue while using a different strategy elsewhere."
+    },
+    {
+      "type": "paragraph",
+      "text": "Indoor connectivity should be treated as an architecture decision, not as a product contest. The goal is consistent guest and operational performance at an economically rational cost."
+    },
+    {
+      "type": "h2",
+      "text": "The questions an owner should ask before deciding"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Where are the actual coverage and usability problems in the property?",
+        "Are the problems consistent across AT&T, T-Mobile, Verizon, and other relevant carriers, or are they carrier-specific?",
+        "How strong is the existing Wi-Fi network in the affected areas?",
+        "Is the requirement primarily coverage, capacity, voice reliability, mobile data, operational communications, or all of the above?",
+        "What level of construction disruption is acceptable in an operating hotel?",
+        "What is the expected lifecycle and total cost, not just the initial installation cost?",
+        "Does the solution depend on carrier approvals or participation, and who owns that coordination?",
+        "How will the hotel measure success after deployment?"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "The Dascoda view"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dascoda does not believe every hotel should buy the same indoor cellular solution. A modern hotel may have several viable paths, and the best answer depends on its physical environment and its business priorities."
+    },
+    {
+      "type": "paragraph",
+      "text": "For many existing hotels with strong enterprise Wi-Fi, Passpoint and Wi-DAS deserve serious consideration because they can leverage infrastructure already deployed throughout the building. For larger, higher-capacity, or more specialized environments, DAS may remain the correct architecture. The important step is to evaluate the property before choosing the technology."
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "text": "CommScope - Distributed Antenna System overview and evolution: https://www.commscope.com/blog/2016/top-10-commscope-innovations-distributed-antenna-system-solutions/"
+    },
+    {
+      "id": "source-2",
+      "text": "CommScope - The Evolution of DAS: https://www.commscope.com/blog/2013/the-evolution-of-das/"
+    },
+    {
+      "id": "source-3",
+      "text": "Microsoft Learn - Passpoint: https://learn.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/passpoint"
+    },
+    {
+      "id": "source-4",
+      "text": "Wireless Broadband Alliance - OpenRoaming FAQ: https://wballiance.com/openroaming/faq/"
+    },
+    {
+      "id": "source-5",
+      "text": "AT&T - Wi-Fi Calling: https://www.att.com/features/wifi-calling/"
+    },
+    {
+      "id": "source-6",
+      "text": "T-Mobile - Wi-Fi Calling: https://www.t-mobile.com/support/coverage/wi-fi-calling-from-t-mobile"
+    },
+    {
+      "id": "source-7",
+      "text": "American Bandwidth - Wi-DAS: https://ameriband.com/wi-das"
+    }
+  ],
+  "source_note": "Research note: This Dascoda Insights article is written for an executive hospitality audience. Technical claims were checked against standards, carrier, regulator, and infrastructure-provider materials. Vendor-specific statements are identified as such.",
+  "cta": {
+    "headline": "Every property is different. Start with the operating need.",
+    "copy": "Dascoda helps owners and operators evaluate the connectivity challenge, understand the available options, and determine the right path forward.",
+    "button_text": "Talk with Dascoda",
+    "button_url": "/contact"
+  },
+  "source_document": "C:\\Users\\dscot\\OneDrive\\Documents\\Dascoda\\Marketing\\Articles\\Dascoda_Insights_DAS_vs_Passpoint.docx"
+}
