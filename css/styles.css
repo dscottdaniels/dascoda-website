@@ -2759,6 +2759,14 @@ textarea:focus {
     padding: 64px 0 52px;
   }
 
+  .insights-index-page .insights-hero {
+    padding: 56px 0 46px;
+  }
+
+  .insights-index-page .insights-hero h1 {
+    font-size: clamp(2.35rem, 10vw, 2.85rem);
+  }
+
   .hero-showcase {
     padding: 54px 0 52px;
   }
@@ -3074,19 +3082,31 @@ textarea:focus {
     var(--navy);
 }
 
+.insights-index-page .insights-hero {
+  padding: 70px 0 58px;
+}
+
 .insights-hero .container,
 .insight-article-hero .container {
   max-width: 860px;
 }
 
-.insights-hero h1,
 .insight-article-hero h1 {
   max-width: 820px;
+}
+
+.insights-index-page .insights-hero h1 {
+  max-width: 780px;
+  font-size: clamp(2.55rem, 4.2vw, 4.05rem);
 }
 
 .insights-hero .lead,
 .insight-article-hero .lead {
   max-width: 760px;
+}
+
+.insights-index-page .insights-hero .lead {
+  max-width: 820px;
 }
 
 .insight-feature-layout {
