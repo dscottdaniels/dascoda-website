@@ -114,42 +114,48 @@ if (rotatingHero) {
   const heroItems = [
     {
       label: "HOSPITALITY",
-      image: "assets/images/Hospitality Hero Image.png",
+      image: "assets/images/home-hero-hospitality-desktop.webp",
+      mobileImage: "assets/images/home-hero-hospitality-mobile.webp",
       desktopPosition: "68% center",
       tabletPosition: "64% center",
       mobilePosition: "62% center",
     },
     {
       label: "MULTIFAMILY / MDU",
-      image: "assets/images/Multifamily Hero Image.png",
+      image: "assets/images/home-hero-multifamily-desktop.webp",
+      mobileImage: "assets/images/home-hero-multifamily-mobile.webp",
       desktopPosition: "62% center",
       tabletPosition: "58% center",
       mobilePosition: "56% center",
     },
     {
       label: "COMMERCIAL REAL ESTATE",
-      image: "assets/images/Commercial Hero Image.png",
+      image: "assets/images/home-hero-commercial-desktop.webp",
+      mobileImage: "assets/images/home-hero-commercial-mobile.webp",
       desktopPosition: "64% center",
       tabletPosition: "60% center",
       mobilePosition: "58% center",
     },
     {
       label: "HEALTHCARE",
-      image: "assets/images/Healthcare Hero Image.png",
+      image: "assets/images/home-hero-healthcare-desktop.webp",
+      mobileImage: "assets/images/home-hero-healthcare-mobile.webp",
       desktopPosition: "66% center",
       tabletPosition: "62% center",
       mobilePosition: "60% center",
     },
     {
       label: "MANUFACTURING & DISTRIBUTION",
-      image: "assets/images/Manufacturing Hero Image.png",
+      image: "assets/images/home-hero-manufacturing-desktop.webp",
+      mobileImage: "assets/images/home-hero-manufacturing-mobile.webp",
       desktopPosition: "62% center",
       tabletPosition: "58% center",
       mobilePosition: "57% center",
     },
     {
       label: "MULTI-SITE OPERATIONS",
-      image: "assets/images/Multi-Site Hero Image.png",
+      image: "assets/images/home-hero-multisite-desktop.webp",
+      mobileImage: "assets/images/home-hero-multisite-mobile.webp",
       desktopPosition: "58% center",
       tabletPosition: "55% center",
       mobilePosition: "52% center",
@@ -166,15 +172,20 @@ if (rotatingHero) {
     return item.desktopPosition;
   };
 
+  const getImage = (item) => {
+    if (mobileViewport.matches && item.mobileImage) return item.mobileImage;
+    return item.image;
+  };
+
   const setSlide = (slide, item) => {
-    slide.style.backgroundImage = `url("${item.image}")`;
+    slide.style.backgroundImage = `url("${getImage(item)}")`;
     slide.style.backgroundPosition = getPosition(item);
   };
 
   const preloadNext = (index) => {
     const nextItem = heroItems[(index + 1) % heroItems.length];
     nextPreload = new Image();
-    nextPreload.src = nextItem.image;
+    nextPreload.src = getImage(nextItem);
   };
 
   const updateLabel = (item) => {
@@ -189,14 +200,25 @@ if (rotatingHero) {
 
   const updateVisiblePosition = () => {
     const currentItem = heroItems[activeIndex];
+    slides[activeSlide].style.backgroundImage = `url("${getImage(currentItem)}")`;
     slides[activeSlide].style.backgroundPosition = getPosition(currentItem);
+  };
+
+  const deferNextPreload = () => {
+    const queue = window.requestIdleCallback || ((callback) => window.setTimeout(callback, 1200));
+    queue(() => preloadNext(activeIndex), { timeout: 2500 });
   };
 
   if (slides.length >= 2) {
     setSlide(slides[0], heroItems[0]);
-    preloadNext(0);
 
     if (!reduceMotion.matches) {
+      if (document.readyState === "complete") {
+        deferNextPreload();
+      } else {
+        window.addEventListener("load", deferNextPreload, { once: true });
+      }
+
       window.setInterval(() => {
         const nextIndex = (activeIndex + 1) % heroItems.length;
         const nextSlide = activeSlide === 0 ? 1 : 0;
