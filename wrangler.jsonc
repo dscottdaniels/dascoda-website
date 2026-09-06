@@ -1,0 +1,27 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "dascoda-website",
+  "main": "./worker/index.js",
+  "compatibility_date": "2026-09-06",
+  "assets": {
+    "directory": "./",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/api/*"
+    ],
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  },
+  "send_email": [
+    {
+      "name": "EMAIL",
+      "allowed_destination_addresses": [
+        "dscottdaniels@dascoda.com",
+        "mark.mueleman@dascoda.com"
+      ],
+      "allowed_sender_addresses": [
+        "website@forms.dascoda.com"
+      ]
+    }
+  ]
+}

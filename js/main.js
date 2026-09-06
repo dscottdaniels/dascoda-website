@@ -21,6 +21,11 @@ const trackGaEvent = (eventName) => {
 
 if (contactForm) {
   let contactFormStarted = false;
+  let isSubmitting = false;
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+  const formMessage = contactForm.querySelector("[data-form-message]");
+  const submitButtonText = submitButton?.textContent || "";
+
   const markContactFormStarted = () => {
     if (contactFormStarted) return;
     contactFormStarted = true;
@@ -30,14 +35,50 @@ if (contactForm) {
   contactForm.addEventListener("focusin", markContactFormStarted);
   contactForm.addEventListener("change", markContactFormStarted);
 
-  contactForm.addEventListener("submit", () => {
-    try {
-      window.sessionStorage.setItem(CONTACT_SUBMITTED_KEY, "true");
-    } catch (error) {
-      // Analytics should never interfere with the FormSubmit POST.
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    if (isSubmitting || !contactForm.checkValidity()) return;
+
+    isSubmitting = true;
+    contactForm.setAttribute("aria-busy", "true");
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending...";
+    }
+    if (formMessage) {
+      formMessage.classList.remove("is-visible");
     }
 
     trackGaEvent("contact_form_submit");
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Contact form submission failed.");
+      }
+
+      window.sessionStorage.setItem(CONTACT_SUBMITTED_KEY, "true");
+      window.location.href = "/thank-you.html";
+    } catch (error) {
+      isSubmitting = false;
+      contactForm.removeAttribute("aria-busy");
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = submitButtonText;
+      }
+      if (formMessage) {
+        formMessage.textContent = "Your message could not be sent. Please try again.";
+        formMessage.classList.add("is-visible");
+      }
+    }
   });
 }
 
