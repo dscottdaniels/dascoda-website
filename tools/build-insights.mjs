@@ -7,7 +7,7 @@ const root = path.resolve(__dirname, "..");
 const contentDir = path.join(root, "content", "insights");
 const outputDir = path.join(root, "insights");
 const siteUrl = "https://dascoda.com";
-const buildVersion = "insights-framework-1";
+const buildVersion = "insights-rendering-2";
 
 const readJson = async (filePath) => JSON.parse(await readFile(filePath, "utf8"));
 
@@ -309,15 +309,18 @@ const renderArticle = (article, articleMap) => {
       <header class="hero insight-article-hero">
         <div class="container">
           ${renderBreadcrumbs(breadcrumbs)}
-           <p class="eyebrow">Dascoda Insights</p>
-           ${article.hero_label ? `<p class="insight-hero-label">${escapeHtml(article.hero_label)}</p>` : ""}
+           <p class="eyebrow insight-article-kicker">Dascoda Insights${article.hero_label ? ` <span aria-hidden="true">&middot;</span> ${escapeHtml(article.hero_label)}` : ""}</p>
            <h1>${escapeHtml(article.title)}</h1>
            <p class="lead">${escapeHtml(article.dek)}</p>
            <div class="article-meta"><span>${escapeHtml(editorialLabel(article))}</span></div>
-           ${renderEditorialImage(article.image, "insight-hero-image-frame", "insight-hero-image", { loading: "eager", fetchPriority: "high", sizes: "(max-width: 760px) calc(100vw - 40px), min(1120px, calc(100vw - 80px))" })}
-        </div>
-      </header>
-      <section class="section">
+         </div>
+       </header>
+       <section class="insight-article-visual" aria-label="Article visual">
+         <div class="container">
+           ${renderEditorialImage(article.image, "insight-hero-image-frame", "insight-hero-image", { loading: "eager", fetchPriority: "high", sizes: "(max-width: 760px) calc(100vw - 40px), min(960px, calc(100vw - 80px))" })}
+         </div>
+       </section>
+       <section class="section insight-article-reading">
         <div class="container insight-article-layout${article.show_on_this_page ? " insight-article-layout--with-sidebar" : " insight-article-layout--single"}">
           ${renderOnThisPage(article)}
           <div class="insight-article-body">
