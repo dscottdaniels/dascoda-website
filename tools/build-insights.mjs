@@ -260,19 +260,21 @@ const renderLearningPath = (article, articleMap) => {
 
 const renderLandingCluster = (cluster, articleMap) => {
   const items = cluster.items.map((item) => ({ ...item, article: articleMap.get(item.slug) })).filter((item) => item.article);
-  const clusterImage = renderEditorialImage(cluster.image, "insights-cluster-image-frame", "insights-cluster-image", { sizes: "(max-width: 760px) calc(100vw - 40px), 420px" });
-  const headerClass = clusterImage ? "insights-cluster-header" : "insights-cluster-header insights-cluster-header--text-only";
-  return `<section class="section insights-cluster-section" id="${escapeHtml(cluster.id)}"><div class="container"><div class="${headerClass}">${clusterImage}<div><p class="eyebrow">${escapeHtml(cluster.eyebrow || "Learning Path")}</p><h2>${escapeHtml(cluster.headline)}</h2><p>${escapeHtml(cluster.description)}</p></div></div><div class="insight-learning-list">${items.map((item) => renderArticleCard(item.article, "", { step: item.step, stepLabel: item.step_label })).join("")}</div></div></section>`;
+  return `<section class="section insights-cluster-section" id="${escapeHtml(cluster.id)}"><div class="container"><div class="insights-cluster-header insights-cluster-header--text-only"><div><p class="eyebrow">${escapeHtml(cluster.eyebrow || "Learning Path")}</p><h2>${escapeHtml(cluster.headline)}</h2><p>${escapeHtml(cluster.description)}</p></div></div><div class="insight-learning-list">${items.map((item) => renderArticleCard(item.article, "", { step: item.step, stepLabel: item.step_label })).join("")}</div></div></section>`;
 };
 
 const renderLanding = (landing, articleMap) => {
+  const clusterHeroImage = landing.clusters?.[0]?.image;
   const body = `
   <main class="insights-page">
     <section class="hero insights-hero">
-      <div class="container">
-        <p class="eyebrow">${escapeHtml(landing.eyebrow)}</p>
-        <h1>${escapeHtml(landing.headline)}</h1>
-        <p class="lead">${escapeHtml(landing.copy)}</p>
+      <div class="container insights-hero-layout">
+        <div class="insights-hero-copy">
+          <p class="eyebrow">${escapeHtml(landing.eyebrow)}</p>
+          <h1>${escapeHtml(landing.headline)}</h1>
+          <p class="lead">${escapeHtml(landing.copy)}</p>
+        </div>
+        ${renderEditorialImage(clusterHeroImage, "insights-landing-hero-image-frame", "insights-landing-hero-image", { loading: "eager", fetchPriority: "high", sizes: "(max-width: 800px) calc(100vw - 40px), min(460px, 40vw)" })}
       </div>
     </section>
     <section class="section insights-explore-intro"><div class="container"><div class="section-header"><p class="eyebrow">${escapeHtml(landing.explore_eyebrow)}</p><h2>${escapeHtml(landing.explore_headline)}</h2><p>${escapeHtml(landing.explore_copy)}</p></div></div></section>
@@ -316,7 +318,7 @@ const renderArticle = (article, articleMap) => {
         </div>
       </header>
       <section class="section">
-        <div class="container insight-article-layout">
+        <div class="container insight-article-layout${article.show_on_this_page ? " insight-article-layout--with-sidebar" : " insight-article-layout--single"}">
           ${renderOnThisPage(article)}
           <div class="insight-article-body">
             <div class="insight-lede-callout">${escapeHtml(article.lede_callout)}</div>
