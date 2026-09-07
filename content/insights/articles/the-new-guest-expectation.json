@@ -5,7 +5,7 @@
   "funnel_stage": "awareness",
   "editorial_label": "WHITE PAPER · HOSPITALITY",
   "hero_label": "Hospitality Connectivity",
-  "show_on_this_page": true,
+  "show_toc": true,
   "image": { "src": "/assets/images/insights/insights-why-hotel-guests-expect-reliable-cellular-coverage.webp", "alt": "Hotel guest using a smartphone while arriving at a modern property.", "width": 1536, "height": 1024, "mobile_src": null, "srcset": [] },
   "next_slug": "hotel-in-building-cellular-coverage-options",
   "next_label": "02 · Understand the Options",

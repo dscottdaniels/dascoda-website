@@ -34,6 +34,7 @@ const slugify = (value = "") =>
   String(value).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
 const editorialLabel = (article) => article.editorial_label || article.content_type.replaceAll("_", " ");
+const tocLabel = (text = "") => String(text).replace(/^\d+\s*(?:[.|]\s*|\|\s*)/, "");
 
 const renderEditorialImage = (image, frameClass, imageClass, options = {}) => {
   if (!image?.src) return "";
@@ -242,10 +243,10 @@ const renderArticleCta = (cta) => `
   <section class="section"><div class="container"><div class="cta-band"><div><h2>${escapeHtml(cta.headline)}</h2><p>${escapeHtml(cta.copy)}</p></div><a class="btn btn-primary" href="${escapeHtml(cta.button_url)}">${escapeHtml(cta.button_text)}</a></div></div></section>`;
 
 const renderOnThisPage = (article) => {
-  if (!article.show_on_this_page) return "";
+  if (!article.show_toc) return "";
   const headings = article.body.filter((block) => block.type === "h2");
   if (!headings.length) return "";
-  return `<nav class="insight-on-this-page" aria-label="On this page"><details open><summary>On This Page</summary><ol>${headings.map((block) => `<li><a href="#${escapeHtml(slugify(block.text))}">${escapeHtml(block.text)}</a></li>`).join("")}</ol></details></nav>`;
+  return `<nav class="insight-on-this-page" aria-label="On this page"><details open><summary>On This Page</summary><ol>${headings.map((block) => `<li><a href="#${escapeHtml(slugify(block.text))}">${escapeHtml(tocLabel(block.text))}</a></li>`).join("")}</ol></details></nav>`;
 };
 
 const renderLearningPath = (article, articleMap) => {
@@ -268,13 +269,13 @@ const renderLanding = (landing, articleMap) => {
   const body = `
   <main class="insights-page">
     <section class="hero insights-hero">
+      ${renderEditorialImage(clusterHeroImage, "insights-hero-media", "insights-hero-media-image", { loading: "eager", fetchPriority: "high", sizes: "100vw" })}
       <div class="container insights-hero-layout">
         <div class="insights-hero-copy">
           <p class="eyebrow">${escapeHtml(landing.eyebrow)}</p>
           <h1>${escapeHtml(landing.headline)}</h1>
           <p class="lead">${escapeHtml(landing.copy)}</p>
         </div>
-        ${renderEditorialImage(clusterHeroImage, "insights-landing-hero-image-frame", "insights-landing-hero-image", { loading: "eager", fetchPriority: "high", sizes: "(max-width: 800px) calc(100vw - 40px), min(460px, 40vw)" })}
       </div>
     </section>
     <section class="section insights-explore-intro"><div class="container"><div class="section-header"><p class="eyebrow">${escapeHtml(landing.explore_eyebrow)}</p><h2>${escapeHtml(landing.explore_headline)}</h2><p>${escapeHtml(landing.explore_copy)}</p></div></div></section>
@@ -303,10 +304,15 @@ const renderArticle = (article, articleMap) => {
     { name: "Insights", href: "/insights/" },
     { name: article.title, href: articlePath(article.slug) },
   ];
+  const hasToc = Boolean(article.show_toc);
+  const layoutClass = hasToc
+    ? ` insight-article-layout--with-sidebar${article.content_type === "white_paper" ? " insight-article-layout--white-paper" : ""}`
+    : " insight-article-layout--single";
   const body = `
   <main class="insight-article-page">
     <article>
       <header class="hero insight-article-hero">
+        ${renderEditorialImage(article.image, "insight-article-hero-media", "insight-article-hero-media-image", { loading: "eager", fetchPriority: "high", sizes: "100vw" })}
         <div class="container">
           ${renderBreadcrumbs(breadcrumbs)}
            <p class="eyebrow insight-article-kicker">Dascoda Insights${article.hero_label ? ` <span aria-hidden="true">&middot;</span> ${escapeHtml(article.hero_label)}` : ""}</p>
@@ -315,13 +321,8 @@ const renderArticle = (article, articleMap) => {
            <div class="article-meta"><span>${escapeHtml(editorialLabel(article))}</span></div>
          </div>
        </header>
-       <section class="insight-article-visual" aria-label="Article visual">
-         <div class="container">
-           ${renderEditorialImage(article.image, "insight-hero-image-frame", "insight-hero-image", { loading: "eager", fetchPriority: "high", sizes: "(max-width: 760px) calc(100vw - 40px), min(960px, calc(100vw - 80px))" })}
-         </div>
-       </section>
        <section class="section insight-article-reading">
-        <div class="container insight-article-layout${article.show_on_this_page ? " insight-article-layout--with-sidebar" : " insight-article-layout--single"}">
+         <div class="container insight-article-layout${layoutClass}">
           ${renderOnThisPage(article)}
           <div class="insight-article-body">
             <div class="insight-lede-callout">${escapeHtml(article.lede_callout)}</div>

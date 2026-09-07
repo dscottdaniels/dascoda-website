@@ -5,6 +5,7 @@
   "funnel_stage": "education",
   "editorial_label": "GUIDE · PASSPOINT",
   "hero_label": "Passpoint",
+  "show_toc": true,
   "image": { "src": "/assets/images/insights/insights-passpoint-for-hotels.webp", "alt": "Hotel guest using a smartphone in a modern lobby environment.", "width": 1536, "height": 1024, "mobile_src": null, "srcset": [] },
   "next_slug": "why-dascoda",
   "next_label": "05 · Put It Into Practice",

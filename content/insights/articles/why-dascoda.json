@@ -5,6 +5,7 @@
   "funnel_stage": "decision",
   "editorial_label": "DASCODA PERSPECTIVE · ADVISORY",
   "hero_label": "Evaluation-First Advisory",
+  "show_toc": false,
   "image": { "src": "/assets/images/insights/insights-why-dascoda.webp", "alt": "Technology and property leaders evaluating plans and connectivity options together.", "width": 1536, "height": 1024, "mobile_src": null, "srcset": [] },
   "next_cta": {
     "headline": "Every property is different.",

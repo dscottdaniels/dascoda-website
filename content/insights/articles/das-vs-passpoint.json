@@ -5,6 +5,7 @@
   "funnel_stage": "comparison",
   "editorial_label": "COMPARISON · IN-BUILDING CONNECTIVITY",
   "hero_label": "In-Building Connectivity",
+  "show_toc": true,
   "image": { "src": "/assets/images/insights/insights-das-vs-passpoint.webp", "alt": "Interior environment illustrating different approaches to in-building wireless connectivity.", "width": 1536, "height": 1024, "mobile_src": null, "srcset": [] },
   "next_slug": "passpoint-for-hotels",
   "next_label": "04 · Go Deeper",

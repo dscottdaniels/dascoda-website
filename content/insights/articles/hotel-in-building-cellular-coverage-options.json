@@ -5,6 +5,7 @@
   "funnel_stage": "consideration",
   "editorial_label": "GUIDE · IN-BUILDING CONNECTIVITY",
   "hero_label": "In-Building Connectivity",
+  "show_toc": true,
   "image": { "src": "/assets/images/insights/insights-hotel-in-building-cellular-coverage-options.webp", "alt": "Modern property showing multiple layers of in-building connectivity infrastructure.", "width": 1536, "height": 1024, "mobile_src": null, "srcset": [] },
   "next_slug": "das-vs-passpoint",
   "next_label": "03 · Compare the Approaches",
