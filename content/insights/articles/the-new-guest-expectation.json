@@ -3,7 +3,14 @@
   "dek": "Why cellular connectivity is becoming part of the hotel experience.",
   "content_type": "white_paper",
   "funnel_stage": "awareness",
-  "landing_section": "featured-insight",
+  "editorial_label": "WHITE PAPER · HOSPITALITY",
+  "hero_label": "Hospitality Connectivity",
+  "show_on_this_page": true,
+  "image": { "src": "/assets/images/insights/insights-why-hotel-guests-expect-reliable-cellular-coverage.webp", "alt": "Hotel guest using a smartphone while arriving at a modern property.", "width": 1536, "height": 1024, "mobile_src": null, "srcset": [] },
+  "next_slug": "hotel-in-building-cellular-coverage-options",
+  "next_label": "02 · Understand the Options",
+  "landing_section": "indoor-mobility-in-building-connectivity",
+  "learning_step": 1,
   "featured": true,
   "display_order": 10,
   "category": "Mobility",
@@ -44,7 +51,7 @@
     "Wireless Infrastructure Group and Nomadix source note: primary source reports should be confirmed before citing specific percentages."
   ],
   "og_image": "/assets/images/home-industries-portfolio-visual.png",
-  "lede_callout": "",
+  "lede_callout": "Hospitality has redesigned the guest journey around the smartphone. The connectivity infrastructure now has to catch up.",
   "body": [
     {
       "type": "h2",

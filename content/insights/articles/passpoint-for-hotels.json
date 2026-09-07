@@ -3,7 +3,13 @@
   "dek": "How standards-based Wi-Fi authentication can help hotels create a more seamless indoor mobile experience.",
   "content_type": "guide",
   "funnel_stage": "education",
-  "landing_section": "go-deeper",
+  "editorial_label": "GUIDE · PASSPOINT",
+  "hero_label": "Passpoint",
+  "image": { "src": "/assets/images/insights/insights-passpoint-for-hotels.webp", "alt": "Hotel guest using a smartphone in a modern lobby environment.", "width": 1536, "height": 1024, "mobile_src": null, "srcset": [] },
+  "next_slug": "why-dascoda",
+  "next_label": "05 · Put It Into Practice",
+  "landing_section": "indoor-mobility-in-building-connectivity",
+  "learning_step": 4,
   "featured": false,
   "display_order": 40,
   "category": "Mobility",
@@ -231,7 +237,9 @@
       "text": "American Bandwidth - Wi-DAS: https://ameriband.com/wi-das"
     }
   ],
-  "source_note": "Research note: This Dascoda Insights article is written for an executive hospitality audience. Technical claims were checked against standards, carrier, regulator, and infrastructure-provider materials. Vendor-specific statements are identified as such.",
+  "editorial_notes": [
+    "This Dascoda Insights article is written for an executive hospitality audience. Technical claims were checked against standards, carrier, regulator, and infrastructure-provider materials. Vendor-specific statements are identified as such."
+  ],
   "cta": {
     "headline": "Every property is different. Start with the operating need.",
     "copy": "Dascoda helps owners and operators evaluate the connectivity challenge, understand the available options, and determine the right path forward.",

@@ -3,7 +3,17 @@
   "dek": "Hotel connectivity decisions should start with the property, not the technology. Dascoda evaluates the operating need, existing infrastructure, carrier environment, and business priorities before recommending a path forward.",
   "content_type": "article",
   "funnel_stage": "decision",
-  "landing_section": "dascoda-approach",
+  "editorial_label": "DASCODA PERSPECTIVE · ADVISORY",
+  "hero_label": "Evaluation-First Advisory",
+  "image": { "src": "/assets/images/insights/insights-why-dascoda.webp", "alt": "Technology and property leaders evaluating plans and connectivity options together.", "width": 1536, "height": 1024, "mobile_src": null, "srcset": [] },
+  "next_cta": {
+    "headline": "Every property is different.",
+    "copy": "Dascoda starts with the operating need, evaluates the available options, and helps determine the right path forward.",
+    "button_text": "Talk with Dascoda",
+    "button_url": "/contact"
+  },
+  "landing_section": "indoor-mobility-in-building-connectivity",
+  "learning_step": 5,
   "featured": true,
   "display_order": 50,
   "category": "Technology Advisory",
@@ -186,10 +196,12 @@
       "text": "Dascoda Insights, \"Passpoint for Hotels: What It Is and How It Works,\" section \"How Dascoda approaches the decision.\""
     }
   ],
-  "source_note": "Research note: Every claim about Dascoda's approach, positioning, or the Ameriband partnership on this page is quoted or closely paraphrased from Dascoda's published Insights articles or from dascoda.com and ameriband.com directly, with the specific source identified after each section. No claims about internal process, methodology, or results are asserted beyond what these sources state.",
+  "editorial_notes": [
+    "Every claim about Dascoda's approach, positioning, or the Ameriband partnership is quoted or closely paraphrased from the cited Dascoda Insights articles, dascoda.com, or ameriband.com directly."
+  ],
   "cta": {
-    "headline": "Every property is different. Start with the operating need.",
-    "copy": "Dascoda helps owners and operators evaluate the connectivity challenge, understand the available options, and determine the right path forward.",
+    "headline": "Every property is different.",
+    "copy": "Dascoda starts with the operating need, evaluates the available options, and helps determine the right path forward.",
     "button_text": "Talk with Dascoda",
     "button_url": "/contact"
   },

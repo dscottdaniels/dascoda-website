@@ -1,4 +1,5 @@
 worker/
+/local-image-masters/
 wrangler.jsonc
 wrangler.toml
 wrangler.json

@@ -16,38 +16,30 @@
   "date_published": null,
   "date_updated": null,
   "publication_date_status": "pending_actual_dascoda_com_publication_date",
-  "sections": [
+  "explore_eyebrow": "EXPLORE INSIGHTS",
+  "explore_headline": "Explore Insights",
+  "explore_copy": "Dascoda Insights is organized around the technology and business decisions owners, operators, and technology leaders need to understand before moving from evaluation to execution.",
+  "clusters": [
     {
-      "id": "featured-insight",
-      "eyebrow": "Featured Insight",
-      "headline": "Start with the guest expectation.",
-      "description": "A practical entry point for understanding why indoor mobile connectivity has become a business issue for modern properties.",
-      "layout": "featured",
-      "slugs": ["the-new-guest-expectation"]
-    },
-    {
-      "id": "understanding-connectivity",
-      "eyebrow": "Understanding In-Building Connectivity",
-      "headline": "Evaluate the available paths before choosing a solution.",
-      "description": "The pillar article introduces the major approaches owners and operators should understand before moving forward.",
-      "layout": "pillar",
-      "slugs": ["hotel-in-building-cellular-coverage-options"]
-    },
-    {
-      "id": "go-deeper",
-      "eyebrow": "Go Deeper",
-      "headline": "Compare approaches and understand the technology.",
-      "description": "These educational pieces support the evaluation path without forcing every reader into a technical deep dive.",
-      "layout": "grid",
-      "slugs": ["das-vs-passpoint", "passpoint-for-hotels"]
-    },
-    {
-      "id": "dascoda-approach",
-      "eyebrow": "The Dascoda Approach",
-      "headline": "Move from education to action with an evaluation-first partner.",
-      "description": "The decision-stage article explains how Dascoda helps clients align stakeholders, evaluate options, and maintain accountability through execution.",
-      "layout": "featured",
-      "slugs": ["why-dascoda"]
+      "id": "indoor-mobility-in-building-connectivity",
+      "eyebrow": "LEARNING PATH",
+      "headline": "Indoor Mobility & In-Building Connectivity",
+      "description": "Understand the need, explore the available technologies, compare approaches, and determine the right path for a property or portfolio.",
+      "image": {
+        "src": "/assets/images/insights/insights-indoor-mobility-in-building-connectivity.webp",
+        "alt": "Modern multi-use property interior representing connected buildings and technology environments.",
+        "width": 1672,
+        "height": 941,
+        "mobile_src": null,
+        "srcset": []
+      },
+      "items": [
+        { "step": "01", "step_label": "Understand the Need", "slug": "the-new-guest-expectation" },
+        { "step": "02", "step_label": "Understand the Options", "slug": "hotel-in-building-cellular-coverage-options" },
+        { "step": "03", "step_label": "Compare the Approaches", "slug": "das-vs-passpoint" },
+        { "step": "04", "step_label": "Go Deeper", "slug": "passpoint-for-hotels" },
+        { "step": "05", "step_label": "Put It Into Practice", "slug": "why-dascoda" }
+      ]
     }
   ]
 }

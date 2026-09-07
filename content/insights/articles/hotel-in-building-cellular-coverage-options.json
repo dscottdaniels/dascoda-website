@@ -3,7 +3,13 @@
   "dek": "A practical guide to DAS, small cells, signal boosters, Passpoint/Wi-DAS, Wi-Fi Calling, private wireless, and hybrid strategies.",
   "content_type": "guide",
   "funnel_stage": "consideration",
-  "landing_section": "understanding-connectivity",
+  "editorial_label": "GUIDE · IN-BUILDING CONNECTIVITY",
+  "hero_label": "In-Building Connectivity",
+  "image": { "src": "/assets/images/insights/insights-hotel-in-building-cellular-coverage-options.webp", "alt": "Modern property showing multiple layers of in-building connectivity infrastructure.", "width": 1536, "height": 1024, "mobile_src": null, "srcset": [] },
+  "next_slug": "das-vs-passpoint",
+  "next_label": "03 · Compare the Approaches",
+  "landing_section": "indoor-mobility-in-building-connectivity",
+  "learning_step": 2,
   "featured": true,
   "display_order": 20,
   "category": "Connectivity",
@@ -359,7 +365,9 @@
       "text": "American Bandwidth - Wi-DAS: https://ameriband.com/wi-das"
     }
   ],
-  "source_note": "Research note: This Dascoda Insights article is written for an executive hospitality audience. Technical claims were checked against standards, carrier, regulator, and infrastructure-provider materials. Vendor-specific statements are identified as such.",
+  "editorial_notes": [
+    "This Dascoda Insights article is written for an executive hospitality audience. Technical claims were checked against standards, carrier, regulator, and infrastructure-provider materials. Vendor-specific statements are identified as such."
+  ],
   "cta": {
     "headline": "Every property is different. Start with the operating need.",
     "copy": "Dascoda helps owners and operators evaluate the connectivity challenge, understand the available options, and determine the right path forward.",

@@ -11,6 +11,8 @@ const buildVersion = "insights-framework-1";
 
 const readJson = async (filePath) => JSON.parse(await readFile(filePath, "utf8"));
 
+const cleanHtml = (html) => html.replace(/[ \t]+(?=\r?\n)/g, "");
+
 const escapeHtml = (value = "") =>
   String(value)
     .replaceAll("&", "&amp;")
@@ -18,18 +20,6 @@ const escapeHtml = (value = "") =>
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
-
-const isIsoDate = (value) => typeof value === "string" && /^\d{4}-\d{2}-\d{2}$/.test(value);
-
-const formatDate = (value) => {
-  if (!isIsoDate(value)) return "Publication date pending";
-  return new Intl.DateTimeFormat("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    timeZone: "UTC",
-  }).format(new Date(`${value}T00:00:00Z`));
-};
 
 const absoluteUrl = (url) => {
   if (!url) return siteUrl;
@@ -40,8 +30,27 @@ const absoluteUrl = (url) => {
 const articlePath = (slug) => `/insights/${slug}`;
 const articleCanonical = (article) => `${siteUrl}${articlePath(article.slug)}`;
 
-const tagList = (items = []) =>
-  items.map((item) => `<span>${escapeHtml(item)}</span>`).join("");
+const slugify = (value = "") =>
+  String(value).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+const editorialLabel = (article) => article.editorial_label || article.content_type.replaceAll("_", " ");
+
+const renderEditorialImage = (image, frameClass, imageClass, options = {}) => {
+  if (!image?.src) return "";
+
+  const loading = options.loading || "lazy";
+  const fetchPriority = options.fetchPriority ? ` fetchpriority="${escapeHtml(options.fetchPriority)}"` : "";
+  const srcset = Array.isArray(image.srcset) && image.srcset.length
+    ? ` srcset="${escapeHtml(image.srcset.map(({ src, width }) => `${src} ${width}w`).join(", "))}"`
+    : "";
+  const mobileSource = image.mobile_src
+    ? `<source media="(max-width: 640px)" srcset="${escapeHtml(image.mobile_src)}">`
+    : "";
+  const width = Number.isFinite(image.width) ? image.width : 2400;
+  const height = Number.isFinite(image.height) ? image.height : 1600;
+
+  return `<picture class="insight-image-frame ${frameClass}">${mobileSource}<img class="${imageClass}" src="${escapeHtml(image.src)}"${srcset} sizes="${escapeHtml(options.sizes || "100vw")}" width="${width}" height="${height}" alt="${escapeHtml(image.alt || "")}" loading="${loading}"${fetchPriority}></picture>`;
+};
 
 const linkifyText = (value = "") =>
   escapeHtml(value).replace(/(https?:\/\/[^\s<]+)/g, (url) => {
@@ -168,23 +177,19 @@ const articleJsonLd = (article) => {
       "@id": articleCanonical(article),
     },
   };
-  if (isIsoDate(article.date_published)) data.datePublished = article.date_published;
-  if (isIsoDate(article.date_updated)) data.dateModified = article.date_updated;
   return data;
 };
 
 const schemaScript = (...objects) =>
   `<script type="application/ld+json">${JSON.stringify(objects.length === 1 ? objects[0] : objects, null, 2)}</script>`;
 
-const renderArticleCard = (article, variant = "") => `
-  <article class="card insight-card ${variant}">
-    <div class="insight-card-meta">
-      <span>${escapeHtml(article.content_type.replace("_", " "))}</span>
-      <span>${escapeHtml(article.category)}</span>
-    </div>
+const renderArticleCard = (article, variant = "", options = {}) => `
+  <article class="card insight-card ${variant}${options.step ? " insight-card-learning" : ""}">
+    ${options.step ? `<div class="insight-learning-step"><span>${escapeHtml(options.step)}</span><small>${escapeHtml(options.stepLabel)}</small></div>` : ""}
+    ${renderEditorialImage(article.image, "insight-card-image-frame", "insight-card-image", { sizes: "(max-width: 760px) calc(100vw - 40px), (max-width: 1080px) calc(50vw - 48px), 340px" })}
+    <div class="insight-card-meta"><span>${escapeHtml(editorialLabel(article))}</span></div>
     <h3><a href="${articlePath(article.slug)}">${escapeHtml(article.title)}</a></h3>
     <p>${escapeHtml(article.dek)}</p>
-    <div class="insight-tag-list" aria-label="Article topics">${tagList(article.tags)}</div>
     <a class="insight-card-link" href="${articlePath(article.slug)}">Read Insight</a>
   </article>`;
 
@@ -198,7 +203,7 @@ const renderBreadcrumbs = (items) => `
 const renderBodyBlock = (block) => {
   switch (block.type) {
     case "h2":
-      return `<h2>${escapeHtml(block.text)}</h2>`;
+      return `<h2 id="${escapeHtml(slugify(block.text))}">${escapeHtml(block.text)}</h2>`;
     case "h3":
       return `<h3>${escapeHtml(block.text)}</h3>`;
     case "paragraph":
@@ -230,11 +235,35 @@ const renderSourceList = (article) => {
 const renderRelatedInsights = (article, articleMap) => {
   const related = (article.related_slugs || []).map((slug) => articleMap.get(slug)).filter(Boolean);
   if (!related.length) return "";
-  return `<section class="section section-blue related-insights"><div class="container"><div class="section-header"><p class="eyebrow">Related Insights</p><h2>Continue the evaluation path.</h2></div><div class="grid grid-3">${related.map((item) => renderArticleCard(item)).join("")}</div></div></section>`;
+  return `<section class="section section-blue related-insights"><div class="container"><div class="section-header"><p class="eyebrow">Related Insights</p><h2>Explore related perspectives.</h2></div><div class="grid grid-3">${related.map((item) => renderArticleCard(item)).join("")}</div></div></section>`;
 };
 
 const renderArticleCta = (cta) => `
   <section class="section"><div class="container"><div class="cta-band"><div><h2>${escapeHtml(cta.headline)}</h2><p>${escapeHtml(cta.copy)}</p></div><a class="btn btn-primary" href="${escapeHtml(cta.button_url)}">${escapeHtml(cta.button_text)}</a></div></div></section>`;
+
+const renderOnThisPage = (article) => {
+  if (!article.show_on_this_page) return "";
+  const headings = article.body.filter((block) => block.type === "h2");
+  if (!headings.length) return "";
+  return `<nav class="insight-on-this-page" aria-label="On this page"><details open><summary>On This Page</summary><ol>${headings.map((block) => `<li><a href="#${escapeHtml(slugify(block.text))}">${escapeHtml(block.text)}</a></li>`).join("")}</ol></details></nav>`;
+};
+
+const renderLearningPath = (article, articleMap) => {
+  if (article.next_slug) {
+    const next = articleMap.get(article.next_slug);
+    if (!next) return "";
+    return `<section class="section insight-learning-path" id="continue-the-learning-path"><div class="container"><div class="insight-learning-path-inner"><div><p class="eyebrow">Continue the Learning Path</p><p class="insight-path-label">${escapeHtml(article.next_label || "Next Insight")}</p><h2>${escapeHtml(next.title)}</h2><p>${escapeHtml(next.dek)}</p></div><a class="btn btn-secondary" href="${articlePath(next.slug)}">Continue Reading</a></div></div></section>`;
+  }
+  if (article.next_cta) return renderArticleCta(article.next_cta);
+  return "";
+};
+
+const renderLandingCluster = (cluster, articleMap) => {
+  const items = cluster.items.map((item) => ({ ...item, article: articleMap.get(item.slug) })).filter((item) => item.article);
+  const clusterImage = renderEditorialImage(cluster.image, "insights-cluster-image-frame", "insights-cluster-image", { sizes: "(max-width: 760px) calc(100vw - 40px), 420px" });
+  const headerClass = clusterImage ? "insights-cluster-header" : "insights-cluster-header insights-cluster-header--text-only";
+  return `<section class="section insights-cluster-section" id="${escapeHtml(cluster.id)}"><div class="container"><div class="${headerClass}">${clusterImage}<div><p class="eyebrow">${escapeHtml(cluster.eyebrow || "Learning Path")}</p><h2>${escapeHtml(cluster.headline)}</h2><p>${escapeHtml(cluster.description)}</p></div></div><div class="insight-learning-list">${items.map((item) => renderArticleCard(item.article, "", { step: item.step, stepLabel: item.step_label })).join("")}</div></div></section>`;
+};
 
 const renderLanding = (landing, articleMap) => {
   const body = `
@@ -246,12 +275,8 @@ const renderLanding = (landing, articleMap) => {
         <p class="lead">${escapeHtml(landing.copy)}</p>
       </div>
     </section>
-    ${landing.sections.map((section, index) => {
-      const articles = section.slugs.map((slug) => articleMap.get(slug)).filter(Boolean);
-      const sectionClass = index % 2 === 1 ? "section section-blue" : "section";
-      const gridClass = section.layout === "grid" ? "grid grid-2" : "insight-feature-layout";
-      return `<section class="${sectionClass}" id="${escapeHtml(section.id)}"><div class="container"><div class="section-header"><p class="eyebrow">${escapeHtml(section.eyebrow)}</p><h2>${escapeHtml(section.headline)}</h2><p>${escapeHtml(section.description)}</p></div><div class="${gridClass}">${articles.map((article) => renderArticleCard(article, section.layout === "featured" || section.layout === "pillar" ? "insight-card-featured" : "")).join("")}</div></div></section>`;
-    }).join("")}
+    <section class="section insights-explore-intro"><div class="container"><div class="section-header"><p class="eyebrow">${escapeHtml(landing.explore_eyebrow)}</p><h2>${escapeHtml(landing.explore_headline)}</h2><p>${escapeHtml(landing.explore_copy)}</p></div></div></section>
+    ${landing.clusters.map((cluster) => renderLandingCluster(cluster, articleMap)).join("")}
   </main>`;
 
   return pageShell({
@@ -282,20 +307,17 @@ const renderArticle = (article, articleMap) => {
       <header class="hero insight-article-hero">
         <div class="container">
           ${renderBreadcrumbs(breadcrumbs)}
-          <p class="eyebrow">Dascoda Insights</p>
-          <h1>${escapeHtml(article.title)}</h1>
-          <p class="lead">${escapeHtml(article.dek)}</p>
-          <div class="article-meta"><span>${isIsoDate(article.date_published) ? `Published ${formatDate(article.date_published)}` : "Publication date pending"}</span><span>${isIsoDate(article.date_updated) ? `Updated ${formatDate(article.date_updated)}` : "Update date pending"}</span><span>${escapeHtml(article.content_type.replace("_", " "))}</span></div>
+           <p class="eyebrow">Dascoda Insights</p>
+           ${article.hero_label ? `<p class="insight-hero-label">${escapeHtml(article.hero_label)}</p>` : ""}
+           <h1>${escapeHtml(article.title)}</h1>
+           <p class="lead">${escapeHtml(article.dek)}</p>
+           <div class="article-meta"><span>${escapeHtml(editorialLabel(article))}</span></div>
+           ${renderEditorialImage(article.image, "insight-hero-image-frame", "insight-hero-image", { loading: "eager", fetchPriority: "high", sizes: "(max-width: 760px) calc(100vw - 40px), min(1120px, calc(100vw - 80px))" })}
         </div>
       </header>
       <section class="section">
         <div class="container insight-article-layout">
-          <aside class="insight-article-sidebar" aria-label="Article context">
-            <div class="insight-context-card">
-              <p class="eyebrow">Focus</p>
-              <div class="insight-tag-list">${tagList([article.category, ...article.industries, ...article.solutions])}</div>
-            </div>
-          </aside>
+          ${renderOnThisPage(article)}
           <div class="insight-article-body">
             <div class="insight-lede-callout">${escapeHtml(article.lede_callout)}</div>
             ${article.body.map(renderBodyBlock).join("")}
@@ -304,8 +326,9 @@ const renderArticle = (article, articleMap) => {
         </div>
       </section>
     </article>
+    ${renderLearningPath(article, articleMap)}
     ${renderRelatedInsights(article, articleMap)}
-    ${renderArticleCta(article.cta)}
+    ${article.next_cta ? "" : renderArticleCta(article.cta)}
   </main>`;
 
   return pageShell({
@@ -350,9 +373,9 @@ const validateContent = (landing, articles) => {
     }
   }
 
-  for (const section of landing.sections) {
-    for (const slug of section.slugs) {
-      if (!articleMap.has(slug)) throw new Error(`Landing section ${section.id} references unknown slug ${slug}`);
+  for (const cluster of landing.clusters) {
+    for (const item of cluster.items) {
+      if (!articleMap.has(item.slug)) throw new Error(`Landing cluster ${cluster.id} references unknown slug ${item.slug}`);
     }
   }
 
@@ -366,12 +389,12 @@ const main = async () => {
 
   await rm(outputDir, { recursive: true, force: true });
   await mkdir(outputDir, { recursive: true });
-  await writeFile(path.join(outputDir, "index.html"), renderLanding(landing, articleMap), "utf8");
+  await writeFile(path.join(outputDir, "index.html"), cleanHtml(renderLanding(landing, articleMap)), "utf8");
 
   for (const article of articles) {
     const directory = path.join(outputDir, article.slug);
     await mkdir(directory, { recursive: true });
-    await writeFile(path.join(directory, "index.html"), renderArticle(article, articleMap), "utf8");
+    await writeFile(path.join(directory, "index.html"), cleanHtml(renderArticle(article, articleMap)), "utf8");
   }
 
   console.log(`Generated ${articles.length + 1} Insights pages.`);

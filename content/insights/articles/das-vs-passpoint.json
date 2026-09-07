@@ -3,7 +3,13 @@
   "dek": "Two very different approaches to the same guest expectation: reliable mobile connectivity inside the hotel.",
   "content_type": "article",
   "funnel_stage": "comparison",
-  "landing_section": "go-deeper",
+  "editorial_label": "COMPARISON · IN-BUILDING CONNECTIVITY",
+  "hero_label": "In-Building Connectivity",
+  "image": { "src": "/assets/images/insights/insights-das-vs-passpoint.webp", "alt": "Interior environment illustrating different approaches to in-building wireless connectivity.", "width": 1536, "height": 1024, "mobile_src": null, "srcset": [] },
+  "next_slug": "passpoint-for-hotels",
+  "next_label": "04 · Go Deeper",
+  "landing_section": "indoor-mobility-in-building-connectivity",
+  "learning_step": 3,
   "featured": false,
   "display_order": 30,
   "category": "Mobility",
@@ -270,7 +276,9 @@
       "text": "American Bandwidth - Wi-DAS: https://ameriband.com/wi-das"
     }
   ],
-  "source_note": "Research note: This Dascoda Insights article is written for an executive hospitality audience. Technical claims were checked against standards, carrier, regulator, and infrastructure-provider materials. Vendor-specific statements are identified as such.",
+  "editorial_notes": [
+    "This Dascoda Insights article is written for an executive hospitality audience. Technical claims were checked against standards, carrier, regulator, and infrastructure-provider materials. Vendor-specific statements are identified as such."
+  ],
   "cta": {
     "headline": "Every property is different. Start with the operating need.",
     "copy": "Dascoda helps owners and operators evaluate the connectivity challenge, understand the available options, and determine the right path forward.",
