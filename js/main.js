@@ -24,6 +24,7 @@ if (contactForm) {
   let isSubmitting = false;
   let turnstileToken = "";
   let turnstileWidgetId = null;
+  let preserveMessageOnNextTurnstileSuccess = false;
   const submitButton = contactForm.querySelector('button[type="submit"]');
   const formMessage = contactForm.querySelector("[data-form-message]");
   const turnstileContainer = contactForm.querySelector("[data-turnstile-container]");
@@ -65,14 +66,20 @@ if (contactForm) {
         action: "contact",
         callback: (token) => {
           turnstileToken = token;
+          if (preserveMessageOnNextTurnstileSuccess) {
+            preserveMessageOnNextTurnstileSuccess = false;
+            return;
+          }
           clearFormMessage();
         },
         "error-callback": () => {
           turnstileToken = "";
+          preserveMessageOnNextTurnstileSuccess = false;
           showFormMessage("Verification could not be completed. Please try again.", true);
         },
         "expired-callback": () => {
           turnstileToken = "";
+          preserveMessageOnNextTurnstileSuccess = false;
           showFormMessage("Verification could not be completed. Please try again.", true);
         },
       });
@@ -145,6 +152,7 @@ if (contactForm) {
         submitButton.disabled = false;
         submitButton.textContent = submitButtonText;
       }
+      preserveMessageOnNextTurnstileSuccess = true;
       resetTurnstile();
       showFormMessage("Your message could not be sent. Please try again.", true);
     }
