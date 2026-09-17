@@ -22,9 +22,74 @@ const trackGaEvent = (eventName) => {
 if (contactForm) {
   let contactFormStarted = false;
   let isSubmitting = false;
+  let turnstileToken = "";
+  let turnstileWidgetId = null;
   const submitButton = contactForm.querySelector('button[type="submit"]');
   const formMessage = contactForm.querySelector("[data-form-message]");
+  const turnstileContainer = contactForm.querySelector("[data-turnstile-container]");
   const submitButtonText = submitButton?.textContent || "";
+
+  const showFormMessage = (message, isError = false) => {
+    if (!formMessage) return;
+    formMessage.textContent = message;
+    formMessage.classList.toggle("is-error", isError);
+    formMessage.classList.add("is-visible");
+  };
+
+  const clearFormMessage = () => {
+    if (!formMessage) return;
+    formMessage.classList.remove("is-visible", "is-error");
+  };
+
+  const resetTurnstile = () => {
+    turnstileToken = "";
+    if (turnstileWidgetId !== null && typeof window.turnstile?.reset === "function") {
+      window.turnstile.reset(turnstileWidgetId);
+    }
+  };
+
+  const renderTurnstile = () => {
+    if (
+      !turnstileContainer ||
+      turnstileWidgetId !== null ||
+      typeof window.turnstile?.render !== "function"
+    ) {
+      return;
+    }
+
+    try {
+      turnstileWidgetId = window.turnstile.render(turnstileContainer, {
+        sitekey: turnstileContainer.dataset.sitekey,
+        theme: "light",
+        size: "flexible",
+        action: "contact",
+        callback: (token) => {
+          turnstileToken = token;
+          clearFormMessage();
+        },
+        "error-callback": () => {
+          turnstileToken = "";
+          showFormMessage("Verification could not be completed. Please try again.", true);
+        },
+        "expired-callback": () => {
+          turnstileToken = "";
+          showFormMessage("Verification could not be completed. Please try again.", true);
+        },
+      });
+    } catch {
+      turnstileToken = "";
+    }
+  };
+
+  window.onTurnstileLoad = () => {
+    if (typeof window.turnstile?.ready === "function") {
+      window.turnstile.ready(renderTurnstile);
+      return;
+    }
+    renderTurnstile();
+  };
+
+  window.onTurnstileLoad();
 
   const markContactFormStarted = () => {
     if (contactFormStarted) return;
@@ -40,22 +105,28 @@ if (contactForm) {
 
     if (isSubmitting || !contactForm.checkValidity()) return;
 
+    if (!turnstileToken) {
+      showFormMessage("Please complete the verification and try again.", true);
+      return;
+    }
+
     isSubmitting = true;
     contactForm.setAttribute("aria-busy", "true");
     if (submitButton) {
       submitButton.disabled = true;
       submitButton.textContent = "Sending...";
     }
-    if (formMessage) {
-      formMessage.classList.remove("is-visible");
-    }
+    clearFormMessage();
 
     trackGaEvent("contact_form_submit");
 
     try {
+      const formData = new FormData(contactForm);
+      formData.set("cf-turnstile-response", turnstileToken);
+
       const response = await fetch(contactForm.action, {
         method: "POST",
-        body: new FormData(contactForm),
+        body: formData,
         headers: {
           Accept: "application/json",
         },
@@ -74,10 +145,8 @@ if (contactForm) {
         submitButton.disabled = false;
         submitButton.textContent = submitButtonText;
       }
-      if (formMessage) {
-        formMessage.textContent = "Your message could not be sent. Please try again.";
-        formMessage.classList.add("is-visible");
-      }
+      resetTurnstile();
+      showFormMessage("Your message could not be sent. Please try again.", true);
     }
   });
 }

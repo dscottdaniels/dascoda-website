@@ -2530,6 +2530,16 @@ textarea:focus {
   display: block;
 }
 
+.contact-page .form-message.is-error {
+  color: #7b2f2a;
+  background: rgba(198, 60, 50, 0.1);
+  border-color: rgba(198, 60, 50, 0.3);
+}
+
+.contact-page .turnstile-widget {
+  min-height: 65px;
+}
+
 .response-commitment {
   margin-top: 26px;
   padding: 20px 22px;

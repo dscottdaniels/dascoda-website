@@ -3,6 +3,7 @@ const CONTACT_CC = "mark.meuleman@dascoda.com";
 const CONTACT_FROM = "website@forms.dascoda.com";
 const CONTACT_SUBJECT = "New Dascoda website inquiry";
 const MAX_BODY_BYTES = 20000;
+const TURNSTILE_SITEVERIFY_URL = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
 
 const FIELD_LIMITS = {
   "first-name": 80,
@@ -65,13 +66,23 @@ async function handleContactRequest(request, env) {
 
   const honeypot = normalizeField(formData.get("website"));
   if (honeypot) {
-    return respond(request, { ok: true }, 200);
+    return respond(request, { ok: false, message: "Verification could not be completed" }, 400);
   }
 
   const values = collectFields(formData);
   const validationError = validateFields(values);
   if (validationError) {
     return respond(request, { ok: false, message: validationError }, 400);
+  }
+
+  const turnstileToken = normalizeField(formData.get("cf-turnstile-response"));
+  const turnstileVerified = await verifyTurnstile(
+    turnstileToken,
+    request,
+    env.TURNSTILE_SECRET_KEY
+  );
+  if (!turnstileVerified) {
+    return respond(request, { ok: false, message: "Verification could not be completed" }, 400);
   }
 
   try {
@@ -92,6 +103,34 @@ async function handleContactRequest(request, env) {
   }
 
   return respond(request, { ok: true }, 200);
+}
+
+async function verifyTurnstile(token, request, secret) {
+  if (!token || typeof secret !== "string" || !secret) {
+    return false;
+  }
+
+  const verificationData = new FormData();
+  verificationData.set("secret", secret);
+  verificationData.set("response", token);
+
+  const remoteIp = request.headers.get("CF-Connecting-IP");
+  if (remoteIp) {
+    verificationData.set("remoteip", remoteIp);
+  }
+
+  try {
+    const response = await fetch(TURNSTILE_SITEVERIFY_URL, {
+      method: "POST",
+      body: verificationData,
+    });
+    if (!response.ok) return false;
+
+    const result = await response.json();
+    return result?.success === true && result.action === "contact";
+  } catch {
+    return false;
+  }
 }
 
 function collectFields(formData) {
