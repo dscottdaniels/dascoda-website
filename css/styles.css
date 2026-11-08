@@ -3265,8 +3265,8 @@ textarea:focus {
 .insights-path-nav .container {
   display: flex;
   align-items: center;
-  gap: 8px 20px;
-  min-height: 58px;
+  gap: 14px 20px;
+  min-height: 70px;
 }
 
 .insights-path-nav-label {
@@ -3277,15 +3277,47 @@ textarea:focus {
   text-transform: uppercase;
 }
 
-.insights-path-nav a {
-  color: var(--slate);
-  font-size: 0.95rem;
-  font-weight: 700;
+.insights-path-tabs {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  max-width: 720px;
 }
 
-.insights-path-nav a:hover,
-.insights-path-nav a.active {
-  color: var(--red);
+.insights-path-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 8px 14px;
+  color: var(--navy);
+  background: var(--white);
+  border: 1px solid rgba(31, 58, 95, 0.24);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.insights-path-tab:hover {
+  color: var(--navy);
+  background: #edf8f7;
+  border-color: #0f8f88;
+}
+
+.insights-path-tab.active {
+  color: var(--navy);
+  background: #edf8f7;
+  border-color: #0f8f88;
+  box-shadow: inset 0 -3px 0 #0f8f88;
+}
+
+.insights-path-tab:focus-visible {
+  outline: 3px solid #0f8f88;
+  outline-offset: 2px;
 }
 
 .insights-path-grid {
@@ -3789,8 +3821,15 @@ textarea:focus {
     padding-bottom: 14px;
   }
 
-  .insights-path-nav a {
-    font-size: 0.9rem;
+  .insights-path-tabs {
+    width: 100%;
+    max-width: none;
+  }
+
+  .insights-path-tab {
+    min-height: 48px;
+    padding: 8px 10px;
+    font-size: 0.82rem;
   }
 
   .insight-learning-path-inner {

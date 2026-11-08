@@ -204,11 +204,16 @@ const renderBreadcrumbs = (items) => `
       : `<a href="${escapeHtml(item.href)}">${escapeHtml(item.name)}</a>`).join("<span aria-hidden=\"true\">/</span>")}
   </nav>`;
 
-const renderInsightsPathNav = (paths, activePathId = "") => `
+const renderInsightsPathNav = (paths, activePathId = "", isPathPage = false) => `
   <nav class="insights-path-nav" aria-label="Insights learning paths">
     <div class="container">
-      <span class="insights-path-nav-label">Explore:</span>
-      ${paths.map((pathRecord) => `<a${pathRecord.id === activePathId ? " class=\"active\" aria-current=\"page\"" : ""} href="${escapeHtml(learningPathUrl(pathRecord))}">${escapeHtml(pathRecord.nav_label)}</a>`).join("")}
+      <span class="insights-path-nav-label">Insights paths</span>
+      <div class="insights-path-tabs">
+        ${paths.map((pathRecord) => {
+          const isActive = pathRecord.id === activePathId;
+          return `<a class="insights-path-tab${isActive ? " active" : ""}"${isActive && isPathPage ? " aria-current=\"page\"" : ""} href="${escapeHtml(learningPathUrl(pathRecord))}">${escapeHtml(pathRecord.nav_label)}</a>`;
+        }).join("")}
+      </div>
     </div>
   </nav>`;
 
@@ -269,8 +274,8 @@ const renderLearningPath = (article, articleMap) => {
   const next = article.next_slug ? articleMap.get(article.next_slug) : null;
   if (previous || next) {
     const previousLink = previous ? `<a class="insight-previous-link" href="${articlePath(previous.slug)}">Previous: ${escapeHtml(previous.title)}</a>` : "";
-    const nextMarkup = next ? `<div><p class="eyebrow">Continue the Learning Path</p><p class="insight-path-label">${escapeHtml(article.next_label || "Next Insight")}</p><h2>${escapeHtml(next.title)}</h2><p>${escapeHtml(next.dek)}</p></div><a class="btn btn-secondary" href="${articlePath(next.slug)}">Continue Reading</a>` : "";
-    return `<section class="section insight-learning-path" id="continue-the-learning-path"><div class="container">${previousLink}<div class="insight-learning-path-inner">${nextMarkup}</div></div></section>`;
+    const nextMarkup = next ? `<div class="insight-learning-path-inner"><div><p class="eyebrow">Continue the Learning Path</p><p class="insight-path-label">${escapeHtml(article.next_label || "Next Insight")}</p><h2>${escapeHtml(next.title)}</h2><p>${escapeHtml(next.dek)}</p></div><a class="btn btn-secondary" href="${articlePath(next.slug)}">Continue Reading</a></div>` : "";
+    return `<section class="section insight-learning-path" id="continue-the-learning-path"><div class="container">${previousLink}${nextMarkup}</div></section>`;
   }
   if (article.next_cta) return renderArticleCta(article.next_cta);
   return "";
@@ -302,7 +307,7 @@ const renderPathHub = (insightPath, paths, articleMap) => {
         <p class="lead">${escapeHtml(insightPath.description)}</p>
       </div></div>
     </section>
-    ${renderInsightsPathNav(paths, insightPath.id)}
+    ${renderInsightsPathNav(paths, insightPath.id, true)}
     <section class="section insights-cluster-section"><div class="container"><div class="insights-cluster-header insights-cluster-header--text-only"><div><p class="eyebrow">${escapeHtml(insightPath.learning_eyebrow || "Learning Path")}</p><h2>${escapeHtml(insightPath.learning_headline || "Explore the research")}</h2><p>${escapeHtml(insightPath.learning_copy || insightPath.description)}</p></div></div>${renderLearningPathItems(insightPath, articleMap)}</div></section>
   </main>`;
   return pageShell({
