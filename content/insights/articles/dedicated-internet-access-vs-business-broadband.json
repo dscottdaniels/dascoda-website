@@ -1,0 +1,312 @@
+{
+  "title": "Dedicated Internet Access vs. Business Broadband: Understanding the Differences",
+  "slug": "dedicated-internet-access-vs-business-broadband",
+  "dek": "Dedicated Internet Access (DIA) and business broadband can both support important commercial functions.",
+  "content_type": "research_white_paper",
+  "funnel_stage": "education",
+  "editorial_label": "Research White Paper",
+  "hero_label": "Business Connectivity & DIA",
+  "show_toc": true,
+  "image": { "src": "/assets/images/insights/insights-dia-vs-business-broadband.webp", "alt": "Business leaders comparing enterprise connectivity options.", "width": 1800, "height": 1200, "mobile_src": null, "srcset": [] },
+  "landing_section": "business-connectivity-dia",
+  "learning_step": 3,
+  "featured": false,
+  "display_order": 70,
+  "category": "Business Connectivity",
+  "tags": [
+    "Dedicated Internet Access",
+    "business connectivity"
+  ],
+  "industries": [
+    "Hospitality",
+    "Multi-site operations"
+  ],
+  "solutions": [
+    "Connectivity Solutions"
+  ],
+  "target_keyword": "Dedicated Internet Access vs. Business Broadband: Understanding the Differences",
+  "supporting_keywords": [],
+  "meta_title": "Dedicated Internet Access vs. Business Broadband: Understanding the Differences",
+  "meta_description": "Dedicated Internet Access (DIA) and business broadband can both support important commercial functions.",
+  "og_title": "Dedicated Internet Access vs. Business Broadband: Understanding the Differences",
+  "og_description": "Dedicated Internet Access (DIA) and business broadband can both support important commercial functions.",
+  "og_image": "/assets/images/insights/insights-dia-vs-business-broadband.webp",
+  "related_slugs": [
+    "dedicated-internet-access-explained",
+    "resilient-internet-strategy"
+  ],
+  "sources_heading": "References",
+  "date_published": "2026-11-08",
+  "date_updated": "2026-11-08",
+  "metadata_status": "published",
+  "publication_date_status": "published",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Executive summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dedicated Internet Access (DIA) and business broadband can both support important commercial functions. Services with the same advertised speed may nevertheless differ in contracted capacity, access architecture, performance measures, support processes and financial obligations. Conversely, features often associated with DIA, including symmetrical fiber speeds, may also be available in certain broadband products."
+    },
+    {
+      "type": "paragraph",
+      "text": "This paper provides an evidence-based comparison without assuming that DIA always provides better application outcomes or that broadband is unsuitable for hotels. It also distinguishes product type from delivery model: a business may receive direct-carrier, off-net, hybrid-aggregator or resold connectivity in either a multi-location purchasing program or a property-level arrangement."
+    },
+    {
+      "type": "h2",
+      "text": "1. Product categories and what they actually promise"
+    },
+    {
+      "type": "paragraph",
+      "text": "DIA commonly specifies access bandwidth under an enterprise agreement, with one or more service-level commitments. Those commitments vary by provider, product tier, location and contract. A dedicated access rate does not reserve the entire public-internet route between the customer and every destination. Applications still depend on customer equipment, the provider's network, interconnections and the destination service."
+    },
+    {
+      "type": "paragraph",
+      "text": "Business broadband includes fiber, cable, DSL and fixed wireless access. Most products use shared or statistically multiplexed resources, but the extent of contention, service objectives and support varies. Do not assume every business broadband service is slow, asymmetrical or best-effort under all circumstances. Verizon, for example, sells Fios Business Internet with symmetrical nominal speed tiers [1]."
+    },
+    {
+      "type": "paragraph",
+      "text": "The practical question is what each specific offered product commits to deliver, rather than whether its marketing label sounds more enterprise-oriented."
+    },
+    {
+      "type": "h2",
+      "text": "2. Comparing technical attributes"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Dimension",
+        "DIA: common characteristics",
+        "Business broadband: common characteristics"
+      ],
+      "rows": [
+        [
+          "Contracted capacity",
+          "Defined access rate, subject to service terms",
+          "Often advertised typical or maximum rate; contract varies"
+        ],
+        [
+          "Symmetry",
+          "Frequently symmetrical",
+          "Can be symmetrical on some fiber offerings; other technologies may be asymmetric"
+        ],
+        [
+          "Underlying infrastructure",
+          "Dedicated customer access with shared upstream network elements",
+          "Often shared access or aggregation infrastructure"
+        ],
+        [
+          "Availability commitments",
+          "Commonly formal SLA provisions",
+          "May have limited, different or no comparable SLA"
+        ],
+        [
+          "Latency / loss targets",
+          "May be contractually stated within defined network boundaries",
+          "May lack equivalent contractual targets despite good observed performance"
+        ],
+        [
+          "Restoration",
+          "Enterprise ticketing and service terms, product-dependent",
+          "Support and restoration policies differ by provider/product"
+        ],
+        [
+          "Installation",
+          "May require construction, surveys and special equipment",
+          "Can be easier where infrastructure already serves the site"
+        ],
+        [
+          "Cost",
+          "Often higher than comparably advertised broadband",
+          "Often lower, subject to market and service design"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "These are patterns rather than rules; the executed order and service agreement govern. Performance claims must specify where metrics are measured. Verizon's published Internet Dedicated terms, for example, distinguish certain measurements taken between designated backbone routers from customer-site connectivity [2]."
+    },
+    {
+      "type": "paragraph",
+      "text": "Latency, packet loss and packet delay variation can affect real-time applications even where nominal speed is high; the IETF formalizes packet delay variation in RFC 3393 [3]. Neither a fast speed test nor an SLA alone establishes an application's actual performance."
+    },
+    {
+      "type": "h2",
+      "text": "3. Hotels: guest expectation and operational exposure"
+    },
+    {
+      "type": "paragraph",
+      "text": "Guests may depend on property internet access for remote work, communications, streaming and digital hotel services. Hospitality Technology's 2026 survey found 86% of respondents valued reliable, secure Wi-Fi [4]. J.D. Power reported that 40% of respondents in its 2025 study considered smart TVs or personal streaming a necessary hotel amenity, up from 21% in 2019 [5]. These are consumer-preference results, not proof of a need for DIA."
+    },
+    {
+      "type": "paragraph",
+      "text": "An upstream circuit failure can impair guest connectivity and employee access to cloud applications simultaneously. A guest may remain connected to the local Wi-Fi radio network even while access to external internet services is lost. Conversely, a property may have a fully functioning DIA circuit while guests encounter poor coverage or congestion on the internal Wi-Fi network. A network evaluation must isolate LAN and WLAN performance from WAN access performance."
+    },
+    {
+      "type": "paragraph",
+      "text": "Operational effects can include guest complaints, disruption to cloud PMS access, electronic payment issues and increased manual work. At a busy check-in period, the question for hotel employees is whether a fallback arrivals list, approved payment procedure and room-status process exist, regardless of whether the failed primary circuit is DIA or broadband. Oracle documents its cloud PMS functions [6], while its payment documentation shows that offline acceptance is limited by platform and carries financial risks [7]. Hotels should test actual applications rather than assume that primary internet loss completely disables every service."
+    },
+    {
+      "type": "h3",
+      "text": "The human consequences are not determined by the product label"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a guest, a disrupted remote-work session or unavailable streaming service is the immediate problem. For the front desk, the same upstream event may produce calls, lines and manual work just as staff have fewer systems available. A DIA label does not itself guarantee a better guest experience; likewise, a functioning broadband connection may support the entire stay effectively. A sound comparison should test guest internet performance, employee application continuity, and incident response as three separate criteria."
+    },
+    {
+      "type": "h3",
+      "text": "Guest streaming demand and property standards"
+    },
+    {
+      "type": "paragraph",
+      "text": "The bandwidth conversation should start with observable property demand, simultaneous use, guest services, and applicable brand requirements, not a generic circuit-size recommendation. AHLA/HTNG's in-room entertainment guidance advises hotels to consider the estimated number of simultaneous streaming guests, internet-delivered television services, and brand bandwidth standards [13]. This does not imply that all rooms stream simultaneously or that a particular service product is required. It supports occupancy- and use-based capacity planning, with testing during peak demand and attention to the local Wi-Fi distribution network."
+    },
+    {
+      "type": "h2",
+      "text": "4. Network ownership and contracting structure"
+    },
+    {
+      "type": "paragraph",
+      "text": "Provider brand and circuit type do not identify who owns the physical route. A facilities-based carrier can use third-party local access. A hybrid aggregator can operate its own fiber at certain hotels and buy complete wholesale services elsewhere. A reseller can contract with the customer while coordinating underlying carriers. A customer can also contract directly with a carrier while using an agent or advisor for procurement and escalation assistance."
+    },
+    {
+      "type": "paragraph",
+      "text": "Lumen formally distinguishes off-net local access from entirely third-party internet service [8] and markets Dedicated Internet Extension as a third-party resale offering with one contract/invoice [9]. Verizon separately documents access supplied on its own facilities or through third parties [10]. These arrangements matter for fault isolation and contractual accountability but do not automatically predict poor service."
+    },
+    {
+      "type": "paragraph",
+      "text": "A Tier 1 backbone designation concerns global interconnection practices, not a guarantee of superior local support or repair. The ITU describes internet tier taxonomy and its limitations [11]. A well-run regional or hybrid provider may perform better at a given location than a poorly managed offering from a larger network; comparative performance needs comparable evidence."
+    },
+    {
+      "type": "h2",
+      "text": "5. Support and SLAs: where the real differences may emerge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Evaluation should separate: (a) who receives the initial incident, (b) who investigates the local service, (c) who repairs the affected network component, (d) who communicates with the customer and (e) which entity owes the contractual remedy. Some direct carrier services involve wholesale access subcontractors, and resellers can contribute highly effective customer-facing advocacy."
+    },
+    {
+      "type": "paragraph",
+      "text": "An SLA may define availability and credits, but a stated target does not guarantee uninterrupted service or reimbursement for business losses. Some DIA product tiers may not include standard credit remedies: Verizon's published Internet Dedicated SLA excludes its Essential plan from such credits [12]. Customers should verify trouble-ticket initiation rules, monitoring scope, response and repair distinctions, maintenance exceptions, service-credit procedures and maximum remedies. Verizon's published service guide illustrates these detailed contract dependencies [2]."
+    },
+    {
+      "type": "paragraph",
+      "text": "For multi-property ownership groups, a centralized vendor may simplify reporting but hide site-specific access-provider differences unless those are tracked explicitly. Standardizing incident data and maintaining per-property network diagrams can be more useful than assuming every circuit under one master arrangement behaves the same way."
+    },
+    {
+      "type": "h2",
+      "text": "6. Total cost of ownership and contract exposure"
+    },
+    {
+      "type": "paragraph",
+      "text": "Compare the full financial commitment, not just monthly recurring charge: installation, construction, equipment, licensing, support, access taxes or surcharges, upgrade options, renewal, early termination, relocation and changes in property ownership or management. Some lower-priced products may have shorter terms; some enterprise offers may have construction commitments or termination obligations that outweigh a headline discount."
+    },
+    {
+      "type": "paragraph",
+      "text": "Consider two hypothetical, non-market-based options over 36 months: (A) one DIA circuit at $1,000 per month, totaling $36,000 in recurring fees; (B) primary broadband at $300 and secondary connectivity at $150 per month, totaling $16,200. The $19,800 nominal difference excludes nonrecurring fees, equipment, taxes and service impacts. The designs are not equivalent: one has a single contracted primary link, while the other has two links with potentially different performance guarantees and unknown route independence. It would be incorrect to infer which is more resilient or economically optimal from this arithmetic alone."
+    },
+    {
+      "type": "paragraph",
+      "text": "A business-impact assessment should model possible costs of interruption without treating data-center outage figures as typical hotel losses. Repair performance, physical route diversity, failover configuration and application requirements determine whether additional expense buys meaningful risk reduction."
+    },
+    {
+      "type": "h3",
+      "text": "Security should not be inferred from the access product"
+    },
+    {
+      "type": "paragraph",
+      "text": "Neither DIA nor business broadband, by itself, creates a compliant payment environment or protects the hotel's entire internal network. Firewalls, segmentation, endpoint controls, wireless security, monitoring and appropriately configured alternate paths remain separate requirements. PCI SSC guidance distinguishes the scope of a cardholder data environment from the type of internet circuit providing connectivity [14]. During service comparisons, businesses should identify the security features actually included rather than assume an enterprise service label includes them."
+    },
+    {
+      "type": "h2",
+      "text": "7. Decision framework"
+    },
+    {
+      "type": "paragraph",
+      "text": "DIA may merit priority consideration when an organization requires a contracted access rate, measurable network commitments, enterprise support or consistent performance requirements. Business broadband may be appropriate where observed performance satisfies needs, risks are manageable, and continuity measures are sufficient. A mixed approach may also be practical: DIA primary plus broadband or cellular backup, or dual broadband where adequate. The right answer is site-specific."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask: Which applications are critical? What are peak upload and download demands? What interruption duration is tolerable? Are latency/loss commitments material? Is the primary service on-net or off-net? Who holds the contract and who actually repairs the local access? Does backup share conduits or equipment? How does the service continue after property ownership changes? What is the full three-year cost and exit liability?"
+    },
+    {
+      "type": "h2",
+      "text": "8. Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "text": "DIA and business broadband should be compared as complete services, not speed labels. DIA frequently offers stronger contracted access and support commitments; broadband can provide substantial and sometimes symmetrical capacity. Neither category eliminates outages, and neither determines the quality of a property's internal Wi-Fi. Network ownership, underlying carrier arrangements, support coordination, physical diversity and contractual terms must be evaluated alongside bandwidth and price."
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-1",
+      "text": "[1] Verizon Business, Fios Business Internet. https://www.verizon.com/business/products/internet/fios/"
+    },
+    {
+      "id": "reference-2",
+      "text": "[2] Verizon Business, Internet Dedicated Services (service guide and current applicable SLA resources). https://www.verizon.com/business/service_guide/reg/cp_ids_toc.htm"
+    },
+    {
+      "id": "reference-3",
+      "text": "[3] IETF (2002), RFC 3393: IP Packet Delay Variation Metric. https://datatracker.ietf.org/doc/rfc3393/"
+    },
+    {
+      "id": "reference-4",
+      "text": "[4] Hospitality Technology (2026), 2026 Guest Engagement Study: Lodging Edition analysis. https://hospitalitytech.com/control-friction-and-customer-loyalty-inside-2026-guest-engagement-study"
+    },
+    {
+      "id": "reference-5",
+      "text": "[5] J.D. Power (July 15, 2025), 2025 North America Hotel Guest Satisfaction Index Study. https://www.jdpower.com/business/press-releases/2025-north-america-hotel-guest-satisfaction-index-nagsi-study"
+    },
+    {
+      "id": "reference-6",
+      "text": "[6] Oracle, OPERA Cloud Property Management. https://www.oracle.com/hospitality/hotel-property-management/"
+    },
+    {
+      "id": "reference-7",
+      "text": "[7] Oracle Payment Cloud, Offline Processing. https://docs.oracle.com/en/industries/oracle-payment-cloud/latest/opcsc/c_offline_processing.html"
+    },
+    {
+      "id": "reference-8",
+      "text": "[8] Lumen (April 22, 2026), Service Level Agreement, definitions. https://assets.lumen.com/is/content/Lumen/lumen-service-level-agreementpdf"
+    },
+    {
+      "id": "reference-9",
+      "text": "[9] Lumen, Dedicated Internet Extension. https://www.lumen.com/en-us/services/dedicated-internet-extension.html"
+    },
+    {
+      "id": "reference-10",
+      "text": "[10] Verizon, Access Service Terms. https://www.verizon.com/business/service_guide/reg/cp_access_plus_access_2023MAR02_mk.pdf"
+    },
+    {
+      "id": "reference-11",
+      "text": "[11] ITU (2025), Terminology and Taxonomy for International Internet Connectivity (prepublished). https://www.itu.int/dms_pub/itu-t/opb/fg/T-FG-CD-2025-6-PDF-E.pdf"
+    },
+    {
+      "id": "reference-12",
+      "text": "[12] Verizon Business (2025), Internet Dedicated Services SLA, section 1.4. https://www.verizon.com/business/service_guide/reg/cp_ids_plus_sla_2025FEB01_mk.pdf"
+    },
+    {
+      "id": "reference-13",
+      "text": "[13] AHLA/HTNG (2022), In-Room Entertainment System Requirements, Section 9, bandwidth sizing and brand standards. https://www.ahla.com/sites/default/files/2022-01_AHLA_Guest-Room-Entertainment-Requirements.pdf"
+    },
+    {
+      "id": "reference-14",
+      "text": "[14] PCI Security Standards Council (2024), PCI DSS Scoping and Segmentation Guidance for Modern Network Architectures. https://blog.pcisecuritystandards.org/new-information-supplement-pci-dss-scoping-and-segmentation-guidance-for-modern-network-architectures"
+    }
+  ],
+  "cta": {
+    "headline": "Explore the Business Connectivity & DIA learning path.",
+    "copy": "Read the current research in this path and return as additional papers are published.",
+    "button_text": "Explore the learning path",
+    "button_url": "/insights/business-connectivity-dia/"
+  },
+  "source_document": "C:\\Users\\dscot\\Downloads\\Dascoda_Dedicated_Internet_Research_Five_Papers.docx",
+  "previous_slug": "dedicated-internet-access-explained",
+  "next_slug": "resilient-internet-strategy",
+  "next_label": "04 · Build Resilience",
+  "research_limitations": "Research limitations: Comparison characteristics are typical, not universal. Carrier documentation establishes product design and terms, not cross-provider service-quality rankings. Financial example is hypothetical."
+}

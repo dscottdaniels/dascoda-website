@@ -3257,6 +3257,70 @@ textarea:focus {
   padding-bottom: 30px;
 }
 
+.insights-path-nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+}
+
+.insights-path-nav .container {
+  display: flex;
+  align-items: center;
+  gap: 8px 20px;
+  min-height: 58px;
+}
+
+.insights-path-nav-label {
+  color: var(--navy);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.insights-path-nav a {
+  color: var(--slate);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.insights-path-nav a:hover,
+.insights-path-nav a.active {
+  color: var(--red);
+}
+
+.insights-path-grid {
+  align-items: stretch;
+}
+
+.insights-path-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.insights-path-card > .eyebrow {
+  margin: 0 0 10px;
+}
+
+.insights-path-card h2 {
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+}
+
+.insights-path-card h2 a {
+  color: inherit;
+}
+
+.insights-path-card > p:not(.eyebrow) {
+  margin: 14px 0 0;
+}
+
+.insights-path-card .insight-card-link {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
 .insights-cluster-section {
   padding-top: 18px;
 }
@@ -3492,6 +3556,7 @@ textarea:focus {
 }
 
 .insight-article-body ul,
+.insight-article-body ol,
 .insight-sources ol {
   margin: 14px 0 0;
   padding-left: 22px;
@@ -3618,6 +3683,10 @@ textarea:focus {
   overflow-wrap: anywhere;
 }
 
+.insight-source-afterword {
+  margin-top: 14px;
+}
+
 .insight-learning-path {
   padding-top: 42px;
   padding-bottom: 42px;
@@ -3632,6 +3701,13 @@ textarea:focus {
   background: var(--blue-soft);
   border-left: 4px solid var(--blue-start);
   border-radius: var(--radius);
+}
+
+.insight-previous-link {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: var(--blue-start);
+  font-weight: 700;
 }
 
 .insight-learning-path-inner h2 {
@@ -3703,6 +3779,18 @@ textarea:focus {
 
   .insight-learning-list {
     grid-template-columns: 1fr;
+  }
+
+  .insights-path-nav .container {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .insights-path-nav a {
+    font-size: 0.9rem;
   }
 
   .insight-learning-path-inner {

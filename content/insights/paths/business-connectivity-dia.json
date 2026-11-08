@@ -1,0 +1,25 @@
+{
+  "id": "business-connectivity-dia",
+  "slug": "business-connectivity-dia",
+  "display_order": 2,
+  "nav_label": "Business Connectivity & DIA",
+  "eyebrow": "DASCODA INSIGHTS",
+  "headline": "Business Connectivity & Dedicated Internet Access",
+  "description": "Vendor-neutral research for organizations evaluating dedicated internet access, service accountability, resilient connectivity, and the operating decisions behind dependable business internet.",
+  "learning_eyebrow": "RESEARCH PATH",
+  "learning_headline": "Understand business connectivity decisions.",
+  "learning_copy": "Follow the five-paper sequence from operating need and DIA fundamentals through comparison, resilience, and an evaluation-first perspective.",
+  "meta_title": "Business Connectivity & DIA Insights | Dascoda",
+  "meta_description": "Vendor-neutral research and guidance for evaluating dedicated internet access and business connectivity decisions.",
+  "og_title": "Business Connectivity & DIA Insights | Dascoda",
+  "og_description": "Vendor-neutral research and guidance for dedicated internet access and business connectivity decisions.",
+  "og_image": "/assets/images/insights/insights-business-connectivity-dia.webp",
+  "image": { "src": "/assets/images/insights/insights-business-connectivity-dia.webp", "alt": "Business leaders reviewing enterprise connectivity plans in a modern office.", "width": 1920, "height": 1080, "mobile_src": null, "srcset": [] },
+  "items": [
+    { "step": "01", "step_label": "Understand the Operating Need", "slug": "hotel-internet-connectivity-operations" },
+    { "step": "02", "step_label": "Understand Dedicated Internet Access", "slug": "dedicated-internet-access-explained" },
+    { "step": "03", "step_label": "Compare the Services", "slug": "dedicated-internet-access-vs-business-broadband" },
+    { "step": "04", "step_label": "Build Resilience", "slug": "resilient-internet-strategy" },
+    { "step": "05", "step_label": "Put It Into Practice", "slug": "why-dascoda-business-connectivity" }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "indoor-mobility-wireless",
+  "slug": "indoor-mobility-wireless",
+  "display_order": 1,
+  "nav_label": "Indoor Mobility & Wireless",
+  "eyebrow": "DASCODA INSIGHTS",
+  "headline": "Indoor Mobility & In-Building Connectivity",
+  "description": "Practical research and guidance for evaluating guest expectations, indoor mobile connectivity options, Passpoint, and the operational decisions behind a better in-building experience.",
+  "learning_eyebrow": "LEARNING PATH",
+  "learning_headline": "Build an informed path to indoor connectivity.",
+  "learning_copy": "Start with the business need, understand the available approaches, and work toward a property-specific evaluation.",
+  "meta_title": "Indoor Mobility & Wireless Insights | Dascoda",
+  "meta_description": "Research and guidance for evaluating indoor mobility, Passpoint, and in-building connectivity decisions.",
+  "og_title": "Indoor Mobility & Wireless Insights | Dascoda",
+  "og_description": "Research and guidance for evaluating indoor mobility and in-building connectivity decisions.",
+  "og_image": "/assets/images/insights/insights-indoor-mobility-in-building-connectivity.webp",
+  "image": {
+    "src": "/assets/images/insights/insights-indoor-mobility-in-building-connectivity.webp",
+    "alt": "Modern multi-use property interior representing connected buildings and technology environments.",
+    "width": 1672,
+    "height": 941,
+    "mobile_src": null,
+    "srcset": []
+  },
+  "items": [
+    { "step": "01", "step_label": "Understand the Need", "slug": "the-new-guest-expectation" },
+    { "step": "02", "step_label": "Understand the Options", "slug": "hotel-in-building-cellular-coverage-options" },
+    { "step": "03", "step_label": "Compare the Approaches", "slug": "das-vs-passpoint" },
+    { "step": "04", "step_label": "Go Deeper", "slug": "passpoint-for-hotels" },
+    { "step": "05", "step_label": "Put It Into Practice", "slug": "why-dascoda" }
+  ]
+}

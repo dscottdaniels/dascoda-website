@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
 const contentDir = path.join(root, "content", "insights");
+const pathsDir = path.join(contentDir, "paths");
 const outputDir = path.join(root, "insights");
 const siteUrl = "https://dascoda.com";
 const buildVersion = "insights-rendering-2";
@@ -29,6 +30,8 @@ const absoluteUrl = (url) => {
 
 const articlePath = (slug) => `/insights/${slug}`;
 const articleCanonical = (article) => `${siteUrl}${articlePath(article.slug)}`;
+const learningPathUrl = (pathRecord) => `/insights/${pathRecord.slug}/`;
+const insightPathCanonical = (pathRecord) => `${siteUrl}${learningPathUrl(pathRecord)}`;
 
 const slugify = (value = "") =>
   String(value).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -201,6 +204,14 @@ const renderBreadcrumbs = (items) => `
       : `<a href="${escapeHtml(item.href)}">${escapeHtml(item.name)}</a>`).join("<span aria-hidden=\"true\">/</span>")}
   </nav>`;
 
+const renderInsightsPathNav = (paths, activePathId = "") => `
+  <nav class="insights-path-nav" aria-label="Insights learning paths">
+    <div class="container">
+      <span class="insights-path-nav-label">Explore:</span>
+      ${paths.map((pathRecord) => `<a${pathRecord.id === activePathId ? " class=\"active\" aria-current=\"page\"" : ""} href="${escapeHtml(learningPathUrl(pathRecord))}">${escapeHtml(pathRecord.nav_label)}</a>`).join("")}
+    </div>
+  </nav>`;
+
 const renderBodyBlock = (block) => {
   switch (block.type) {
     case "h2":
@@ -213,6 +224,8 @@ const renderBodyBlock = (block) => {
       return `<p class="insight-source-note-inline">${linkifyText(block.text)}</p>`;
     case "bullets":
       return `<ul>${block.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
+    case "ordered_list":
+      return `<ol>${block.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>`;
     case "pullquote":
       return `<figure class="insight-pullquote"><blockquote>${escapeHtml(block.text)}</blockquote>${block.attribution ? `<figcaption>${escapeHtml(block.attribution)}</figcaption>` : ""}</figure>`;
     case "stat_callout":
@@ -226,11 +239,13 @@ const renderBodyBlock = (block) => {
 
 const renderSourceList = (article) => {
   const sources = article.sources || [];
-  if (!sources.length && !article.source_note) return "";
+  if (!sources.length && !article.source_note && !article.research_limitations && !article.source_afterword?.length) return "";
   const heading = article.sources_heading || "Sources and Further Reading";
   const note = article.source_note ? `<p>${linkifyText(article.source_note)}</p>` : "";
   const list = sources.length ? `<ol>${sources.map((source) => `<li id="${escapeHtml(source.id)}">${source.text ? linkifyText(source.text) : `<strong>${escapeHtml(source.title)}</strong>${source.publisher ? `, ${escapeHtml(source.publisher)}` : ""}${source.url ? `. <a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">View source</a>` : ""}`}</li>`).join("")}</ol>` : "";
-  return `<section class="insight-sources"><h2>${escapeHtml(heading)}</h2>${note}${list}</section>`;
+  const limitations = article.research_limitations ? `<p class="insight-research-limitations">${escapeHtml(article.research_limitations)}</p>` : "";
+  const afterword = (article.source_afterword || []).map((paragraph) => `<p class="insight-source-afterword">${escapeHtml(paragraph)}</p>`).join("");
+  return `<section class="insight-sources"><h2>${escapeHtml(heading)}</h2>${note}${list}${limitations}${afterword}</section>`;
 };
 
 const renderRelatedInsights = (article, articleMap) => {
@@ -250,22 +265,65 @@ const renderOnThisPage = (article) => {
 };
 
 const renderLearningPath = (article, articleMap) => {
-  if (article.next_slug) {
-    const next = articleMap.get(article.next_slug);
-    if (!next) return "";
-    return `<section class="section insight-learning-path" id="continue-the-learning-path"><div class="container"><div class="insight-learning-path-inner"><div><p class="eyebrow">Continue the Learning Path</p><p class="insight-path-label">${escapeHtml(article.next_label || "Next Insight")}</p><h2>${escapeHtml(next.title)}</h2><p>${escapeHtml(next.dek)}</p></div><a class="btn btn-secondary" href="${articlePath(next.slug)}">Continue Reading</a></div></div></section>`;
+  const previous = article.previous_slug ? articleMap.get(article.previous_slug) : null;
+  const next = article.next_slug ? articleMap.get(article.next_slug) : null;
+  if (previous || next) {
+    const previousLink = previous ? `<a class="insight-previous-link" href="${articlePath(previous.slug)}">Previous: ${escapeHtml(previous.title)}</a>` : "";
+    const nextMarkup = next ? `<div><p class="eyebrow">Continue the Learning Path</p><p class="insight-path-label">${escapeHtml(article.next_label || "Next Insight")}</p><h2>${escapeHtml(next.title)}</h2><p>${escapeHtml(next.dek)}</p></div><a class="btn btn-secondary" href="${articlePath(next.slug)}">Continue Reading</a>` : "";
+    return `<section class="section insight-learning-path" id="continue-the-learning-path"><div class="container">${previousLink}<div class="insight-learning-path-inner">${nextMarkup}</div></div></section>`;
   }
   if (article.next_cta) return renderArticleCta(article.next_cta);
   return "";
 };
 
-const renderLandingCluster = (cluster, articleMap) => {
-  const items = cluster.items.map((item) => ({ ...item, article: articleMap.get(item.slug) })).filter((item) => item.article);
-  return `<section class="section insights-cluster-section" id="${escapeHtml(cluster.id)}"><div class="container"><div class="insights-cluster-header insights-cluster-header--text-only"><div><p class="eyebrow">${escapeHtml(cluster.eyebrow || "Learning Path")}</p><h2>${escapeHtml(cluster.headline)}</h2><p>${escapeHtml(cluster.description)}</p></div></div><div class="insight-learning-list">${items.map((item) => renderArticleCard(item.article, "", { step: item.step, stepLabel: item.step_label })).join("")}</div></div></section>`;
+const renderLearningPathItems = (insightPath, articleMap) => {
+  const items = insightPath.items.map((item) => ({ ...item, article: articleMap.get(item.slug) })).filter((item) => item.article);
+  return `<div class="insight-learning-list">${items.map((item) => renderArticleCard(item.article, "", { step: item.step, stepLabel: item.step_label })).join("")}</div>`;
 };
 
-const renderLanding = (landing, articleMap) => {
-  const clusterHeroImage = landing.clusters?.[0]?.image;
+const renderPathCard = (pathRecord) => `
+  <article class="card insights-path-card">
+    ${renderEditorialImage(pathRecord.image, "insight-card-image-frame", "insight-card-image", { sizes: "(max-width: 760px) calc(100vw - 40px), 520px" })}
+    <p class="eyebrow">Learning Path</p>
+    <h2><a href="${escapeHtml(learningPathUrl(pathRecord))}">${escapeHtml(pathRecord.headline)}</a></h2>
+    <p>${escapeHtml(pathRecord.description)}</p>
+    <a class="insight-card-link" href="${escapeHtml(learningPathUrl(pathRecord))}">Explore this learning path</a>
+  </article>`;
+
+const renderPathHub = (insightPath, paths, articleMap) => {
+  const body = `
+  <main class="insights-page insights-path-page">
+    <section class="hero insights-hero">
+      ${renderEditorialImage(insightPath.image, "insights-hero-media", "insights-hero-media-image", { loading: "eager", fetchPriority: "high", sizes: "100vw" })}
+      <div class="container insights-hero-layout"><div class="insights-hero-copy">
+        ${renderBreadcrumbs([{ name: "Home", href: "/" }, { name: "Insights", href: "/insights/" }, { name: insightPath.headline, href: learningPathUrl(insightPath) }])}
+        <p class="eyebrow">${escapeHtml(insightPath.eyebrow || "Dascoda Insights")}</p>
+        <h1>${escapeHtml(insightPath.headline)}</h1>
+        <p class="lead">${escapeHtml(insightPath.description)}</p>
+      </div></div>
+    </section>
+    ${renderInsightsPathNav(paths, insightPath.id)}
+    <section class="section insights-cluster-section"><div class="container"><div class="insights-cluster-header insights-cluster-header--text-only"><div><p class="eyebrow">${escapeHtml(insightPath.learning_eyebrow || "Learning Path")}</p><h2>${escapeHtml(insightPath.learning_headline || "Explore the research")}</h2><p>${escapeHtml(insightPath.learning_copy || insightPath.description)}</p></div></div>${renderLearningPathItems(insightPath, articleMap)}</div></section>
+  </main>`;
+  return pageShell({
+    title: insightPath.meta_title,
+    description: insightPath.meta_description,
+    canonical: insightPathCanonical(insightPath),
+    image: insightPath.og_image,
+    body,
+    bodyClass: "insights-index-page insights-path-page",
+    ogTitle: insightPath.og_title || insightPath.meta_title,
+    ogDescription: insightPath.og_description || insightPath.meta_description,
+    schema: schemaScript(breadcrumbJsonLd([
+      { name: "Home", url: `${siteUrl}/` },
+      { name: "Insights", url: `${siteUrl}/insights/` },
+      { name: insightPath.headline, url: insightPathCanonical(insightPath) },
+    ])),
+  });
+};
+
+const renderLanding = (landing, paths) => {
+  const clusterHeroImage = paths[0]?.image;
   const body = `
   <main class="insights-page">
     <section class="hero insights-hero">
@@ -278,8 +336,8 @@ const renderLanding = (landing, articleMap) => {
         </div>
       </div>
     </section>
-    <section class="section insights-explore-intro"><div class="container"><div class="section-header"><p class="eyebrow">${escapeHtml(landing.explore_eyebrow)}</p><h2>${escapeHtml(landing.explore_headline)}</h2><p>${escapeHtml(landing.explore_copy)}</p></div></div></section>
-    ${landing.clusters.map((cluster) => renderLandingCluster(cluster, articleMap)).join("")}
+    ${renderInsightsPathNav(paths)}
+    <section class="section insights-explore-intro"><div class="container"><div class="section-header"><p class="eyebrow">${escapeHtml(landing.explore_eyebrow)}</p><h2>${escapeHtml(landing.explore_headline)}</h2><p>${escapeHtml(landing.explore_copy)}</p></div><div class="grid grid-2 insights-path-grid">${paths.map(renderPathCard).join("")}</div></div></section>
   </main>`;
 
   return pageShell({
@@ -298,15 +356,17 @@ const renderLanding = (landing, articleMap) => {
   });
 };
 
-const renderArticle = (article, articleMap) => {
+const renderArticle = (article, articleMap, paths) => {
+  const currentPath = paths.find((insightPath) => insightPath.items.some((item) => item.slug === article.slug));
   const breadcrumbs = [
     { name: "Home", href: "/" },
     { name: "Insights", href: "/insights/" },
+    ...(currentPath ? [{ name: currentPath.headline, href: learningPathUrl(currentPath) }] : []),
     { name: article.title, href: articlePath(article.slug) },
   ];
   const hasToc = Boolean(article.show_toc);
   const layoutClass = hasToc
-    ? ` insight-article-layout--with-sidebar${article.content_type === "white_paper" ? " insight-article-layout--white-paper" : ""}`
+    ? ` insight-article-layout--with-sidebar${["white_paper", "research_white_paper"].includes(article.content_type) ? " insight-article-layout--white-paper" : ""}`
     : " insight-article-layout--single";
   const body = `
   <main class="insight-article-page">
@@ -321,11 +381,12 @@ const renderArticle = (article, articleMap) => {
            <div class="article-meta"><span>${escapeHtml(editorialLabel(article))}</span></div>
          </div>
        </header>
+       ${renderInsightsPathNav(paths, currentPath?.id)}
        <section class="section insight-article-reading">
          <div class="container insight-article-layout${layoutClass}">
           ${renderOnThisPage(article)}
           <div class="insight-article-body">
-            <div class="insight-lede-callout">${escapeHtml(article.lede_callout)}</div>
+            ${article.lede_callout ? `<div class="insight-lede-callout">${escapeHtml(article.lede_callout)}</div>` : ""}
             ${article.body.map(renderBodyBlock).join("")}
             ${renderSourceList(article)}
           </div>
@@ -352,6 +413,7 @@ const renderArticle = (article, articleMap) => {
       breadcrumbJsonLd([
         { name: "Home", url: `${siteUrl}/` },
         { name: "Insights", url: `${siteUrl}/insights/` },
+        ...(currentPath ? [{ name: currentPath.headline, url: insightPathCanonical(currentPath) }] : []),
         { name: article.title, url: articleCanonical(article) },
       ]),
     ]),
@@ -366,7 +428,14 @@ const loadArticles = async () => {
   return articles;
 };
 
-const validateContent = (landing, articles) => {
+const loadPaths = async () => {
+  const files = (await readdir(pathsDir)).filter((file) => file.endsWith(".json")).sort();
+  const paths = await Promise.all(files.map((file) => readJson(path.join(pathsDir, file))));
+  paths.sort((a, b) => (a.display_order ?? 0) - (b.display_order ?? 0));
+  return paths;
+};
+
+const validateContent = (landing, articles, paths) => {
   const articleMap = new Map(articles.map((article) => [article.slug, article]));
   const requiredFields = ["title", "slug", "dek", "content_type", "category", "tags", "industries", "solutions", "date_published", "date_updated", "related_slugs", "body", "cta"];
 
@@ -379,9 +448,9 @@ const validateContent = (landing, articles) => {
     }
   }
 
-  for (const cluster of landing.clusters) {
-    for (const item of cluster.items) {
-      if (!articleMap.has(item.slug)) throw new Error(`Landing cluster ${cluster.id} references unknown slug ${item.slug}`);
+  for (const insightPath of paths) {
+    for (const item of insightPath.items) {
+      if (!articleMap.has(item.slug)) throw new Error(`Insights path ${insightPath.id} references unknown slug ${item.slug}`);
     }
   }
 
@@ -391,19 +460,26 @@ const validateContent = (landing, articles) => {
 const main = async () => {
   const landing = await readJson(path.join(contentDir, "landing.json"));
   const articles = await loadArticles();
-  const articleMap = validateContent(landing, articles);
+  const paths = await loadPaths();
+  const articleMap = validateContent(landing, articles, paths);
 
   await rm(outputDir, { recursive: true, force: true });
   await mkdir(outputDir, { recursive: true });
-  await writeFile(path.join(outputDir, "index.html"), cleanHtml(renderLanding(landing, articleMap)), "utf8");
+  await writeFile(path.join(outputDir, "index.html"), cleanHtml(renderLanding(landing, paths)), "utf8");
+
+  for (const insightPath of paths) {
+    const directory = path.join(outputDir, insightPath.slug);
+    await mkdir(directory, { recursive: true });
+    await writeFile(path.join(directory, "index.html"), cleanHtml(renderPathHub(insightPath, paths, articleMap)), "utf8");
+  }
 
   for (const article of articles) {
     const directory = path.join(outputDir, article.slug);
     await mkdir(directory, { recursive: true });
-    await writeFile(path.join(directory, "index.html"), cleanHtml(renderArticle(article, articleMap)), "utf8");
+    await writeFile(path.join(directory, "index.html"), cleanHtml(renderArticle(article, articleMap, paths)), "utf8");
   }
 
-  console.log(`Generated ${articles.length + 1} Insights pages.`);
+  console.log(`Generated ${articles.length + paths.length + 1} Insights pages.`);
 };
 
 main().catch((error) => {

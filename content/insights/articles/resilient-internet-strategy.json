@@ -1,0 +1,305 @@
+{
+  "title": "Building a Resilient Internet Strategy: Primary Circuits, Backup Connectivity, and Failover",
+  "slug": "resilient-internet-strategy",
+  "dek": "A primary internet circuit can deliver excellent performance and still fail.",
+  "content_type": "research_white_paper",
+  "funnel_stage": "education",
+  "editorial_label": "Research White Paper",
+  "hero_label": "Business Connectivity & DIA",
+  "show_toc": true,
+  "image": { "src": "/assets/images/insights/insights-resilient-internet-strategy.webp", "alt": "Network operations professionals planning resilient primary and backup connectivity.", "width": 1800, "height": 1200, "mobile_src": null, "srcset": [] },
+  "landing_section": "business-connectivity-dia",
+  "learning_step": 4,
+  "featured": false,
+  "display_order": 80,
+  "category": "Business Connectivity",
+  "tags": [
+    "Dedicated Internet Access",
+    "business connectivity"
+  ],
+  "industries": [
+    "Hospitality",
+    "Multi-site operations"
+  ],
+  "solutions": [
+    "Connectivity Solutions"
+  ],
+  "target_keyword": "Building a Resilient Internet Strategy: Primary Circuits, Backup Connectivity, and Failover",
+  "supporting_keywords": [],
+  "meta_title": "Building a Resilient Internet Strategy: Primary Circuits, Backup Connectivity, and Failover",
+  "meta_description": "A primary internet circuit can deliver excellent performance and still fail.",
+  "og_title": "Building a Resilient Internet Strategy: Primary Circuits, Backup Connectivity, and Failover",
+  "og_description": "A primary internet circuit can deliver excellent performance and still fail.",
+  "og_image": "/assets/images/insights/insights-resilient-internet-strategy.webp",
+  "related_slugs": [
+    "dedicated-internet-access-vs-business-broadband",
+    "why-dascoda-business-connectivity"
+  ],
+  "sources_heading": "References",
+  "date_published": "2026-11-08",
+  "date_updated": "2026-11-08",
+  "metadata_status": "published",
+  "publication_date_status": "published",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Executive summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "A primary internet circuit can deliver excellent performance and still fail. A second connection may reduce exposure, but two circuits do not necessarily create two independent paths. They can share conduits, building entrances, power, access providers, aggregation facilities or customer-premises equipment. Automatic failover can redirect traffic but may not preserve existing application sessions. Resilience therefore requires technical design, business-process prioritization and regular testing."
+    },
+    {
+      "type": "paragraph",
+      "text": "This paper provides a practical framework for hotels and multi-site businesses to map dependencies, select proportionate backup options, evaluate common points of failure, prioritize critical applications, and test recovery. It draws principally on NIST's contingency planning and alternate-telecommunications guidance [1,2] and on open networking standards; vendor technical documents are cited only as examples of implementation."
+    },
+    {
+      "type": "h2",
+      "text": "1. Availability, redundancy and resilience"
+    },
+    {
+      "type": "paragraph",
+      "text": "Availability describes whether a service is operational under a specific measurement definition. Redundancy supplies alternatives to components that may fail. Resilience is the broader ability to maintain or recover essential services despite disruptions. A redundant circuit arrangement can be vulnerable to a shared fault; a functioning internet circuit can still leave an organization unable to access its cloud application."
+    },
+    {
+      "type": "paragraph",
+      "text": "NIST SP 800-34 recommends mapping essential business processes, establishing recovery objectives, selecting continuity approaches, and testing them [1]. NIST SP 800-53 Control CP-8 addresses alternate telecommunications services; associated enhancements consider single points of failure and separation [2]. These sources provide useful general principles, not hotel-specific regulatory obligations."
+    },
+    {
+      "type": "h2",
+      "text": "2. Map realistic failure modes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Internet services can fail because of cable cuts, equipment faults, building wiring, power loss, routing or configuration errors, provider incidents or external cloud outages. A fiber cut can affect multiple connections if routes share conduit. A single customer firewall or switch can disable both carrier links. A cloud PMS may be unavailable even when both local circuits are healthy. DNS, identity services and security gateways can also be dependencies."
+    },
+    {
+      "type": "paragraph",
+      "text": "To avoid false confidence, list the applications that matter and trace their physical and logical paths through customer equipment, provider access, backbone, internet interconnection and external platforms. Document what the company controls and what depends on vendors."
+    },
+    {
+      "type": "h3",
+      "text": "Failure domains beyond the physical circuit"
+    },
+    {
+      "type": "paragraph",
+      "text": "A working fiber connection does not ensure application access. Domain Name System (DNS) service, identity and authentication systems, firewalls, cloud platforms, and customer-premises power can independently interrupt service. NIST's March 2026 secure DNS deployment guide identifies DNS as an integral enterprise dependency, with security and availability considerations that warrant deliberate architecture and management [7]. Resilience exercises should test name resolution and sign-in as well as physical link recovery. Buying another circuit will not solve an outage affecting an application provider or a common DNS dependency."
+    },
+    {
+      "type": "h2",
+      "text": "3. Distinguish diversity from provider count"
+    },
+    {
+      "type": "paragraph",
+      "text": "Provider diversity means different contracted companies or underlying carriers. Physical diversity means reducing common physical infrastructure, such as using separate building entrances, conduit routes and aggregation facilities. Different provider names do not prove diverse physical paths: two carriers can lease facilities from the same local network operator. Likewise, two circuits from one provider may have intentionally separated routes, depending on design."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask suppliers for available route-diversity documentation, separate-entry feasibility, local-access operator information and known shared points of failure. Route detail may be unavailable or confidential; record uncertainty rather than assuming complete separation. Check customer-premises power, optical termination, routers and firewalls as well as external facilities. A dual-WAN firewall can itself become the shared failure point."
+    },
+    {
+      "type": "h2",
+      "text": "4. Selecting a backup architecture"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Option",
+        "Potential contribution",
+        "Caveats"
+      ],
+      "rows": [
+        [
+          "Single DIA",
+          "Contracted primary capacity and support terms",
+          "One external path unless supplemented"
+        ],
+        [
+          "DIA + business broadband",
+          "Different product and potentially different access medium",
+          "Verify route independence and backup capacity"
+        ],
+        [
+          "Dual DIA",
+          "Two contracted enterprise connections",
+          "Higher cost; diversity not automatic"
+        ],
+        [
+          "Dual broadband",
+          "Potential lower-cost redundancy",
+          "Commitments and physical separation may be limited"
+        ],
+        [
+          "Wired + cellular/fixed wireless",
+          "Reduces dependence on one wired last mile",
+          "Wireless signal, congestion, data plan, power and upstream transport risks"
+        ],
+        [
+          "Multi-WAN or SD-WAN",
+          "Automated monitoring and traffic steering",
+          "Configuration, application sessions and security must be tested"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The right combination depends on acceptable downtime, peak traffic, provider availability and the costs of failure. Wireless backup may be valuable after a physical cable cut, but coverage maps do not guarantee in-building signal or usable throughput. Test it at the actual premises and under representative conditions."
+    },
+    {
+      "type": "h2",
+      "text": "5. Failover is not always seamless"
+    },
+    {
+      "type": "paragraph",
+      "text": "A dual-WAN device may detect failure through interface state or reachability probes and route traffic through another link. More sophisticated SD-WAN implementations monitor latency, loss and delay variation. Fortinet's technical documentation shows how link-health checks can remove unhealthy routes and restore them later [3]; this is a product example, not proof that every SD-WAN deployment meets a particular recovery target."
+    },
+    {
+      "type": "paragraph",
+      "text": "IETF RFC 5880 defines Bidirectional Forwarding Detection, a protocol for rapid fault detection between forwarding engines [4]. It does not imply that every business router implements BFD or that application continuity is guaranteed. Failure detection, path selection, IP address changes, NAT sessions, firewall policy, DNS, cloud allowlists, VPN state and application retry behavior all matter."
+    },
+    {
+      "type": "paragraph",
+      "text": "A failover can cause a video call to drop or an existing payment transaction to need resubmission even if the backup path comes online quickly. When the primary returns, poorly tuned failback can cause repeated switching. Test both directions of transfer, not just the initial primary failure."
+    },
+    {
+      "type": "h2",
+      "text": "6. Hotel applications during backup operation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hotel operators should distinguish guest connectivity from essential operations while recognizing that both contribute to service quality. On limited backup capacity, policy may prioritize PMS, approved payment systems, administrative communications and selected guest services, subject to operational requirements. Unrestricted streaming can overwhelm an undersized backup; traffic segmentation alone cannot fix that capacity issue."
+    },
+    {
+      "type": "paragraph",
+      "text": "A cloud PMS may rely on continuous internet access to synchronize reservations and room status [5]. Payment terminals may have restricted offline features or none; Oracle's payment documentation illustrates platform-specific limitations and the possibility of declined or fraudulent offline transactions [6]. Offline procedures must be approved and exercised with the actual applications and payment providers. Safety and emergency communications should be evaluated independently against applicable codes and service requirements, rather than assuming ordinary hotel internet backup is sufficient."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep the guest experience in the continuity plan: what staff will say, whether partial Wi-Fi service is available, whether a temporary captive-portal message is needed, and how guest issues will be handled while business applications recover. Do not promise a particular restoration time unless it is confirmed by the responsible provider."
+    },
+    {
+      "type": "paragraph",
+      "text": "Frontline operational drill: In a planned test, ask one team member to act as a guest reporting Wi-Fi failure, another as a front-desk agent attempting check-in, and another as the person handling payment or room-status exceptions. Verify that staff can distinguish an internal Wi-Fi fault from an upstream outage, find the approved offline instructions, contact responsible support and document actions for later reconciliation. Actual guest transactions or sensitive card data should not be used in a simulated outage. This converts a router failover test into an operational continuity test."
+    },
+    {
+      "type": "h3",
+      "text": "Preserve security controls during backup operation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Moving traffic to a backup circuit or cellular connection must not bypass payment-network separation, firewall policy, or other security protections. Organizations should verify that the alternate path preserves required segmentation and that the security boundaries are tested. PCI SSC's modern-network guidance describes scope and segmentation concerns that remain relevant when networks are reconfigured [8]. A recovery arrangement that restores basic internet access but exposes protected systems is not an acceptable continuity design."
+    },
+    {
+      "type": "h2",
+      "text": "7. Recovery objectives and meaningful tests"
+    },
+    {
+      "type": "paragraph",
+      "text": "NIST differentiates Maximum Tolerable Downtime (MTD), the disruption threshold a business process can withstand; Recovery Time Objective (RTO), a target for restoring a system resource; and Recovery Point Objective (RPO), a data-recovery measure relevant where information may be lost or need reconciliation [1]. A simple internet interruption does not automatically involve data loss."
+    },
+    {
+      "type": "paragraph",
+      "text": "For each critical service, document: acceptable interruption, recovery method, responsible person, offline alternatives, and post-recovery validation. A recovery objective is a planning target, not an outage guarantee."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tests should include (a) primary circuit disconnection, (b) loss farther upstream when the interface remains electrically up, (c) failover under load, (d) application-specific reconnection, (e) guest/business traffic prioritization, (f) return to primary, and (g) staff notification and incident closure. Measure detection, switch time, application recovery, user impact and any reconciliation required. Repeat testing after material changes."
+    },
+    {
+      "type": "h3",
+      "text": "Procedures for communicating with guests and staff"
+    },
+    {
+      "type": "paragraph",
+      "text": "Technical recovery planning should assign ownership of incident updates. During a disruptive event, the property needs a clear process for telling guests what is affected, offering realistic alternatives, and providing updated information without promising an unsupported restoration time. Employees likewise need to know which manual workflows are authorized, where to document transactions and requests, and when to switch back to normal procedures. This is an operational recommendation supported by the broader business-continuity framework, not a claim about a measured industry-average guest response."
+    },
+    {
+      "type": "h2",
+      "text": "8. Economics and multi-property governance"
+    },
+    {
+      "type": "paragraph",
+      "text": "The cost of resilience includes circuits, installation and construction, customer equipment, power, software, licensing, monitoring, testing and ongoing support. A hypothetical $250/month secondary service costs $3,000 annually and $9,000 over 36 months before nonrecurring charges. That arithmetic is not evidence of prevailing market price or an ROI calculation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Compare several interruption scenarios against the cost and effectiveness of alternative architectures. Do not apply data-center cost-per-outage statistics to hotels as if they were hotel averages. Correlated failures are especially important: two circuits exposed to one conduit cut are not independent events."
+    },
+    {
+      "type": "paragraph",
+      "text": "Multi-property groups can establish minimum standards while allowing property-specific implementations. Maintain a circuit inventory with contracting party, known underlying access provider, routes where available, equipment, backup method, escalation contacts, contract dates, test results and outage history. Review the arrangements at acquisitions, management transitions and major application migrations."
+    },
+    {
+      "type": "h2",
+      "text": "9. Evaluation checklist"
+    },
+    {
+      "type": "ordered_list",
+      "items": [
+        "Which guest-facing and back-office processes must survive a primary-link failure?",
+        "Which dependencies extend beyond the hotel: cloud, identity, DNS, payment, power?",
+        "Where are shared physical and customer-premises failure points?",
+        "What actual backup throughput is available when guest demand is high?",
+        "Is the backup connection usable and compliant for sensitive applications?",
+        "How are failures detected, how quickly do routes change, and what sessions break?",
+        "Who is alerted and who owns vendor escalation?",
+        "How do staff continue check-in, payment processing and guest communications?",
+        "How often are failover and recovery tested, and are results recorded?",
+        "Are costs and contract liabilities proportionate to the risk reduction achieved?"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "10. Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "text": "Connectivity resilience is not a product that can be purchased by name. It is a tested capability built from suitable primary service, genuinely useful alternatives, sound customer-premises design, clear priorities and recovery procedures. A second circuit can be worthwhile, but its value depends on route independence and its ability to support critical applications when required. For hotels and other distributed enterprises, successful recovery means restoring essential business functions, not merely turning a router indicator green."
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-1",
+      "text": "[1] NIST (2010), SP 800-34 Rev. 1: Contingency Planning Guide for Federal Information Systems. https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+    },
+    {
+      "id": "reference-2",
+      "text": "[2] NIST, SP 800-53 Rev. 5, CP-8: Telecommunications Services, including enhancements. https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+    },
+    {
+      "id": "reference-3",
+      "text": "[3] Fortinet, FortiOS Performance SLAs (implementation example). https://docs.fortinet.com/document/fortigate/latest/administration-guide/723056/performance-slas"
+    },
+    {
+      "id": "reference-4",
+      "text": "[4] IETF (2010), RFC 5880: Bidirectional Forwarding Detection. https://datatracker.ietf.org/doc/rfc5880/"
+    },
+    {
+      "id": "reference-5",
+      "text": "[5] Oracle Hospitality, OPERA Cloud Property Management. https://www.oracle.com/hospitality/hotel-property-management/"
+    },
+    {
+      "id": "reference-6",
+      "text": "[6] Oracle Payment Cloud, Offline Processing (Store and Forward). https://docs.oracle.com/en/industries/oracle-payment-cloud/latest/opcsc/c_offline_processing.html"
+    },
+    {
+      "id": "reference-7",
+      "text": "[7] NIST (March 2026), SP 800-81 Rev. 3: Secure Domain Name System (DNS) Deployment Guide. https://csrc.nist.gov/pubs/sp/800/81/r3/final"
+    },
+    {
+      "id": "reference-8",
+      "text": "[8] PCI Security Standards Council (2024), PCI DSS Scoping and Segmentation Guidance for Modern Network Architectures. https://blog.pcisecuritystandards.org/new-information-supplement-pci-dss-scoping-and-segmentation-guidance-for-modern-network-architectures"
+    }
+  ],
+  "cta": {
+    "headline": "Explore the Business Connectivity & DIA learning path.",
+    "copy": "Read the current research in this path and return as additional papers are published.",
+    "button_text": "Explore the learning path",
+    "button_url": "/insights/business-connectivity-dia/"
+  },
+  "source_document": "C:\\Users\\dscot\\Downloads\\Dascoda_Dedicated_Internet_Research_Five_Papers.docx",
+  "previous_slug": "dedicated-internet-access-vs-business-broadband",
+  "next_slug": "why-dascoda-business-connectivity",
+  "next_label": "05 · Put It Into Practice",
+  "research_limitations": "Research limitations: NIST materials are general information-system guidance. Vendor documentation illustrates specific implementations. Backup designs, availability and recovery results require property-specific engineering and tests."
+}
