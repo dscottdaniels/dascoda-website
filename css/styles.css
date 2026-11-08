@@ -3265,11 +3265,14 @@ textarea:focus {
 .insights-path-nav .container {
   display: flex;
   align-items: center;
-  gap: 14px 20px;
-  min-height: 70px;
+  gap: 18px 28px;
+  min-height: 76px;
 }
 
 .insights-path-nav-label {
+  flex: 0 0 124px;
+  padding-right: 24px;
+  border-right: 1px solid rgba(31, 58, 95, 0.18);
   color: var(--navy);
   font-size: 0.78rem;
   font-weight: 800;
@@ -3281,16 +3284,19 @@ textarea:focus {
   display: grid;
   flex: 1;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
-  max-width: 720px;
+  gap: 12px;
+  max-width: 760px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .insights-path-tab {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 42px;
-  padding: 8px 14px;
+  min-height: 46px;
+  padding: 10px 18px;
   color: var(--navy);
   background: var(--white);
   border: 1px solid rgba(31, 58, 95, 0.24);
@@ -3816,14 +3822,21 @@ textarea:focus {
   .insights-path-nav .container {
     align-items: flex-start;
     flex-direction: column;
-    gap: 8px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    gap: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .insights-path-nav-label {
+    flex-basis: auto;
+    padding-right: 0;
+    border-right: 0;
   }
 
   .insights-path-tabs {
     width: 100%;
     max-width: none;
+    gap: 8px;
   }
 
   .insights-path-tab {

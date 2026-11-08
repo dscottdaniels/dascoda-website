@@ -208,12 +208,12 @@ const renderInsightsPathNav = (paths, activePathId = "", isPathPage = false) => 
   <nav class="insights-path-nav" aria-label="Insights learning paths">
     <div class="container">
       <span class="insights-path-nav-label">Insights paths</span>
-      <div class="insights-path-tabs">
+      <ul class="insights-path-tabs" role="list">
         ${paths.map((pathRecord) => {
           const isActive = pathRecord.id === activePathId;
-          return `<a class="insights-path-tab${isActive ? " active" : ""}"${isActive && isPathPage ? " aria-current=\"page\"" : ""} href="${escapeHtml(learningPathUrl(pathRecord))}">${escapeHtml(pathRecord.nav_label)}</a>`;
+          return `<li><a class="insights-path-tab${isActive ? " active" : ""}"${isActive && isPathPage ? " aria-current=\"page\"" : ""} href="${escapeHtml(learningPathUrl(pathRecord))}">${escapeHtml(pathRecord.nav_label)}</a></li>`;
         }).join("")}
-      </div>
+      </ul>
     </div>
   </nav>`;
 
